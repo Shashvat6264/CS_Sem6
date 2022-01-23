@@ -1,0 +1,1 @@
+mkdir -p Nil&&find $1 -type f ! -name "*.*" -exec mv -t Nil "{}" +;for e in $(find $1 -type f|sed -e 's/.*\.//'|sed -e 's/.*\///'|sort -u);do mkdir -p $e&&find $1 -type f -name "*.$e" -exec mv -t $e '{}' +;done
