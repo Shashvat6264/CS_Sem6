@@ -3,6 +3,6 @@
   29 c.sh :(
   10 d.sh
   59 SolnE.sh :(
-  25 SolnF.sh
-  36 SolnG.sh
+  13 SolnF.sh
+  23 SolnG.sh
  183 total
