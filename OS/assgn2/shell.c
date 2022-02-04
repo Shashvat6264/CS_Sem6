@@ -8,13 +8,29 @@
 #define MAXCMDNUM 50
 #define MAXPIPES 20
 
+#define HISTFILESIZE 10000
+#define HISTSHOWSIZE 1000
 
-int  inputCmd(char* str){
+void initShell(){
+	printf("/******************************************************************\n");
+	printf("*******************************************************************\n");
+	printf("************************ Welcome to our shell *********************\n");
+	printf("*******************************************************************\n");
+	printf("******************************************************************/\n");
+}
+
+void printDirName(){
+	char cwd[1024];
+    getcwd(cwd, sizeof(cwd));
+    printf("\n%s", cwd);
+}
+
+int inputCmd(char* str){
 	//str = (char*) malloc(MAXCMDLEN * sizeof(char));
 	int n = scanf("%[^\n]", str);
+	getchar();
 	//printf("%d %s\n", n,str);
 	return n;
-
 }
 
 char** parseCmd(char* cmd){
@@ -36,18 +52,8 @@ int parsePipes(char* cmd, char** cmdlist){
 
 }
 
-void initShell(){
-	printf("/******************************************************************\n");
-	printf("*******************************************************************\n");
-	printf("************************ Welcome to our shell *********************\n");
-	printf("*******************************************************************\n");
-	printf("******************************************************************/\n");
-}
+int ownCommandHandler(char** parsed){
 
-void printDirName(){
-	char cwd[1024];
-    getcwd(cwd, sizeof(cwd));
-    printf("\n%s", cwd);
 }
 
 
@@ -59,15 +65,12 @@ int main()
 
 		printDirName();
 
-		char* cmd;
+		char cmd[MAXCMDLEN];
 		char **parsedcmd;
 		printf("/myshell$ ");
-		cmd  = (char*) malloc(MAXCMDLEN * sizeof(char));
-		 //get prev newline
-		int notBlank = inputCmd(cmd);
-		getchar();
+		
 		//if input is blank handle
-		if(!notBlank) continue;
+		if(!inputCmd(cmd)) continue;
 
 
 		parsedcmd = parseCmd(cmd);
