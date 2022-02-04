@@ -36,13 +36,32 @@ int parsePipes(char* cmd, char** cmdlist){
 
 }
 
+void initShell(){
+	printf("/******************************************************************\n");
+	printf("*******************************************************************\n");
+	printf("************************ Welcome to our shell *********************\n");
+	printf("*******************************************************************\n");
+	printf("******************************************************************/\n");
+}
+
+void printDirName(){
+	char cwd[1024];
+    getcwd(cwd, sizeof(cwd));
+    printf("\n%s", cwd);
+}
+
 
 int main()
 {
+	initShell();
+
 	while(1){
+
+		printDirName();
+
 		char* cmd;
 		char **parsedcmd;
-		printf("\nmyshell$ ");
+		printf("/myshell$ ");
 		cmd  = (char*) malloc(MAXCMDLEN * sizeof(char));
 		 //get prev newline
 		int notBlank = inputCmd(cmd);
