@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <termios.h>
 
 #define MAXCMDLEN 200
 #define MAXCMDNUM 50
@@ -13,12 +14,41 @@
 #define HISTFILESIZE 10000
 #define HISTSHOWSIZE 1000
 
+pid_t shell_pgid;
+int shell_terminal, shell_is_interactive;
+struct termios shell_tmodes;
+
 void initShell(){
-	printf("/******************************************************************\n");
-	printf("*******************************************************************\n");
-	printf("************************ Welcome to our shell *********************\n");
-	printf("*******************************************************************\n");
-	printf("******************************************************************/\n");
+    shell_terminal = STDIN_FILENO;
+    shell_is_interactive = isatty(shell_terminal);
+
+    if (shell_is_interactive){
+        while (tcgetpgrp(shell_terminal) != (shell_pgid = getpgrp())) kill(- shell_pgid, SIGTTIN);
+
+        signal (SIGINT, SIG_IGN);
+        signal (SIGQUIT, SIG_IGN);
+        signal (SIGTSTP, SIG_IGN);
+        signal (SIGTTIN, SIG_IGN);
+        signal (SIGTTOU, SIG_IGN);
+        signal (SIGCHLD, SIG_IGN);
+
+        shell_pgid = getpid();
+
+        if (setpgid(shell_pgid, shell_pgid) < 0){
+            perror("Couldn't put the shell in its own process group");
+            exit(1);
+        }
+
+        tcsetpgrp(shell_terminal, shell_pgid);
+        tcgetattr(shell_terminal, &shell_tmodes);
+
+        printf("/******************************************************************\n");
+        printf("*******************************************************************\n");
+        printf("************************ Welcome to our shell *********************\n");
+        printf("*******************************************************************\n");
+        printf("******************************************************************/\n");
+    }
+    else exit(0);
 }
 
 void printDirName(){
@@ -30,10 +60,11 @@ void printDirName(){
 void sigint_handler(int signum){
 	signal(SIGINT, sigint_handler);
 	printf("Got a Ctrl+C interrupt\n");
-	pid_t pid = getpid();
-	printf("Ending process with PID: %d", pid);
-	kill(pid, SIGKILL);
-	fflush(stdout);
+}
+
+void sigtstp_handler(int sig_num){
+	signal(SIGTSTP, sigtstp_handler);
+	printf("Got a Ctrl+Z interrupt\n");
 }
 
 void add_history(char *command){
@@ -188,7 +219,6 @@ int ownCommandHandler(char** parsed){
     return 0;
 }
 
-
 int execute(char* cmd,int in_fd,int out_fd){
 	int len = strlen(cmd);
 	//strip spaces at the end
@@ -205,7 +235,7 @@ int execute(char* cmd,int in_fd,int out_fd){
 	}
 	if (ownCommandHandler(parsedcmd)) return 0;
 
-	pid_t pid,wpid;
+	pid_t pid,wpid,jpgid = 0;
 	pid = fork();
 	if(pid<0){
 	   fprintf(stderr, "fork failed");
@@ -213,6 +243,20 @@ int execute(char* cmd,int in_fd,int out_fd){
 	}
 	else if(pid == 0){ 
 		//handle pipe redirects
+        // pid_t pid;
+    
+        // pid = getpid();
+        if (jpgid == 0) jpgid = pid;
+        setpgid(pid, jpgid);
+        tcsetpgrp(shell_terminal, jpgid);
+
+        signal(SIGINT, SIG_DFL);
+        signal(SIGQUIT, SIG_DFL);
+        signal(SIGTSTP, SIG_DFL);
+        signal(SIGTTIN, SIG_DFL);
+        signal(SIGTTOU, SIG_DFL);
+        signal(SIGCHLD, SIG_DFL);
+
         if(in_fd!=0){
             dup2(in_fd,0);
             close(in_fd);
@@ -221,6 +265,7 @@ int execute(char* cmd,int in_fd,int out_fd){
             dup2(out_fd,1);
             close(out_fd);
         }
+
         int cmdlen = 0; //len of the command without file redirects
         int flag=0;
         for(int i=0;i<noWords;i++){
@@ -248,7 +293,9 @@ int execute(char* cmd,int in_fd,int out_fd){
 		execvp(parsedcmd[0],parsedcmd);
 	}
 	else{
-	   if(strcmp(parsedcmd[noWords-1],"&")!=0)
+        if (!jpgid) jpgid = pid;
+        setpgid(pid, jpgid);
+	    if(strcmp(parsedcmd[noWords-1],"&")!=0)
         {
         	int status;
             do{
@@ -296,8 +343,7 @@ int execcmd(char* cmd){
 
 int main(){
 	initShell();
-	signal(SIGINT, sigint_handler);
-
+	
 	while(1){
 
 		printDirName();
