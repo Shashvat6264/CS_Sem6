@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <termios.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/wait.h>
@@ -17,6 +18,40 @@
 pid_t shell_pgid;
 int shell_terminal, shell_is_interactive;
 struct termios shell_tmodes;
+
+static struct termios old, current;
+
+
+void initTermios(int echo){
+  tcgetattr(0, &old); 
+  current = old; 
+  current.c_lflag &= ~ICANON; 
+  if (echo) {
+      current.c_lflag |= ECHO; 
+  } else {
+      current.c_lflag &= ~ECHO; 
+  }
+  tcsetattr(0, TCSANOW, &current); 
+}
+
+
+void resetTermios(void){
+  tcsetattr(0, TCSANOW, &old);
+}
+
+
+char getch_(int echo){
+  char ch;
+  initTermios(echo);
+  ch = getchar();
+  resetTermios();
+  return ch;
+}
+
+
+char getch(void){
+  return getch_(0);
+}
 
 void initShell(){
     shell_terminal = STDIN_FILENO;
@@ -72,12 +107,46 @@ void add_history(char *command){
 }
 
 int inputCmd(char* str){
-	//str = (char*) malloc(MAXCMDLEN * sizeof(char));
-	int n = scanf("%[^\n]", str);
+	int i=0,j=0;
+	char c, *temp;
+	temp = (char*)malloc(sizeof(char)*50);
+	
+	while(1){
+		c = getch();
+		if(c=='\n'){
+			str[i] = '\0';
+			break;
+		}
+		str[i++] = c;
+		temp[j++] = c;
+		if(c==' '){
+			free(temp);
+			temp = (char*)malloc(sizeof(char)*50);
+			j=0;
+		}
+		if(c=='\t'){
+			//searching for file will be handled
+			temp[j]=='\0';
+			printf("\n%s\n",temp );// frint options here
+			sleep(2);
+			write(STDOUT_FILENO, "\033[F", 5);
+			write(STDOUT_FILENO, "\033[K", 5); 
+		}
+		//implement backspace
+		else if(c==127){
+			printf("%c",c);
+			printf("\b \b");
+		}
+		else{
+			printf("%c", c);
+		}
+	}
+
+	//int n = scanf("%[^\n]", str);
 	add_history(str);
-	getchar();
+	//getchar();
 	//printf("%d %s\n", n,str);
-	return n;
+	return i;
 }
 
 
@@ -243,11 +312,11 @@ int execute(char* cmd,int in_fd,int out_fd){
 	}
 	else if(pid == 0){ 
 		//handle pipe redirects
-        // pid_t pid;
+        pid_t pidj;
     
-        // pid = getpid();
-        if (jpgid == 0) jpgid = pid;
-        setpgid(pid, jpgid);
+        pidj = getpid();
+        if (jpgid == 0) jpgid = pidj;
+        setpgid(pidj, jpgid);
         tcsetpgrp(shell_terminal, jpgid);
 
         signal(SIGINT, SIG_DFL);
@@ -295,15 +364,17 @@ int execute(char* cmd,int in_fd,int out_fd){
 	else{
         if (!jpgid) jpgid = pid;
         setpgid(pid, jpgid);
-	    if(strcmp(parsedcmd[noWords-1],"&")!=0)
-        {
+	    if(strcmp(parsedcmd[noWords-1],"&")!=0){
         	int status;
             do{
             	wpid = waitpid(pid,&status,WUNTRACED);
             }
             while(!WIFEXITED(status) && !WIFSIGNALED(status));
         }
+        printf("Process excuted successfully\n");
 	}
+    
+    tcsetpgrp(shell_terminal, shell_pgid);
 	return 0;
 }
 
@@ -319,23 +390,21 @@ int execcmd(char* cmd){
 		execute(pipedcmd[0],0,1);	
 	}
 	else if(noPipes>1){
-        int i, in_fd = 0;int pipeError=0;
+        int i, in_fd = 0;
         int FD[2];//store the read and write file descripters
-        for(i = 0; i < noPipes - 1; i++){
+        for(i = 0; i < noPipes; i++){
             if(pipe(FD)==-1){
-                pipeError=1;
                 printf("Error: Error in piping\n");
                 break;
             }
             else{
-                execute(pipedcmd[i], in_fd, FD[1]);
+                if(i==noPipes-1)
+                	execute(pipedcmd[noPipes-1], in_fd, 1); 
+                else
+                	execute(pipedcmd[i], in_fd, FD[1]);
                 close(FD[1]);
-                //set the in file descriptor for next command as FD[0]
                 in_fd = FD[0];
             }
-        }
-        if(!pipeError){
-            execute(pipedcmd[noPipes-1], in_fd, 1); 
         }
     }
 }
@@ -348,10 +417,13 @@ int main(){
 
 		printDirName();
 
-		char cmd[MAXCMDLEN];
+		//char cmd[MAXCMDLEN];
+		char *cmd;
+		cmd = (char*) malloc(MAXCMDLEN * sizeof(char));
 		printf("/myshell$ ");
 		
 		//if input is blank handle
+        memset(cmd, '\0', MAXCMDLEN);
 		if(!inputCmd(cmd)) continue;
 		
 		//executeinput
