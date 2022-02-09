@@ -568,135 +568,136 @@ int handleMultiwatch(char** parsed){
 // }
 
 
-void handleMultiWatch(char** parsed){
-    int i = 0;
+// void handleMultiWatch(char** parsed){
+//     int i = 0;
 
-    int fds[MAXMULTIWATCHCMDS];
-    int noOfCmds = 0;
+//     int fds[MAXMULTIWATCHCMDS];
+//     int noOfCmds = 0;
 
-    fd_set rset;
-    int maxfd = 0;
-    FD_ZERO(&rset);
+//     fd_set rset;
+//     int maxfd = 0;
+//     FD_ZERO(&rset);
 
-    while (parsed[++i] != NULL){
-        char *cmd;
-		cmd = (char*) malloc(MAXCMDLEN * sizeof(char));
-		strcpy(cmd, "watch ");
-        strcat(cmd, parsed[i]);
-        printf("Multiwatch command %d: %s\n", i, cmd);
+//     while (parsed[++i] != NULL){
+//         char *cmd;
+// 		cmd = (char*) malloc(MAXCMDLEN * sizeof(char));
+// 		strcpy(cmd, "watch ");
+//         strcat(cmd, parsed[i]);
+//         printf("Multiwatch command %d: %s\n", i, cmd);
         
-        int len = strlen(cmd);
-        while(cmd[len-1]==' '){
-            len--;
-        }
-        cmd[len] = '\0';
-        char** parsedcmd;
-        parsedcmd = (char**)malloc(MAXCMDNUM*sizeof(char*));
-        int noWords = parseCmd(cmd, parsedcmd);
-        if (ownCommandHandler(parsedcmd)) return;
+//         int len = strlen(cmd);
+//         while(cmd[len-1]==' '){
+//             len--;
+//         }
+//         cmd[len] = '\0';
+//         char** parsedcmd;
+//         parsedcmd = (char**)malloc(MAXCMDNUM*sizeof(char*));
+//         int noWords = parseCmd(cmd, parsedcmd);
+//         if (ownCommandHandler(parsedcmd)) return;
 
-        pid_t pid,wpid,jpgid = 0;
-        pid = fork();
-        if (pid < 0){
-            fprintf(stderr, "fork failed");
-            return;
-        }
-        else if (pid == 0){
-            pid_t pidj;
-            pidj = getpid();
-            if (jpgid == 0) jpgid = pidj;
-            setpgid(pidj, jpgid);
+//         pid_t pid,wpid,jpgid = 0;
+//         pid = fork();
+//         if (pid < 0){
+//             fprintf(stderr, "fork failed");
+//             return;
+//         }
+//         else if (pid == 0){
+//             pid_t pidj;
+//             pidj = getpid();
+//             if (jpgid == 0) jpgid = pidj;
+//             setpgid(pidj, jpgid);
 
-            signal(SIGINT, SIG_DFL);
-            signal(SIGQUIT, SIG_DFL);
-            signal(SIGTSTP, SIG_DFL);
-            signal(SIGTTIN, SIG_DFL);
-            signal(SIGTTOU, SIG_DFL);
-            signal(SIGCHLD, SIG_DFL);
+//             signal(SIGINT, SIG_DFL);
+//             signal(SIGQUIT, SIG_DFL);
+//             signal(SIGTSTP, SIG_DFL);
+//             signal(SIGTTIN, SIG_DFL);
+//             signal(SIGTTOU, SIG_DFL);
+//             signal(SIGCHLD, SIG_DFL);
 
-            int cmdlen = 0; //len of the command without file redirects
-            int flag=0;
-            for(int i=0;i<noWords;i++){
-                if(!flag){
-                    if(strcmp(parsedcmd[i],"&")==0||strcmp(parsedcmd[i],"<")==0||strcmp(parsedcmd[i],">")==0){
-                        cmdlen=i;
-                        flag=1;
-                    }
-                }
-            }
-            if(!flag)
-                cmdlen=noWords;
-            cmdlen++;
-            parsedcmd = (char**)realloc(parsedcmd, sizeof(char*)*cmdlen);
-            parsedcmd[cmdlen-1] = NULL;
+//             int cmdlen = 0; //len of the command without file redirects
+//             int flag=0;
+//             for(int i=0;i<noWords;i++){
+//                 if(!flag){
+//                     if(strcmp(parsedcmd[i],"&")==0||strcmp(parsedcmd[i],"<")==0||strcmp(parsedcmd[i],">")==0){
+//                         cmdlen=i;
+//                         flag=1;
+//                     }
+//                 }
+//             }
+//             if(!flag)
+//                 cmdlen=noWords;
+//             cmdlen++;
+//             parsedcmd = (char**)realloc(parsedcmd, sizeof(char*)*cmdlen);
+//             parsedcmd[cmdlen-1] = NULL;
 
-            char fileName[50];
-            sprintf(fileName, ".temp.%d.txt", pidj);
-            int reOutfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
-            dup2(reOutfd, 1);
-            printf("%s", cmd);
-            close(reOutfd);
-    		execvp(parsedcmd[0],parsedcmd);
-        }
-        else{
-            if (!jpgid) jpgid = pid;
-            setpgid(pid, jpgid);
-            char fileName[50];
-            printf("%d\n", pid);
-            sprintf(fileName, ".temp.%d.txt", pid);
-            int reInfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+//             char fileName[50];
+//             sprintf(fileName, ".temp.%d.txt", pidj);
+//             int reOutfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+//             dup2(reOutfd, 1);
+//             printf("%s", cmd);
+//             close(reOutfd);
+//     		execvp(parsedcmd[0],parsedcmd);
+//         }
+//         else{
+//             if (!jpgid) jpgid = pid;
+//             setpgid(pid, jpgid);
+//             char fileName[50];
+//             printf("%d\n", pid);
+//             sprintf(fileName, ".temp.%d.txt", pid);
+//             int reInfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
 
-            FD_SET(reInfd, &rset);
-            fds[noOfCmds++] = reInfd;
-            printf("Created file descriptor: %d\n", reInfd);
-            maxfd = maxfd > reInfd ? maxfd : reInfd;
-        }
-    }
+//             FD_SET(reInfd, &rset);
+//             fds[noOfCmds++] = reInfd;
+//             printf("Created file descriptor: %d\n", reInfd);
+//             maxfd = maxfd > reInfd ? maxfd : reInfd;
+//         }
+//     }
 
-    // printf("Outside %d\n", noOfCmds);
-    // for (int i=0;i<noOfCmds;i++){
-    //     printf("%s ",fds[i]);
-    // }
-    // while (1){
-        // char buffer[1000];
-        // int fd = open(fds[0], O_RDWR);
-        // printf("%d \n",fd);
-        // int fd = open(fds[0], O_RDONLY);
-        // read(fd, buffer, 1000);
-        // printf("%s",buffer);
-        // sleep(2000);
-    // }
+//     // printf("Outside %d\n", noOfCmds);
+//     // for (int i=0;i<noOfCmds;i++){
+//     //     printf("%s ",fds[i]);
+//     // }
+//     // while (1){
+//         // char buffer[1000];
+//         // int fd = open(fds[0], O_RDWR);
+//         // printf("%d \n",fd);
+//         // int fd = open(fds[0], O_RDONLY);
+//         // read(fd, buffer, 1000);
+//         // printf("%s",buffer);
+//         // sleep(2000);
+//     // }
 
-    // int nready = select(maxfd + 1, &rset, NULL, NULL, NULL);
-    // printf("%d ", nready);
-    // if (nready > )
-    // for 
+//     // int nready = select(maxfd + 1, &rset, NULL, NULL, NULL);
+//     // printf("%d ", nready);
+//     // if (nready > )
+//     // for 
 
-    // while(1){
-        if (select(maxfd + 1, &rset, NULL, NULL, NULL)){
-            for (int i = 0; i < noOfCmds; i++ ){
-                if (FD_ISSET(fds[i], &rset)){
-                    char buffer[1000];
-                    printf("%d \n", fds[i]);
-                    int n = read(fds[i], buffer, 1000);
-                    if (n > 0){
-                        buffer[n] = '\0';
-                        printf("%s\n", buffer);
-                    }
-                    else{
-                        printf("Error while reading.. \n");
-                    }
-                }
-            } 
-        }
-    // }
+//     // while(1){
+//         if (select(maxfd + 1, &rset, NULL, NULL, NULL)){
+//             for (int i = 0; i < noOfCmds; i++ ){
+//                 if (FD_ISSET(fds[i], &rset)){
+//                     char buffer[1000];
+//                     printf("%d \n", fds[i]);
+//                     int n = read(fds[i], buffer, 1000);
+//                     if (n > 0){
+//                         buffer[n] = '\0';
+//                         printf("%s\n", buffer);
+//                     }
+//                     else{
+//                         printf("Error while reading.. \n");
+//                     }
+//                 }
+//             } 
+//         }
+//     // }
+
 void search_history(){
 	printf("Travel your history: \n");
 	for (int i = 0; i < hiscount; ++i){
 		printf("%s\n", storehistory[i]);
 	}
 	if(getch()==18){
-		printf("Enter serach term: ");
+		printf("Enter search term: ");
 		char *temp;
 		temp = (char*)malloc(sizeof(char)*MAXCMDLEN);
 		scanf("%[^\n]",temp);
