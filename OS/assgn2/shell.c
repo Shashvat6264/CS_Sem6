@@ -9,10 +9,12 @@
 #include <termios.h>
 #include <sys/select.h>
 #include <sys/inotify.h>
+#include <dirent.h>
 
 #define MAXCMDLEN 200
 #define MAXCMDNUM 50
 #define MAXPIPES 20
+#define MAXMATCHES 100
 
 #define HISTFILESIZE 10000
 #define HISTSHOWSIZE 1000
@@ -22,7 +24,11 @@
 pid_t shell_pgid;
 int shell_terminal, shell_is_interactive;
 struct termios shell_tmodes;
+char* storehistory[10001];
+static int hiscount = 0;
 
+
+//utility functions: getch implementation
 static struct termios old, current;
 
 int execcmd(char* cmd);
@@ -55,10 +61,101 @@ char getch_(int echo){
   return ch;
 }
 
-
 char getch(void){
   return getch_(0);
 }
+//another set of utility functions: substring matching
+void prefixSuffixArray(char* pat, int M, int* pps) {
+   int length = 0;
+   pps[0] = 0;
+   int i = 1;
+   while (i < M) {
+      if (pat[i] == pat[length]) {
+         length++;
+         pps[i] = length;
+         i++;
+      } else {
+         if (length != 0)
+         length = pps[length - 1];
+         else {
+            pps[i] = 0;
+            i++;
+         }
+      }
+   }
+}
+int KMPAlgorithm(char* text, char* pattern) {
+   int M = strlen(pattern);
+   int N = strlen(text);
+   int pps[M];
+   prefixSuffixArray(pattern, M, pps);
+   int i = 0;
+   int j = 0;
+   while (i < N) {
+      if (pattern[j] == text[i]) {
+         j++;
+         i++;
+      }
+      if (j == M) {
+         return (i-j);
+         j = pps[j - 1];
+      }
+      else if (i < N && pattern[j] != text[i]) {
+         if (j != 0)
+         j = pps[j - 1];
+         else
+         i = i + 1;
+      }
+   }
+   return -1;
+}
+//utility function: custom strtok
+char *strmbtok ( char *str, char* delim, char *openQ, char *closeQ) {
+
+    static char *token = NULL;
+    char *broken = NULL;
+    char *qi = NULL;
+    int flag = 0;
+    int openQidx = 0;
+
+    if ( str != NULL) {
+        token = str;
+        broken = str;
+    }
+    else {
+        broken = token;
+        if ( *token == '\0') {
+            broken = NULL;
+        }
+    }
+
+    while ( *token != '\0') {
+        if ( flag) {
+            if ( closeQ[openQidx] == *token) {
+                flag = 0;
+            }
+            token++;
+            continue;
+        }
+        if ( ( qi = strchr ( openQ, *token)) != NULL) {
+            flag = 1;
+            openQidx = qi - openQ;
+            token++;
+            continue;
+        }
+        if ( strchr ( delim, *token) != NULL) {
+            *token = '\0';
+            token++;
+           	while(strchr ( delim, *token) != NULL)
+           		token++;
+            break;
+        }
+        token++;
+    }
+    return broken;
+}
+
+
 
 void initShell(){
     shell_terminal = STDIN_FILENO;
@@ -110,8 +207,25 @@ void sigtstp_handler(int sig_num){
 }
 
 void add_history(char *command){
-
+	storehistory[hiscount++] = command;
 }
+
+int file_matches(char* temp, char** matches){
+	DIR *d;
+    struct dirent *dir;
+    d = opendir(".");
+    int count=0;
+    if (d){
+        while ((dir = readdir(d)) != NULL){
+        	if(strcmp(".",dir->d_name)==0 || strcmp("..",dir->d_name)==0) continue;
+        	if(KMPAlgorithm(dir->d_name,temp)==0)
+        		matches[count++] = dir->d_name;
+        }
+        closedir(d);
+    }
+    return count;
+}
+
 
 int inputCmd(char* str){
 	int i=0,j=0;
@@ -125,29 +239,58 @@ int inputCmd(char* str){
 			str[i] = '\0';
 			break;
 		}
+		else if(c=='\033'){
+			getch();
+			getch();
+			continue;
+		}
 		else if(c=='\t'){
 			//searching for file will be handled
 			temp[j]=='\0';
-			printf("\n%s\n",temp );
 			// frint options here
-			//matches = 
+			char **matches;
+			matches = (char**)malloc(sizeof(char*)*MAXMATCHES);
+			int noMatches = file_matches(temp,matches);
+			
+			//autocomplete
+			if(noMatches==0) continue;
+			else if(noMatches==1){
+				for(int fn=strlen(temp);fn<strlen(matches[0]);fn++){
+					printf("%c",matches[0][fn] );
+					str[i++] = matches[0][fn];
+				}
 
-			sleep(2);
+				free(temp);
+				temp = (char*)malloc(sizeof(char)*50);
+				j=0;
 
+			}
+			else{
+				printf("\nchoose among: ");
+				for (int file = 0; file < noMatches; ++file)
+					printf("%d.%s  ,  ",file,matches[file] );
+				char inp; scanf("%c",&inp);
+				int idx = inp-'0';
 
-			write(STDOUT_FILENO, "\033[F", 5);
-			write(STDOUT_FILENO, "\033[K", 5);
-			printf("\b \b");
-			write(STDOUT_FILENO, "\033[1A", 6);
-			write(STDOUT_FILENO, "\033[1A", 6);
-			printDirName();
-			printf("/myshell$ ");
-			strcat(str,temp);
-			printf("%s", str);
+				for(int fn=strlen(temp);fn<strlen(matches[idx]);fn++){
+					printf("%c",matches[idx][fn] );
+					str[i++] = matches[0][fn];
+				}
+				write(STDOUT_FILENO, "\033[F", 5);
+				write(STDOUT_FILENO, "\033[K", 5);
+				printf("\b \b");
+				write(STDOUT_FILENO, "\033[1A", 6);
+				write(STDOUT_FILENO, "\033[1A", 6);
+				printDirName();
+				printf("/myshell$ ");
+				strcat(str,temp);
+				printf("%s", str);
 
-			free(temp);
-			temp = (char*)malloc(sizeof(char)*50);
-			j=0;
+				free(temp);
+				temp = (char*)malloc(sizeof(char)*50);
+				j=0;
+			}
+
 		}
 		//implement backspace
 		else if(c==127){
@@ -170,59 +313,11 @@ int inputCmd(char* str){
 		}		
 		
 	}
-
-	//int n = scanf("%[^\n]", str);
 	add_history(str);
-	//getchar();
-	//printf("%d %s\n", n,str);
 	return i;
 }
 
 
-char *strmbtok ( char *str, char* delim, char *openQ, char *closeQ) {
-
-    static char *token = NULL;
-    char *broken = NULL;
-    char *qi = NULL;
-    int flag = 0;
-    int openQidx = 0;
-
-    if ( str != NULL) {
-        token = str;
-        broken = str;
-    }
-    else {
-        broken = token;
-        if ( *token == '\0') {
-            broken = NULL;
-        }
-    }
-
-    while ( *token != '\0') {
-        if ( flag) {
-            if ( closeQ[openQidx] == *token) {
-                flag = 0;
-            }
-            token++;
-            continue;
-        }
-        if ( ( qi = strchr ( openQ, *token)) != NULL) {
-            flag = 1;
-            openQidx = qi - openQ;
-            token++;
-            continue;
-        }
-        if ( strchr ( delim, *token) != NULL) {
-            *token = '\0';
-            token++;
-           	while(strchr ( delim, *token) != NULL)
-           		token++;
-            break;
-        }
-        token++;
-    }
-    return broken;
-}
 
 int parseCmd(char* cmd, char** words){
     char acOpen[]  = {"\"[\'{"};
@@ -595,10 +690,27 @@ void handleMultiWatch(char** parsed){
             } 
         }
     // }
+void search_history(){
+	printf("Travel your history: \n");
+	for (int i = 0; i < hiscount; ++i){
+		printf("%s\n", storehistory[i]);
+	}
+	if(getch()==18){
+		printf("Enter serach term: ");
+		char *temp;
+		temp = (char*)malloc(sizeof(char)*MAXCMDLEN);
+		scanf("%[^\n]",temp);
+		printf("Matched commands are:\n");
+		for (int i = 0; i < hiscount; ++i){
+			if (KMPAlgorithm(storehistory[i],temp)!=-1)
+				printf("%s\n", storehistory[i]);
+		}
+		free(temp);
+	}
 }
 
 int ownCommandHandler(char** parsed){
-	int NoOfOwnCmds = 5, i, switchOwnArg = 0;
+	int NoOfOwnCmds = 6, i, switchOwnArg = 0;
     char* ListOfOwnCmds[NoOfOwnCmds];
     char* username;
   
@@ -607,6 +719,7 @@ int ownCommandHandler(char** parsed){
     ListOfOwnCmds[2] = "help";
     ListOfOwnCmds[3] = "hello";
     ListOfOwnCmds[4] = "multiwatch";
+    ListOfOwnCmds[5] = "history";
   
     for (i = 0; i < NoOfOwnCmds; i++) {
         if (strcmp(parsed[0], ListOfOwnCmds[i]) == 0) {
@@ -635,6 +748,9 @@ int ownCommandHandler(char** parsed){
     case 5:
         handleMultiwatch(parsed);
         return 1;
+    case 6:
+    	search_history();
+  		return 1;
     default:
         break;
     }
@@ -782,6 +898,7 @@ int main(){
 		
 		//executeinput
 		execcmd(cmd);
+		free(cmd);
 
 	}
 	return 0;
