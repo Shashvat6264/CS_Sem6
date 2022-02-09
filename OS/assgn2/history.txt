@@ -1,0 +1,37 @@
+ls
+history
+history
+history
+ls
+multiwatch "date"
+ps
+ls
+multiwatch "date" 
+multiwatch "ls"
+ls
+shell
+gcc shell.c -o shell
+ls
+exit
+./a.out
+exit
+./a.out
+./a.out &
+./a.out
+./a.out &
+ls
+ls &
+ls
+ls | more
+cat trial.cpp | sort | more
+history
+cat trial.txt | sort | more
+ps
+exit
+ls
+multiwatch
+multiWatch "date"
+multiWatch "date"
+multiWatch "ls"
+ls
+exit

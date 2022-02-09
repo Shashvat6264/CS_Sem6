@@ -76,6 +76,7 @@ char getch_(int echo){
 char getch(void){
   return getch_(0);
 }
+
 //another set of utility functions: substring matching
 void lcsmatch(char* text, char* lcsp){
 	for (int i = 0; i < strlen(lcsp); ++i){
@@ -127,6 +128,7 @@ int lcs(char* text, char* pattern){
     }
     return count;
 }
+
 //utility function: custom strtok
 char *strmbtok ( char *str, char* delim, char *openQ, char *closeQ) {
 
@@ -172,8 +174,6 @@ char *strmbtok ( char *str, char* delim, char *openQ, char *closeQ) {
     }
     return broken;
 }
-
-
 
 void initShell(){
     shell_terminal = STDIN_FILENO;
@@ -229,13 +229,6 @@ void printDirName(){
 	char cwd[1024];
     getcwd(cwd, sizeof(cwd));
     printf("\n%s", cwd);
-}
-
-
-void sigtstp_handler(int sig_num){
-	signal(SIGTSTP, sigtstp_handler);
-
-	printf("Got a Ctrl+Z interrupt\n");
 }
 
 void add_history(char *command){
@@ -414,6 +407,8 @@ void openHelp()
         "\n>cd"
         "\n>ls"
         "\n>exit"
+        "\n>history"
+        "\n>multiWatch"
         "\n>all other general commands available in UNIX shell"
         "\n>pipe handling"
         "\n>improper space handling");
@@ -421,7 +416,7 @@ void openHelp()
     return;
 }
 
-void endmultiWatch(int signum){
+void endmultiWatch(int openHelpsignum){
     signal(SIGINT, SIG_IGN);
     multi_watch_called = 0;
 
@@ -434,7 +429,7 @@ void endmultiWatch(int signum){
 
 }
 
-int handleMultiwatch(char** parsed){
+int handleMultiWatch(char** parsed){
     int noOfCmds = 0;
     signal(SIGINT, endmultiWatch);
     multi_watch_called = 1;
@@ -531,7 +526,7 @@ int handleMultiwatch(char** parsed){
                         }
                         while(!WIFEXITED(status) && !WIFSIGNALED(status));
                     }
-                    printf("Process excuted successfully\n");
+                    
                     continue;
                 }
             }
@@ -612,7 +607,7 @@ int handleMultiwatch(char** parsed){
             wpid_to_console = waitpid(pid_to_console,&status,WUNTRACED);
         }
         while(!WIFEXITED(status) && !WIFSIGNALED(status));
-        printf("Process excuted successfully\n");
+        
     }
 
     tcsetpgrp(shell_terminal, shell_pgid);
@@ -656,16 +651,15 @@ void search_history(){
 }
 
 int ownCommandHandler(char** parsed){
-	int NoOfOwnCmds = 6, i, switchOwnArg = 0;
+	int NoOfOwnCmds = 5, i, switchOwnArg = 0;
     char* ListOfOwnCmds[NoOfOwnCmds];
     char* username;
   
     ListOfOwnCmds[0] = "exit";
     ListOfOwnCmds[1] = "cd";
     ListOfOwnCmds[2] = "help";
-    ListOfOwnCmds[3] = "hello";
-    ListOfOwnCmds[4] = "multiwatch";
-    ListOfOwnCmds[5] = "history";
+    ListOfOwnCmds[3] = "multiWatch";
+    ListOfOwnCmds[4] = "history";
   
     for (i = 0; i < NoOfOwnCmds; i++) {
         if (strcmp(parsed[0], ListOfOwnCmds[i]) == 0) {
@@ -686,15 +680,9 @@ int ownCommandHandler(char** parsed){
         openHelp();
         return 1;
     case 4:
-        username = getenv("USER");
-        printf("\nHello %s.\nPut your command to see magic"
-            "\nUse help to know more..\n",
-            username);
+        handleMultiWatch(parsed);
         return 1;
     case 5:
-        handleMultiwatch(parsed);
-        return 1;
-    case 6:
     	search_history();
   		return 1;
     default:
@@ -711,14 +699,10 @@ int execute(char* cmd,int in_fd,int out_fd){
 		len--;
 	}
 	cmd[len] = '\0';
-	printf("%s\n", cmd);
 	char** parsedcmd;
 	parsedcmd = (char**)malloc(MAXCMDNUM*sizeof(char*));
 	int noWords = parseCmd(cmd, parsedcmd);
-	/*for(int i=0;i<noWords;i++){
-		printf("%sxxx\n",parsedcmd[i]);
-	}
-	*/
+
 	if (ownCommandHandler(parsedcmd)) return 0;
 
 	pid_t pid,wpid,jpgid = 0;
@@ -734,7 +718,7 @@ int execute(char* cmd,int in_fd,int out_fd){
         pidj = getpid();
         if (jpgid == 0) jpgid = pidj;
         setpgid(pidj, jpgid);
-        tcsetpgrp(shell_terminal, jpgid);
+        if(strcmp(parsedcmd[noWords-1],"&")!=0) tcsetpgrp(shell_terminal, jpgid);
 
         signal(SIGINT, SIG_DFL);
         signal(SIGQUIT, SIG_DFL);
@@ -791,10 +775,9 @@ int execute(char* cmd,int in_fd,int out_fd){
             }
             while(!WIFEXITED(status) && !WIFSIGNALED(status));
         }
-        printf("Process excuted successfully\n");
 	}
 
-    tcsetpgrp(shell_terminal, shell_pgid);
+    if (tcgetpgrp(shell_terminal) != shell_pgid) tcsetpgrp(shell_terminal, shell_pgid);
 	return EXIT_SUCCESS;
 }
 
@@ -804,7 +787,6 @@ int execcmd(char* cmd){
 	int noPipes;
 	pipedcmd = (char**)malloc(MAXPIPES*sizeof(char*));
 	noPipes = parsePipes(cmd,pipedcmd);
-	//printf("%d\n",noPipes );
 
 	if (noPipes==1){
 		execute(pipedcmd[0],0,1);	
@@ -838,7 +820,6 @@ int main(){
 
 		printDirName();
 
-		//char cmd[MAXCMDLEN];
 		char *cmd;
 		cmd = (char*) malloc(MAXCMDLEN * sizeof(char));
 		printf("/myshell$ ");
@@ -847,6 +828,7 @@ int main(){
         memset(cmd, '\0', MAXCMDLEN);
 		if(!inputCmd(cmd)) continue;
 		add_history(cmd);
+
 		//executeinput
 		execcmd(cmd);
 		free(cmd);
