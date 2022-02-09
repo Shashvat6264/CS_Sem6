@@ -7,6 +7,8 @@
 #include <signal.h>
 #include <fcntl.h>
 #include <termios.h>
+#include <sys/select.h>
+#include <sys/inotify.h>
 
 #define MAXCMDLEN 200
 #define MAXCMDNUM 50
@@ -15,12 +17,17 @@
 #define HISTFILESIZE 10000
 #define HISTSHOWSIZE 1000
 
+#define MAXMULTIWATCHCMDS 100
+
 pid_t shell_pgid;
 int shell_terminal, shell_is_interactive;
 struct termios shell_tmodes;
 
 static struct termios old, current;
 
+int execcmd(char* cmd);
+int ownCommandHandler(char** parsed);
+int execute(char* cmd,int in_fd,int out_fd);
 
 void initTermios(int echo){
   tcgetattr(0, &old); 
@@ -114,32 +121,54 @@ int inputCmd(char* str){
 	while(1){
 		c = getch();
 		if(c=='\n'){
+			printf("\n");
 			str[i] = '\0';
 			break;
 		}
-		str[i++] = c;
-		temp[j++] = c;
-		if(c==' '){
+		else if(c=='\t'){
+			//searching for file will be handled
+			temp[j]=='\0';
+			printf("\n%s\n",temp );
+			// frint options here
+			//matches = 
+
+			sleep(2);
+
+
+			write(STDOUT_FILENO, "\033[F", 5);
+			write(STDOUT_FILENO, "\033[K", 5);
+			printf("\b \b");
+			write(STDOUT_FILENO, "\033[1A", 6);
+			write(STDOUT_FILENO, "\033[1A", 6);
+			printDirName();
+			printf("/myshell$ ");
+			strcat(str,temp);
+			printf("%s", str);
+
 			free(temp);
 			temp = (char*)malloc(sizeof(char)*50);
 			j=0;
 		}
-		if(c=='\t'){
-			//searching for file will be handled
-			temp[j]=='\0';
-			printf("\n%s\n",temp );// frint options here
-			sleep(2);
-			write(STDOUT_FILENO, "\033[F", 5);
-			write(STDOUT_FILENO, "\033[K", 5); 
-		}
 		//implement backspace
 		else if(c==127){
-			printf("%c",c);
-			printf("\b \b");
+			if(i>0){
+				printf("%c",c);
+				printf("\b \b");
+				str[--i] = '\0';
+				if(j)	temp[--j] = '\0';
+			}
 		}
 		else{
-			printf("%c", c);
+			printf("%c",c );
+			str[i++] = c;
+			temp[j++] = c;
 		}
+		if(c==' '){
+			free(temp);
+			temp = (char*)malloc(sizeof(char)*50);
+			j=0;
+		}		
+		
 	}
 
 	//int n = scanf("%[^\n]", str);
@@ -247,8 +276,329 @@ void openHelp()
     return;
 }
 
+int handleMultiwatch(char** parsed){
+    int noOfCmds = 0;
+
+
+    char **commands = (char **)malloc(sizeof(char *)*MAXMULTIWATCHCMDS);
+    if (!commands){
+        fprintf(stderr, "Memory initialization error\n");
+    }
+    while (parsed[++noOfCmds] != NULL){
+        commands[noOfCmds-1] = (char *)malloc(sizeof(char)*MAXCMDLEN);
+        memcpy(commands[noOfCmds - 1], &parsed[noOfCmds][1], strlen(parsed[noOfCmds]) - 2);
+    }
+    noOfCmds--;
+
+    int fd = inotify_init();
+    int inotify_id[noOfCmds];
+    int readFds[noOfCmds];  
+
+
+
+    for (int i=0;i<noOfCmds;i++){
+        printf("in handle: %s", commands[i]);
+        pid_t jpgid = 0;
+        pid_t pid = fork();
+        if (pid < 0){
+            fprintf(stderr, "Error in creating child process\n");
+        }
+        else if (pid == 0){
+            pid_t pidj;
+            pidj = getpid();
+            if (jpgid == 0) jpgid = pidj;
+            setpgid(pidj, jpgid);
+
+            signal(SIGINT, SIG_DFL);
+            signal(SIGQUIT, SIG_DFL);
+            signal(SIGTSTP, SIG_DFL);
+            signal(SIGTTIN, SIG_DFL);
+            signal(SIGTTOU, SIG_DFL);
+            signal(SIGCHLD, SIG_DFL);
+
+            char fileName[50];
+            sprintf(fileName, ".temp.%d.txt", pidj);
+            int fd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+            while(1){
+                execute(commands[i], 0, fd);
+                sleep(2);
+                printf("Updated output for process of PID %d", pidj);
+            }
+
+        }
+        else{
+            if (!jpgid) jpgid = pid;
+            setpgid(pid, jpgid);
+            char fileName[50];
+            sprintf(fileName, ".temp.%d.txt", pid);
+            int fd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+            int wd = inotify_add_watch(fd, fileName, IN_MODIFY);
+        }
+    }
+
+    return 1;
+}
+
+// int shell_multiWatch(char *line){
+
+//     //signal(SIGTSTP, multiWatch_ctrl_c);
+//     // signal(SIGINT, multiWatch_ctrl_c);
+//     char **cammands;
+//     cammands = (char**)malloc(sizeof(char *)*BUF_LEN);
+//     if (!cammands) 
+//     {
+//         memory_failed_error();
+//     }
+
+//     char *temp;
+//     temp = strtok(line,"\"");
+//     temp = strtok(NULL,"\"");
+//     int size=0;
+//     while(temp!=NULL){
+//         cammands[size] = temp;
+//         //printf("%s\n",temp);
+//         size++;
+//         temp = strtok(NULL,"\"");
+//         temp = strtok(NULL,"\"");
+        
+//     }
+//     cammands[size] = NULL;
+//     char ***arguments;
+//     arguments = (char**)malloc(sizeof(char *)*size+1);
+//     int positions[size];
+
+//     int fd = inotify_init();
+//     int inotify_id[size];
+//     int readFds[size];
+    
+//     for(int i=0;i<size;i++){
+//         //printf("%s\n",cammands[i]);
+//         //arguments[i] = cammands[i];
+//         char **args;
+//         int position = 0;
+//         args = shell_split_line(cammands[i], &position);
+//         arguments[i] = args;
+//         positions[i] = position;
+        
+//         char *str;
+//         str = malloc(sizeof(char)*BUF_LEN);
+//         for(int i=0;i<BUF_LEN;i++)
+//             str[i] = '\0';
+//         sprintf(str, ".temp.PID%d.txt", i+1);
+//         int discriptor = open(str,O_CREAT | O_APPEND, 0666);
+//         readFds[i] = discriptor;
+//         //close(discriptor);
+//         //watchFiles(str,cammands[i]);
+//         int wd = inotify_add_watch( fd, str, IN_MODIFY);
+//         inotify_id[i] = wd;
+//     }
+//     pid_t pid_to_console = fork();
+
+//     if(pid_to_console==0){
+//         //signal(SIGTSTP, SIG_DFL);
+//         signal(SIGINT, SIG_DFL);
+//         char buf[EVENT_BUF_LEN]
+//                     _attribute((aligned(alignof_(struct inotify_event))));
+//         for(int i=0;i<EVENT_BUF_LEN;i++) buf[i] = '\0';
+//         while(1){    
+//             int len = read( fd, buf, EVENT_BUF_LEN );
+//             if(len<=0) perror("read error");
+//             int i=0;
+//             while(i<len){
+//                 struct inotify_event *event = (struct inotify_event *)&buf[i];
+                
+//                 if(event->mask & IN_MODIFY){
+
+//                     int wd = event->wd;
+//                     int fileIndex =0;
+//                     for(int j=0;j<size;j++){
+//                         if(wd==inotify_id[j]){
+//                             fileIndex = j;
+//                             break;
+//                         }
+//                     }
+//                     time_t t;   // not a primitive datatype
+//                     time(&t);
+//                     char read_buf[BUF_LEN + 1];
+//                     for (int i = 0; i <= BUF_LEN; i++) {
+//                         read_buf[i] = '\0';
+//                     }
+                    
+//                     fprintf(stdout,"\"%s\", %s\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n",cammands[fileIndex],ctime(&t));
+//                     while (read(readFds[fileIndex], read_buf, BUF_LEN) > 0) {
+//                         fprintf(stdout, "%s", read_buf);
+//                         for (int i = 0; i <= BUF_LEN; i++) {
+//                             read_buf[i] = '\0';
+//                         }
+//                     }
+//                     fprintf(stdout, "->->->->->->->->->->->->->->->->->->->->\n\n");
+//                 }
+//                 i += sizeof(struct inotify_event) + event->len;
+//             }
+//         }
+//     }
+
+//     while(multiWatch_c_detect){
+//         for(int i=0;i<size;i++){
+
+//             //char **args;
+//             //int position = 0;
+//             //args = shell_split_line(cammands[i], &position);
+//             //arguments[i] = args;
+//             //positions[i] = position;
+
+//             char *str;
+//             str = malloc(sizeof(char)*BUF_LEN);
+//             sprintf(str, ".temp.PID%d.txt", i+1);
+//             int discriptor = open(str,O_CREAT| O_WRONLY | O_APPEND, 0644);
+//             //printf("%d\n",positions[i]);
+//             shell_launch(arguments[i],positions[i],0,discriptor,0);
+//         }
+//         sleep(1);
+
+        
+
+        
+        
+//         //char final[EVENT_BUF_LEN+1000];
+//         //for(int i=0;i<size;i++)
+//         //sprintf(final,"\"%s\", %s\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n%s\n->->->->->->->->->->->->->->->->->->->\n",cammand,ctime(&t),buffer);
+//         //printf("%s",final);
+
+
+//     }
+//     multiWatch_c_detect=1;
+    
+//     return 1;
+// }
+
+
+void handleMultiWatch(char** parsed){
+    int i = 0;
+
+    int fds[MAXMULTIWATCHCMDS];
+    int noOfCmds = 0;
+
+    fd_set rset;
+    int maxfd = 0;
+    FD_ZERO(&rset);
+
+    while (parsed[++i] != NULL){
+        char *cmd;
+		cmd = (char*) malloc(MAXCMDLEN * sizeof(char));
+		strcpy(cmd, "watch ");
+        strcat(cmd, parsed[i]);
+        printf("Multiwatch command %d: %s\n", i, cmd);
+        
+        int len = strlen(cmd);
+        while(cmd[len-1]==' '){
+            len--;
+        }
+        cmd[len] = '\0';
+        char** parsedcmd;
+        parsedcmd = (char**)malloc(MAXCMDNUM*sizeof(char*));
+        int noWords = parseCmd(cmd, parsedcmd);
+        if (ownCommandHandler(parsedcmd)) return;
+
+        pid_t pid,wpid,jpgid = 0;
+        pid = fork();
+        if (pid < 0){
+            fprintf(stderr, "fork failed");
+            return;
+        }
+        else if (pid == 0){
+            pid_t pidj;
+            pidj = getpid();
+            if (jpgid == 0) jpgid = pidj;
+            setpgid(pidj, jpgid);
+
+            signal(SIGINT, SIG_DFL);
+            signal(SIGQUIT, SIG_DFL);
+            signal(SIGTSTP, SIG_DFL);
+            signal(SIGTTIN, SIG_DFL);
+            signal(SIGTTOU, SIG_DFL);
+            signal(SIGCHLD, SIG_DFL);
+
+            int cmdlen = 0; //len of the command without file redirects
+            int flag=0;
+            for(int i=0;i<noWords;i++){
+                if(!flag){
+                    if(strcmp(parsedcmd[i],"&")==0||strcmp(parsedcmd[i],"<")==0||strcmp(parsedcmd[i],">")==0){
+                        cmdlen=i;
+                        flag=1;
+                    }
+                }
+            }
+            if(!flag)
+                cmdlen=noWords;
+            cmdlen++;
+            parsedcmd = (char**)realloc(parsedcmd, sizeof(char*)*cmdlen);
+            parsedcmd[cmdlen-1] = NULL;
+
+            char fileName[50];
+            sprintf(fileName, ".temp.%d.txt", pidj);
+            int reOutfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+            dup2(reOutfd, 1);
+            printf("%s", cmd);
+            close(reOutfd);
+    		execvp(parsedcmd[0],parsedcmd);
+        }
+        else{
+            if (!jpgid) jpgid = pid;
+            setpgid(pid, jpgid);
+            char fileName[50];
+            printf("%d\n", pid);
+            sprintf(fileName, ".temp.%d.txt", pid);
+            int reInfd = open(fileName, O_CREAT | O_TRUNC | O_RDWR, 0666);
+
+            FD_SET(reInfd, &rset);
+            fds[noOfCmds++] = reInfd;
+            printf("Created file descriptor: %d\n", reInfd);
+            maxfd = maxfd > reInfd ? maxfd : reInfd;
+        }
+    }
+
+    // printf("Outside %d\n", noOfCmds);
+    // for (int i=0;i<noOfCmds;i++){
+    //     printf("%s ",fds[i]);
+    // }
+    // while (1){
+        // char buffer[1000];
+        // int fd = open(fds[0], O_RDWR);
+        // printf("%d \n",fd);
+        // int fd = open(fds[0], O_RDONLY);
+        // read(fd, buffer, 1000);
+        // printf("%s",buffer);
+        // sleep(2000);
+    // }
+
+    // int nready = select(maxfd + 1, &rset, NULL, NULL, NULL);
+    // printf("%d ", nready);
+    // if (nready > )
+    // for 
+
+    // while(1){
+        if (select(maxfd + 1, &rset, NULL, NULL, NULL)){
+            for (int i = 0; i < noOfCmds; i++ ){
+                if (FD_ISSET(fds[i], &rset)){
+                    char buffer[1000];
+                    printf("%d \n", fds[i]);
+                    int n = read(fds[i], buffer, 1000);
+                    if (n > 0){
+                        buffer[n] = '\0';
+                        printf("%s\n", buffer);
+                    }
+                    else{
+                        printf("Error while reading.. \n");
+                    }
+                }
+            } 
+        }
+    // }
+}
+
 int ownCommandHandler(char** parsed){
-	int NoOfOwnCmds = 4, i, switchOwnArg = 0;
+	int NoOfOwnCmds = 5, i, switchOwnArg = 0;
     char* ListOfOwnCmds[NoOfOwnCmds];
     char* username;
   
@@ -256,6 +606,7 @@ int ownCommandHandler(char** parsed){
     ListOfOwnCmds[1] = "cd";
     ListOfOwnCmds[2] = "help";
     ListOfOwnCmds[3] = "hello";
+    ListOfOwnCmds[4] = "multiwatch";
   
     for (i = 0; i < NoOfOwnCmds; i++) {
         if (strcmp(parsed[0], ListOfOwnCmds[i]) == 0) {
@@ -280,6 +631,9 @@ int ownCommandHandler(char** parsed){
             "not a place to play around."
             "\nUse help to know more..\n",
             username);
+        return 1;
+    case 5:
+        handleMultiwatch(parsed);
         return 1;
     default:
         break;
@@ -373,7 +727,7 @@ int execute(char* cmd,int in_fd,int out_fd){
         }
         printf("Process excuted successfully\n");
 	}
-    
+
     tcsetpgrp(shell_terminal, shell_pgid);
 	return 0;
 }
