@@ -129,9 +129,26 @@ int main(int argc, char const *argv[])
                 printf("Could not send the directory name due to some error\n");
                 continue;
             }
+
+            memset(buffer, '\0', MAX_BUFF);
+            recv(sock, buffer, MAX_BUFF, 0);
+            int status = handleResponseCode(buffer);
+            if (status == -1){
+                printf("Error in shifting to provided directory\n");
+            }
+            continue;
         }
         else if (strcmp(command, "lcd") == 0){
-            printf("Executing the command pass\n");
+            char dir_name[MAX_BUFF];
+            scanf("%s", dir_name);
+            int status = chdir(dir_name) + 1;
+            if (status){
+                printf("Shifted client to directory %s\n", dir_name);
+            }
+            else{
+                printf("Could not find the path %s\n", dir_name);
+            }
+            continue;
         }
         else if (strcmp(command, "dir") == 0){
             printf("Executing the command pass\n");

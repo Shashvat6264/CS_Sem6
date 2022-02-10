@@ -178,6 +178,17 @@ int main(int argc, char *argv[]){
 						char *dir_name;
 						dir_name = strtok(NULL, " ");
 						printf("Received cd command to change to directory %s\n", dir_name);
+						int status = chdir(dir_name) + 1;
+						if (status){
+							printf("Shifted server to directory %s\n", dir_name);
+						}
+						else{
+							printf("Could not find the path %s\n", dir_name);
+						}
+						if (sendDefaultStatusResponse(newsockfd, status) < 0){
+							printf("Could Not send response due to some error\n");
+						}
+						continue;
 					}
 					else if (strcmp(token, "dir") == 0){
 						printf("Received dir command\n");
