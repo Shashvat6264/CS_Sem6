@@ -18,6 +18,10 @@ int handleResponseCode(char *response_status){
         printf("Error executing command\n");
         return -1;
     }
+    else if (strcmp(response_status, "600") == 0){
+        printf("Incorrect order of commands\n");
+        return -2;
+    }
     else return 0;
 }
 
@@ -61,7 +65,7 @@ int main(int argc, char const *argv[])
 
             server_connected = 1;
             printf("Connected to server with IP address: %s and PORT: %d\n", IP_address, port);
-
+            continue;
         }
         else if (strcmp(command, "exit") == 0){
             printf("Shutting down the client\n");
@@ -69,6 +73,7 @@ int main(int argc, char const *argv[])
         }
         else if (!server_connected){
             printf("Connect the client to server before running any other command.\nUse open command for the same.\n");
+            continue;
         }
         else if (strcmp(command, "user") == 0){
             char username[MAX_BUFF];
@@ -84,11 +89,12 @@ int main(int argc, char const *argv[])
             }
 
             memset(buffer, '\0', MAX_BUFF);
-            recv(sock, buffer, 100, 0);
+            recv(sock, buffer, MAX_BUFF, 0);
             int status = handleResponseCode(buffer);
-            if (status < 0){
+            if (status == -1){
                 printf("No such username found\n");
             }
+            continue;
         }
         else if (strcmp(command, "pass") == 0){
             char password[MAX_BUFF];
@@ -102,6 +108,14 @@ int main(int argc, char const *argv[])
                 printf("Could not send the password due to some error\n");
                 continue;
             }
+
+            memset(buffer, '\0', MAX_BUFF);
+            recv(sock, buffer, MAX_BUFF, 0);
+            int status = handleResponseCode(buffer);
+            if (status == -1){
+                printf("No such user with given username and password found\nTry logging in again\n");
+            }
+            continue;
         }
         else if (strcmp(command, "cd") == 0){
             char dir_name[MAX_BUFF];

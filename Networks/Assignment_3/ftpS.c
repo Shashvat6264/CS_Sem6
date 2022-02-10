@@ -43,6 +43,15 @@ int checkUserName(int noOfUsers, char **usernames, char *username){
 	return 0;
 }
 
+int checkPassWord(int noOfUsers, char **passwords, char **usernames, char *password, char *username){
+	for (int i=0;i<noOfUsers;i++){
+		if (strcmp(username, usernames[i]) == 0){
+			if (strcmp(password, passwords[i]) == 0) return 1;
+		}
+	}
+	return 0;
+}
+
 int sendDefaultStatusResponse(int sock, int status){
 	if (status){
 		return send(sock, "200", strlen("200"), 0) < 0;
@@ -109,7 +118,8 @@ int main(int argc, char *argv[]){
 
 			if (fork() == 0) {
 				close(sockfd);
-				char *username, *password;
+				char username[MAX_BUFF], password[MAX_BUFF];
+				int username_verified = 0, password_verified = 0;
 
 				while(1){
 					memset(buffer, '\0', MAX_BUFF);
@@ -118,19 +128,51 @@ int main(int argc, char *argv[]){
 					char *token = strtok(buffer, " ");
 
 					if (strcmp(token, "user") == 0){
-						username = strtok(NULL, " ");
+						char *token = strtok(NULL, " ");
+						strcpy(username, token);
 						printf("Received user command to log in %s from client\n", username);
 						int status = checkUserName(noOfUsers, usernames, username);
-						if (status) printf("Found the username\n");
-						else printf("No such username exists\n");
+						if (status){
+							printf("Found the username\n");
+							username_verified = 1;
+						} 
+						else{
+							printf("No such username exists\n");
+							username_verified = 0;
+						} 	
 						if (sendDefaultStatusResponse(newsockfd, status) < 0){
 							printf("Could Not send response due to some error\n");
 						}
+						continue;
+					}
+					else if (!username_verified){
+						printf("Username not verified yet\n");
+						send(newsockfd, "600", strlen("600"), 0);
+						continue;
 					}
 					else if (strcmp(token, "pass") == 0){
-						char *password;
-						password = strtok(NULL, " ");
+						char *token = strtok(NULL, " ");
+						strcpy(password, token);
 						printf("Received password %s for username %s\n", password, username);
+						int status = checkPassWord(noOfUsers, passwords, usernames, password, username);
+						if (status){
+							printf("Found the user for the given username and password\n");
+							password_verified = 1;
+						}
+						else{
+							printf("Given username does not have this password\n");
+							username_verified = 0;
+							password_verified = 0;
+						}
+						if (sendDefaultStatusResponse(newsockfd, status) < 0){
+							printf("Could Not send response due to some error\n");
+						}
+						continue;
+					}
+					else if (!password_verified){
+						printf("Password not verified yet\n");
+						send(newsockfd, "600", strlen("600"), 0);
+						continue;
 					}
 					else if (strcmp(token, "cd") == 0){
 						char *dir_name;
