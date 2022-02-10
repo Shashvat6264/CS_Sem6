@@ -11,6 +11,46 @@
 #define MAX_BUFF 100
 #define PORT 3000
 
+#define MAXUSERS 100
+
+
+int getAllUsers(char **usernames, char **passwords){
+    FILE *fp = fopen("user.txt", "r");
+    char *line = NULL;
+    size_t len = 0;
+    ssize_t read;
+
+	int i = 0;
+	while((read = getline(&line, &len, fp)) != -1){
+		char *newline = (char *)malloc(sizeof(char)*MAX_BUFF);
+		strcpy(newline, line);
+		char *token = strtok(newline, " ");
+		usernames[i] = token;
+		token = strtok(NULL, " ");
+		if (token[strlen(token)-1] == '\n') token[strlen(token)-1] = '\0';
+		passwords[i] = token;
+		i++;
+	}
+
+	fclose(fp);
+    return i;
+}
+
+int checkUserName(int noOfUsers, char **usernames, char *username){
+	for (int i=0;i<noOfUsers;i++){
+		if (strcmp(username, usernames[i]) == 0) return 1;
+	}
+	return 0;
+}
+
+int sendDefaultStatusResponse(int sock, int status){
+	if (status){
+		return send(sock, "200", strlen("200"), 0) < 0;
+	}
+	else{
+		return send(sock, "500", strlen("500"), 0) < 0;
+	}
+}
 
 int main(int argc, char *argv[]){
 	int sockfd, newsockfd; 
@@ -21,8 +61,11 @@ int main(int argc, char *argv[]){
 	int i;
 	char buffer[MAX_BUFF];
 
-	char usernames[MAX_BUFF][MAX_BUFF];
-	int user_fd = open("user.txt", O_RDONLY);
+	char **usernames, **passwords;
+	usernames = (char **)malloc(sizeof(char *)*MAXUSERS);
+	passwords = (char **)malloc(sizeof(char *)*MAXUSERS);
+
+    int noOfUsers = getAllUsers(usernames, passwords);
 
 	if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
 		printf("Cannot create socket\n");
@@ -66,7 +109,7 @@ int main(int argc, char *argv[]){
 
 			if (fork() == 0) {
 				close(sockfd);
-				char *username;
+				char *username, *password;
 
 				while(1){
 					memset(buffer, '\0', MAX_BUFF);
@@ -77,6 +120,12 @@ int main(int argc, char *argv[]){
 					if (strcmp(token, "user") == 0){
 						username = strtok(NULL, " ");
 						printf("Received user command to log in %s from client\n", username);
+						int status = checkUserName(noOfUsers, usernames, username);
+						if (status) printf("Found the username\n");
+						else printf("No such username exists\n");
+						if (sendDefaultStatusResponse(newsockfd, status) < 0){
+							printf("Could Not send response due to some error\n");
+						}
 					}
 					else if (strcmp(token, "pass") == 0){
 						char *password;

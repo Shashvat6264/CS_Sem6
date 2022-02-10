@@ -3,9 +3,23 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define PORT 8080
 #define MAX_BUFF 100
+
+// Utility function to print message according to response
+int handleResponseCode(char *response_status){
+    if (strcmp(response_status, "200") == 0){
+        printf("Command executed successfully\n");
+        return 1;
+    }
+    else if (strcmp(response_status, "500") == 0){
+        printf("Error executing command\n");
+        return -1;
+    }
+    else return 0;
+}
 
 int main(int argc, char const *argv[])
 {
@@ -69,6 +83,12 @@ int main(int argc, char const *argv[])
                 continue;
             }
 
+            memset(buffer, '\0', MAX_BUFF);
+            recv(sock, buffer, 100, 0);
+            int status = handleResponseCode(buffer);
+            if (status < 0){
+                printf("No such username found\n");
+            }
         }
         else if (strcmp(command, "pass") == 0){
             char password[MAX_BUFF];

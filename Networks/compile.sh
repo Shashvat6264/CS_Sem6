@@ -1,0 +1,1 @@
+for f in ./$1/*.c; do echo $f && gcc $f -o "${f%.*}"; done
