@@ -1,3 +1,12 @@
+/******************
+Computer Networks 
+Assignment - 3
+
+Team Members:
+Shashvat Gupta - 19CS30042
+Sunanda Mondal - 19CS10060
+******************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
