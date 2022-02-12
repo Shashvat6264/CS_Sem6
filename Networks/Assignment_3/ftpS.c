@@ -53,6 +53,31 @@ int checkPassWord(int noOfUsers, char **passwords, char **usernames, char *passw
 	return 0;
 }
 
+int handleDir(int sock){
+	struct dirent *de;
+	DIR *dr = opendir(".");
+
+	if (dr == NULL){
+		printf("Could not open current directory due to some error\n");
+		return 0;
+	}
+
+	char buffer[MAX_BUFF];
+	while ((de = readdir(dr)) != NULL){
+		if (send(sock, de->d_name, strlen(de->d_name)+1, 0) < 0){
+			printf("Some error in sending the directory name %s\n", buffer);
+			return 0;
+		}
+	}
+	if (send(sock, "", 1, 0) < 0){
+		printf("Could not send null terminated string\n");
+		return 0;
+	}
+
+	closedir(dr);
+	return 1;
+}
+
 int sendDefaultStatusResponse(int sock, int status){
 	if (status){
 		return send(sock, "200", strlen("200"), 0) < 0;
@@ -193,6 +218,14 @@ int main(int argc, char *argv[]){
 					}
 					else if (strcmp(token, "dir") == 0){
 						printf("Received dir command\n");
+						int status = handleDir(newsockfd);
+						if (status){
+							printf("Successfully sent all contents of current directory\n");
+						}
+						else{
+							printf("Could not send all contents of current directory due to some error\n");
+						}
+						continue;
 					}
 					else if (strcmp(token, "get") == 0){
 						char *remote_file, *local_file;
