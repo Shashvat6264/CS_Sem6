@@ -191,6 +191,7 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "user") == 0){
             char username[MAX_BUFF];
             scanf("%s", username);
+            char buffer[1024];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "user ");
             strcat(buffer, username);
@@ -212,6 +213,7 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "pass") == 0){
             char password[MAX_BUFF];
             scanf("%s", password);
+            char buffer[1024];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "pass ");
             strcat(buffer, password);
@@ -233,6 +235,7 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "cd") == 0){
             char dir_name[MAX_BUFF];
             scanf("%s", dir_name);
+            char buffer[1024];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "cd ");
             strcat(buffer, dir_name);
@@ -264,11 +267,46 @@ int main(int argc, char const *argv[]){
             continue;
         }
         else if (strcmp(command, "dir") == 0){
-            printf("Executing the command pass\n");
+            char buffer[MAX_BUFF];
+            memset(buffer, '\0', MAX_BUFF);
+            strcpy(buffer, "dir");
+
+            printf("Sending the entered command dir to server\n");
+            if (send(sock, buffer, strlen(buffer), 0) < 0){
+                printf("Could not send the command due to some error\n");
+                continue;
+            }
+
+            printf("Following is the list of contents of server directory:\n");
+            int break_loop = 0;
+            while (!break_loop){
+                memset(buffer, '\0', MAX_BUFF);
+                int n = recv(sock, buffer, MAX_BUFF, 0);
+                if (n<0){
+                    printf("Error in receiving data\n");
+                    return 0;
+                }
+                else if (n == 0) break_loop = 1;
+                else{
+                    char last = '\0';
+                    for (int i=0;i<n && !break_loop;i++){
+                        if (buffer[i] == '\0'){
+                            if (last == '\0') break_loop = 1;
+                            else printf("\n");
+                        }
+                        else printf("%c", buffer[i]);
+                        last = buffer[i];
+                    }
+                }
+            }
+            printf("End of list of content\n");
+
+            continue;
         }
         else if (strcmp(command, "get") == 0){
             char remote_file[MAX_BUFF], local_file[MAX_BUFF];
             scanf("%s %s", remote_file, local_file);
+            char buffer[1024];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "get ");
             strcat(buffer, remote_file);
@@ -281,6 +319,7 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "put") == 0){
             char remote_file[MAX_BUFF], local_file[MAX_BUFF];
             scanf("%s %s", local_file, remote_file);
+            char buffer[1024];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "put ");
             strcat(buffer, local_file);
@@ -294,6 +333,7 @@ int main(int argc, char const *argv[]){
             printf("Executing the command mget\n");
             char temp[MAX_BUFF];
             scanf("%[^\n]",temp);
+            char buffer[1024];
             char *token = strtok(temp, " ");
             while(token!=NULL){
                 memset(buffer, '\0', MAX_BUFF);
@@ -313,6 +353,7 @@ int main(int argc, char const *argv[]){
             printf("Executing the command mput\n");
             char temp[MAX_BUFF];
             scanf("%[^\n]",temp);
+            char buffer[1024];
             char *token = strtok(temp, " ");
             while(token!=NULL){
                 memset(buffer, '\0', MAX_BUFF);
