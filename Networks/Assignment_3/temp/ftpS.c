@@ -7,7 +7,6 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <dirent.h>
 
 #define MAX_BUFF 100
 #define PORT 3000
@@ -52,41 +51,6 @@ int checkPassWord(int noOfUsers, char **passwords, char **usernames, char *passw
 		}
 	}
 	return 0;
-}
-
-int handleDir(int sock){
-	struct dirent *de;
-	DIR *dr = opendir(".");
-
-	if (dr == NULL){
-		printf("Could not open current directory due to some error\n");
-		return 0;
-	}
-
-	char buffer[MAX_BUFF];
-	while ((de = readdir(dr)) != NULL){
-		strcpy(buffer, de->d_name);
-		buffer[strlen(de->d_name) + 1] = '\0';
-		// printf("%s\n", buffer);
-		// printf("%ld\n", strlen(buffer));
-		if (send(sock, buffer, strlen(buffer), 0) < 0){
-			printf("Some error in sending the directory name %s\n", buffer);
-			return 0;
-		}
-		// if (recv(sock, buffer, MAX_BUFF, 0) < 0){
-		// 	printf("Chunk not received by client\n");
-		// 	return 0;
-		// }
-		// printf("%s", buffer);
-	}
-	memset(buffer, '\0', MAX_BUFF);
-	if (send(sock, buffer, MAX_BUFF, 0) < 0){
-		printf("Could not send null terminated string\n");
-		return 0;
-	}
-
-	closedir(dr);
-	return 1;
 }
 
 int sendDefaultStatusResponse(int sock, int status){
@@ -229,14 +193,6 @@ int main(int argc, char *argv[]){
 					}
 					else if (strcmp(token, "dir") == 0){
 						printf("Received dir command\n");
-						int status = handleDir(newsockfd);
-						if (status){
-							printf("Successfully sent all contents of current directory\n");
-						}
-						else{
-							printf("Could not send all contents of current directory due to some error\n");
-						}
-						continue;
 					}
 					else if (strcmp(token, "get") == 0){
 						char *remote_file, *local_file;

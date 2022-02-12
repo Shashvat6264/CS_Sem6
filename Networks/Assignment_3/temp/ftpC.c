@@ -90,7 +90,7 @@ int main(int argc, char const *argv[]){
 	int sock = 0, valread;
 	struct sockaddr_in serv_addr;
 
-	// char buffer[MAX_BUFF] = {0};
+	char buffer[1024] = {0};
 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0){
         printf("\n Socket creation error \n");
@@ -138,7 +138,6 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "user") == 0){
             char username[MAX_BUFF];
             scanf("%s", username);
-	        char buffer[MAX_BUFF];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "user ");
             strcat(buffer, username);
@@ -160,7 +159,6 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "pass") == 0){
             char password[MAX_BUFF];
             scanf("%s", password);
-	        char buffer[MAX_BUFF];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "pass ");
             strcat(buffer, password);
@@ -182,7 +180,6 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "cd") == 0){
             char dir_name[MAX_BUFF];
             scanf("%s", dir_name);
-	        char buffer[MAX_BUFF];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "cd ");
             strcat(buffer, dir_name);
@@ -214,43 +211,11 @@ int main(int argc, char const *argv[]){
             continue;
         }
         else if (strcmp(command, "dir") == 0){
-	        char buffer[MAX_BUFF];
-            memset(buffer, '\0', MAX_BUFF);
-            strcpy(buffer, "dir");
-
-            printf("Sending the entered command dir to server\n");
-            if (send(sock, buffer, strlen(buffer), 0) < 0){
-                printf("Could not send the command due to some error\n");
-                continue;
-            }
-
-            printf("Following is the list of contents of server directory:\n");
-            recv(sock, buffer, MAX_BUFF, 0);
-            while (strlen(buffer) != 0){
-                char *token = strtok(buffer, "\0");
-                while (token != NULL){
-                    printf("%s\n", token);
-                    token = strtok(NULL, "\0");
-                }
-                // printf("%s\n", buffer);
-                // printf("%ld\n", strlen(buffer));
-                memset(buffer, '\0', MAX_BUFF);
-                // char newBuff[MAX_BUFF] = {0};
-                recv(sock, buffer, MAX_BUFF, 0);
-                // strcpy(buffer, "Chunk Received");
-                // int n = send(sock, "Chunk Received", strlen("Chunk received"), 0);
-                // int n = send(sock, buffer, strlen(buffer), 0);
-                // printf("Bytes: %d\n", n);
-                // strcpy(buffer, newBuff);
-            }
-            printf("End of list of content\n");
-
-            continue;
+            printf("Executing the command pass\n");
         }
         else if (strcmp(command, "get") == 0){
             char remote_file[MAX_BUFF], local_file[MAX_BUFF];
             scanf("%s %s", remote_file, local_file);
-	        char buffer[MAX_BUFF];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "get ");
             strcat(buffer, remote_file);
@@ -299,7 +264,6 @@ int main(int argc, char const *argv[]){
         else if (strcmp(command, "put") == 0){
             char remote_file[MAX_BUFF], local_file[MAX_BUFF];
             scanf("%s %s", local_file, remote_file);
-	        char buffer[MAX_BUFF];
             memset(buffer, '\0', MAX_BUFF);
             strcpy(buffer, "put ");
             strcat(buffer, local_file);
