@@ -23,11 +23,11 @@ int handleResponseCode(char *response_status){
         return 1;
     }
     else if (strcmp(response_status, "500") == 0){
-        printf("Error code:500 \nError executing command!\n");
+        printf("Error code: 500 \nError executing command!\n");
         return -1;
     }
     else if (strcmp(response_status, "600") == 0){
-        printf("Error code:600 \nIncorrect order of commands!\n");
+        printf("Error code: 600 \nIncorrect order of commands!\n");
         return -2;
     }
     else return 0;
@@ -50,7 +50,7 @@ int put(char*buffer,char *local_file, char *remote_file, int sock){
             //send(sock,"Ack\0",strlen("Ack\0"),0);
             int status = handleResponseCode(buffer);
             if(status==-1){
-                printf("The remote file %s doesn't exist on serevr side \n", remote_file);
+                printf("The remote file %s doesn't exist on server side \n", remote_file);
                 return -1;
             };
             
@@ -70,19 +70,19 @@ int put(char*buffer,char *local_file, char *remote_file, int sock){
                     }
                     break;
                 }
-                printf("headers:   %s\n", temp);
+                // printf("headers:   %s\n", temp);
                 if(send(sock, temp, strlen(temp), 0) <0 ){
                     printf("Could Not send response due to some error\n");
                     break;
                 }
 
-                printf("data:   %s\n", buffile);
+                // printf("data:   %s\n", buffile);
                 if(send(sock, buffile, len, 0) <0 ){
                     printf("Could Not send response due to some error\n");
                     break;
                 }
             }
-            printf("file over!\n");
+            // printf("file over!\n");
             close(fd);
             return 1;
 }
@@ -180,7 +180,7 @@ int main(int argc, char const *argv[]){
             printf("Connected to server with IP address: %s and PORT: %d\n", IP_address, port);
             continue;
         }
-        else if (strcmp(command, "exit") == 0){
+        else if (strcmp(command, "quit") == 0){
             printf("Shutting down the client\n");
             break;
         }

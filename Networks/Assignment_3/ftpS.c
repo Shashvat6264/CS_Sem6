@@ -10,7 +10,7 @@
 #include <dirent.h>
 
 #define MAX_BUFF 100
-#define PORT 3000
+#define PORT 20001
 #define BLK_SIZE 100
 
 #define MAXUSERS 100
