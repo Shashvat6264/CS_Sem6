@@ -7,6 +7,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <dirent.h>
 
 #define MAX_BUFF 100
 #define PORT 3000
