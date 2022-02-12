@@ -90,8 +90,6 @@ int main(int argc, char const *argv[]){
 	int sock = 0, valread;
 	struct sockaddr_in serv_addr;
 
-	// char buffer[MAX_BUFF] = {0};
-
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0){
         printf("\n Socket creation error \n");
         return -1;
@@ -225,23 +223,26 @@ int main(int argc, char const *argv[]){
             }
 
             printf("Following is the list of contents of server directory:\n");
-            recv(sock, buffer, MAX_BUFF, 0);
-            while (strlen(buffer) != 0){
-                char *token = strtok(buffer, "\0");
-                while (token != NULL){
-                    printf("%s\n", token);
-                    token = strtok(NULL, "\0");
-                }
-                // printf("%s\n", buffer);
-                // printf("%ld\n", strlen(buffer));
+            int break_loop = 0;
+            while (!break_loop){
                 memset(buffer, '\0', MAX_BUFF);
-                // char newBuff[MAX_BUFF] = {0};
-                recv(sock, buffer, MAX_BUFF, 0);
-                // strcpy(buffer, "Chunk Received");
-                // int n = send(sock, "Chunk Received", strlen("Chunk received"), 0);
-                // int n = send(sock, buffer, strlen(buffer), 0);
-                // printf("Bytes: %d\n", n);
-                // strcpy(buffer, newBuff);
+                int n = recv(sock, buffer, MAX_BUFF, 0);
+                if (n<0){
+                    printf("Error in receiving data\n");
+                    return 0;
+                }
+                else if (n == 0) break_loop = 1;
+                else{
+                    char last = '\0';
+                    for (int i=0;i<n && !break_loop;i++){
+                        if (buffer[i] == '\0'){
+                            if (last == '\0') break_loop = 1;
+                            else printf("\n");
+                        }
+                        else printf("%c", buffer[i]);
+                        last = buffer[i];
+                    }
+                }
             }
             printf("End of list of content\n");
 
@@ -314,6 +315,7 @@ int main(int argc, char const *argv[]){
         }
         else if (strcmp(command, "mput") == 0){
             printf("Executing the command mput\n");
+	        char buffer[MAX_BUFF];
             char temp[MAX_BUFF];
             scanf("%s",temp);
             char *token = strtok(temp, " ");
@@ -333,30 +335,5 @@ int main(int argc, char const *argv[]){
             printf("No such command found\n");
         }
     }
-	// if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
-	// {
-	// 	printf("\n Socket creation error \n");
-	// 	return -1;
-	// }
-
-	// serv_addr.sin_family = AF_INET;
-	// serv_addr.sin_port = htons(PORT);
-	
-	// // Convert IPv4 and IPv6 addresses from text to binary form
-	// if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)<=0)
-	// {
-	// 	printf("\nInvalid address/ Address not supported \n");
-	// 	return -1;
-	// }
-
-	// if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
-	// {
-	// 	printf("\nConnection Failed \n");
-	// 	return -1;
-	// }
-	// send(sock , hello , strlen(hello) , 0 );
-	// printf("Hello message sent\n");
-	// valread = read( sock , buffer, 1024);
-	// printf("%s\n",buffer );
 	return 0;
 }

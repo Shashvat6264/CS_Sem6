@@ -65,22 +65,12 @@ int handleDir(int sock){
 
 	char buffer[MAX_BUFF];
 	while ((de = readdir(dr)) != NULL){
-		strcpy(buffer, de->d_name);
-		buffer[strlen(de->d_name) + 1] = '\0';
-		// printf("%s\n", buffer);
-		// printf("%ld\n", strlen(buffer));
-		if (send(sock, buffer, strlen(buffer), 0) < 0){
+		if (send(sock, de->d_name, strlen(de->d_name)+1, 0) < 0){
 			printf("Some error in sending the directory name %s\n", buffer);
 			return 0;
 		}
-		// if (recv(sock, buffer, MAX_BUFF, 0) < 0){
-		// 	printf("Chunk not received by client\n");
-		// 	return 0;
-		// }
-		// printf("%s", buffer);
 	}
-	memset(buffer, '\0', MAX_BUFF);
-	if (send(sock, buffer, MAX_BUFF, 0) < 0){
+	if (send(sock, "", 1, 0) < 0){
 		printf("Could not send null terminated string\n");
 		return 0;
 	}
