@@ -25,7 +25,7 @@ typedef struct shared_memory{
 	int size;
 	int job_created;
 	int tot_matrix;
-	int tot_jobs; //no to worker process required = (tot_matrix-1)*8
+	//int tot_jobs; //no to worker process required = (tot_matrix-1)*8
 	int computed;
 	sem_t mutex;
 	sem_t full;
@@ -36,9 +36,9 @@ job create_job(int proNo){
 	job x;
 	x.proNo = proNo;
 	x.matId = rand()%MAX_JOB_ID+1;
-	status = 0;
+	x.status = 0;
 	for (int i = 0; i < N; ++i){
-		for (int j = 0; j < count; ++j){
+		for (int j = 0; j < N; ++j){
 			x.matrix[i][j] = rand()%19 - 9;
 		}
 	}
@@ -66,10 +66,10 @@ void remove_job(shared_memory* shm){
 }
 
 void print_job(job x){
-	printf("Job ID: %d\n",x.matId)
+	printf("Job ID: %d\n",x.matId);
 	printf("producer: %d\n",x.proNo);
 	for (int i = 0; i < N; ++i){
-		for (int j = 0; j < count; ++j){
+		for (int j = 0; j < N; ++j){
 			printf("%d  ",x.matrix[i][j]);
 		}
 		printf("\n");
@@ -84,7 +84,7 @@ void producer(int shmid,int proNo){
 		if(shmp->job_created==shmp->tot_matrix)
 			break;
 		// create job
-		job j = create_job(prod_pid,proNo);
+		job j = create_job(proNo);
 		// random delay
 		sleep(rand()%4);
 		// wait for empty semaphore
@@ -112,7 +112,7 @@ void producer(int shmid,int proNo){
 	shmdt(shmp);
 }
 // worker function
-void worker(int shmid,int cons_no,pid_t cons_pid){
+void worker(int shmid,int cons_no){
 	shared_memory* shmc=(shared_memory*)shmat(shmid,NULL,0);
 	while(1){
 		// random delay
@@ -125,21 +125,22 @@ void worker(int shmid,int cons_no,pid_t cons_pid){
 		// flag to indicate a job is retrieved
 		int job_retrieved=0;
 		if(shmc->size>0){
-			// remove highest priority job from priority queue
-			//j = remove_job(shmc);
+			//compute cij acc to status
 			job_retrieved=1;
 		}
 		// signal mutex
 		sem_post(&(shmc->mutex));
 		if(job_retrieved){
+			//print aand status++ for bith job
+			shmc->job_queue[0].status++;
+			shmc->job_queue[1].status++;
 			printf("Consumed job details\n");
 			printf("worker: %d,",cons_no);
-			printf("worker pid: %d,",cons_pid);
 			print_job(j);
 			// wait for mutex
 			sem_wait(&(shmc->mutex));
 			// increment shared variable
-			shmc->job_completed++;
+			//shmc->job_completed++;
 			// signal mutex
 			sem_post(&(shmc->mutex));
 			// signal empty semaphore
@@ -179,7 +180,7 @@ int main(){
 	shm->size = 0;
 	shm->tot_matrix = tot_matrix;
 	shm->job_created = 0;
-	shm->tot_jobs= (tot_matrix-1)*8;
+	int tot_jobs= (tot_matrix-1)*8;
 	shm->computed = 0;
 	
 	
@@ -237,7 +238,7 @@ int main(){
 		// acquire lock so that while checking, state change not possible
 		sem_wait(&(shm->mutex));
 		if(shm->job_queue[0].status==8 && shm->job_queue[1].status==8){
-			remove_job();
+			remove_job(shm);
 		}
 		// shm->computed ensures that worker gets killed only after it has computed/slept
 		if(shm->job_created>=tot_matrix && shm->computed>=tot_jobs && shm->size==1){
