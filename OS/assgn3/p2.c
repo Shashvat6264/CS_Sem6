@@ -17,7 +17,7 @@ Sunanda Mandal - 19CS10060
 #include <semaphore.h>
 #define MAX_QUEUE_SIZE 8
 #define MAX_JOB_ID 100000
-#define N 4
+#define N 1000
 
 typedef struct job{
 	int matrix[N][N];
@@ -76,13 +76,13 @@ void remove_job(shared_memory* shm){
 
 void print_job(job x){
 	printf("Job ID: %d\n",x.matId);
-	printf("producer number: %d\nMatrix:\n",x.proNo);
-	for (int i = 0; i < N; ++i){
+	printf("producer number: %d\n",x.proNo);
+	/*for (int i = 0; i < N; ++i){
 		for (int j = 0; j < N; ++j){
 			printf("%d  ",x.matrix[i][j]);
 		}
 		printf("\n");
-	}
+	}*/
 	printf("\n");
 }
 
