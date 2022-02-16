@@ -1,3 +1,11 @@
+/******************
+Operating Systems
+Assignment - 3
+
+Team Members:
+Shashvat Gupta - 19CS30042
+Sunanda Mandal - 19CS10060
+******************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -22,7 +30,7 @@ void *mult(void *arg){
     }
 }
 
-unsigned int sizeof_dm(int row, int col, size_t sizeElement){
+unsigned int sizeof_mat(int row, int col, size_t sizeElement){
     size_t size = row * (sizeof(void *) + (col * sizeElement));
     //size_t size = row * (col * sizeElement);
     return size;
@@ -36,7 +44,7 @@ void create_index(void **m, int row, int col, size_t sizeElement){
     }
 }
 
-void print_matriz(double **matrix, int row, int col){
+void print_matrix(double **matrix, int row, int col){
     printf("\n");
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++)
@@ -55,9 +63,9 @@ int main(int pdc, char **pdv){
     printf("Enter the rows and column of Matrix B: \n");
     scanf("%d %d",&r2,&c2);
 
-    size_t sizeA = sizeof_dm(r1,c1,sizeof(double));
-    size_t sizeB = sizeof_dm(r2,c2,sizeof(double));
-    size_t sizeC = sizeof_dm(r1,c2,sizeof(double));
+    size_t sizeA = sizeof_mat(r1,c1,sizeof(double));
+    size_t sizeB = sizeof_mat(r2,c2,sizeof(double));
+    size_t sizeC = sizeof_mat(r1,c2,sizeof(double));
 
     //const int sz = sizeof(double) * (r1*c1 + r2*c2 + r1*c2);
     shmId = shmget(IPC_PRIVATE, (sizeA+sizeB+sizeC), IPC_CREAT|0600);    
@@ -73,16 +81,16 @@ int main(int pdc, char **pdv){
         for(int j=0; j<c1; j++)
             scanf("%lf",&A[i][j]);
     }        
-    print_matriz(A, r1, c1); 
+    print_matrix(A, r1, c1); 
     printf("Enter matrix B:\n");
     for(int i=0; i<r2; i++){
         for(int j=0; j<c2; j++)
             scanf("%lf",&B[i][j]);
     } 
     printf("Matrix A:\n");   
-    print_matriz(A, r1, c1); 
+    print_matrix(A, r1, c1); 
     printf("Matrix B:\n");   
-    print_matriz(B, r2, c2); 
+    print_matrix(B, r2, c2); 
 
     ProcessData pd;
     pd.A = A;
@@ -116,7 +124,7 @@ int main(int pdc, char **pdv){
         }
     }
     printf("Resultant Matrix C:\n");   
-    print_matriz(C,r1,c2);
+    print_matrix(C,r1,c2);
 
     
     return 0;
