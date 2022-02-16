@@ -76,6 +76,7 @@ void remove_job(shared_memory* shm){
 
 void print_job(job x){
 	printf("Job ID: %d\n",x.matId);
+	printf("PID: %d\n", getpid());
 	printf("producer number: %d\nMatrix:\n",x.proNo);
 	for (int i = 0; i < N; ++i){
 		for (int j = 0; j < N; ++j){
