@@ -77,8 +77,10 @@ int main(int pdc, char **pdv){
     for(int i=0; i<r2; i++){
         for(int j=0; j<c2; j++)
             scanf("%lf",&B[i][j]);
-    }    
+    } 
+    printf("Matrix A:\n");   
     print_matriz(A, r1, c1); 
+    printf("Matrix B:\n");   
     print_matriz(B, r2, c2); 
 
     ProcessData pd;
@@ -92,15 +94,16 @@ int main(int pdc, char **pdv){
             pd.i = i;
             pd.j = j;
             if (fork()==0){
-                printf("called child\n");
+                //printf("called child\n");
                 mult(&pd);   
+                return 0;
             }            
             else{
-                printf("parent\n");
+                //printf("parent\n");
             }
         }
     }
-
+    printf("Resultant Matrix C:\n");   
     print_matriz(C,r1,c2);
 
     
