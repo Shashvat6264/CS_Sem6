@@ -8,7 +8,7 @@
 #include <semaphore.h>
 #define MAX_QUEUE_SIZE 8
 #define MAX_JOB_ID 100000
-#define N 1000
+#define N 4
 
 typedef struct job{
 	int matrix[N][N];
@@ -27,9 +27,9 @@ typedef struct shared_memory{
 	int tot_matrix;
 	//int tot_jobs; //no to worker process required = (tot_matrix-1)*8
 	int computed;
-	sem_t mutex;
-	sem_t full;
-	sem_t empty;
+	//sem_t mutex;
+	//sem_t full;
+	//sem_t empty;
 }shared_memory;
 
 job create_job(int proNo){
@@ -74,6 +74,7 @@ void print_job(job x){
 		}
 		printf("\n");
 	}
+	printf("\n");
 }
 
 
@@ -88,70 +89,139 @@ void producer(int shmid,int proNo){
 		// random delay
 		sleep(rand()%4);
 		// wait for empty semaphore
-		sem_wait(&(shmp->empty));
+		//sem_wait(&(shmp->empty));
 		// wait for mutex
-		sem_wait(&(shmp->mutex));
+		//sem_wait(&(shmp->mutex));
 		// if all jobs created, exit
 		if(shmp->job_created==shmp->tot_matrix){
-			sem_post(&(shmp->mutex));
+			//sem_post(&(shmp->mutex));
 			break;
 		}
-		if(shmp->size < MAX_QUEUE_SIZE){
+		if(shmp->size>0 && shmp->job_queue[0].status>0)
+			continue;
+		if(shmp->size < MAX_QUEUE_SIZE-1){
 			insert_job(shmp,j);
 			printf("Produced job details:\n");
 			print_job(j);
 			// increment shared variable
 			shmp->job_created++;
 			// signal the full semaphore		
-			sem_post(&(shmp->full));						
+			//sem_post(&(shmp->full));						
 		}
 		// signal mutex
-		sem_post(&(shmp->mutex));
+		//sem_post(&(shmp->mutex));
 	}
-	// detach this process from shared memory
 	shmdt(shmp);
 }
 // worker function
-void worker(int shmid,int cons_no){
+void worker(int shmid,int wrkNo){
 	shared_memory* shmc=(shared_memory*)shmat(shmid,NULL,0);
 	while(1){
 		// random delay
 		sleep(rand()%4);
+		if(shmc->size>0 && shmc->job_queue[0].status==8)
+			continue;
 		// wait for the full semaphore
-		sem_wait(&(shmc->full));
+		//sem_wait(&(shmc->full));
 		// wait to acquire mutex
-		sem_wait(&(shmc->mutex));
-		job j;
+		//sem_wait(&(shmc->mutex));
 		// flag to indicate a job is retrieved
-		int job_retrieved=0;
-		if(shmc->size>0){
-			//compute cij acc to status
+		int job_retrieved=0,prev_status,aposx=0,aposy=0,bposx=0,bposy=0;
+		if(shmc->size>=2){
+			//compute cij acc to status here
 			job_retrieved=1;
+			prev_status = shmc->job_queue[0].status;
+			printf("Consumed job details: \n");
+			printf("worker: %d\n",wrkNo);
+			printf("producer numbers: %d %d\n",shmc->job_queue[0].proNo,shmc->job_queue[1].proNo);
+			printf("matrix ids: %d %d\n",shmc->job_queue[0].matId,shmc->job_queue[1].matId);
+			if(prev_status==0){
+				job j = create_job(wrkNo);
+				insert_job(shmc,j);
+			}
+			switch(prev_status){
+				case 0:
+					printf("Fetched block A00 and B00 and copied to block C00\n");
+					break;
+				case 1:
+					aposy = N/2;
+					bposx = N/2;
+					printf("Fetched block A01 and B10 and added to block C00\n");
+					break;
+				case 2:
+					bposy = N/2;
+					printf("Fetched block A00 and B01 and copied to block C01\n");
+					break;
+				case 3:
+					aposy = N/2;
+					bposx = N/2;
+					bposy = N/2;
+					printf("Fetched block A01 and B11 and added to block C01\n");
+					break;
+				case 4:
+					aposx = N/2;
+					printf("Fetched block A10 and B00 and copied to block C10\n");
+					break;
+				case 5:
+					aposx = N/2;
+					aposy = N/2;
+					bposx = N/2;
+					printf("Fetched block A11 and B10 and added to block C10\n");
+					break;
+				case 6:
+					aposx = N/2;
+					bposy = N/2;
+					printf("Fetched block A10 and B01 and copied to block C11\n");
+					break;
+				case 7:
+					aposx = N/2;
+					aposy = N/2;
+					bposx = N/2;
+					bposy = N/2;
+					printf("Fetched block A11 and B11 and added to block C11\n");
+					break;	
+			}
+			//calculate
+			//printf("%d  %d  possssss %d %d\n",aposx,aposy,bposx,bposy );
+			int temp[N/2][N/2];
+			for (int i = 0; i < N/2; ++i){
+				for (int j = 0; j < N/2; ++j){
+					temp[i][j] = 0;
+					for (int k = 0; k < N/2; ++k){
+						temp[i][j] += (shmc->job_queue[0].matrix[i+aposx][k+aposy]*shmc->job_queue[1].matrix[k+bposx][j+bposy]);
+					}
+					if(prev_status%2)
+						shmc->job_queue[shmc->size - 1].matrix[i+aposx][j+bposy] += temp[i][j];
+					else
+						shmc->job_queue[shmc->size - 1].matrix[i+aposx][j+bposy] = temp[i][j];
+					//printf("%d ",temp[i][j] );
+					//printf("%d ",shmc->job_queue[shmc->size - 1].matrix[i+aposx][j+bposy]);
+				}
+				printf("\n");
+			}
+
 		}
 		// signal mutex
-		sem_post(&(shmc->mutex));
+		//sem_post(&(shmc->mutex));
 		if(job_retrieved){
 			//print aand status++ for bith job
+			
+			
+			// wait for mutex
+			//sem_wait(&(shmc->mutex));
 			shmc->job_queue[0].status++;
 			shmc->job_queue[1].status++;
-			printf("Consumed job details\n");
-			printf("worker: %d,",cons_no);
-			print_job(j);
-			// wait for mutex
-			sem_wait(&(shmc->mutex));
-			// increment shared variable
-			//shmc->job_completed++;
 			// signal mutex
-			sem_post(&(shmc->mutex));
+			//sem_post(&(shmc->mutex));
 			// signal empty semaphore
-			sem_post(&(shmc->empty));
+			//sem_post(&(shmc->empty));
 			// to ensure worker is killed only after it has slept/computed job
-			sem_wait(&(shmc->mutex));
+			//sleep(2);
+			//sem_wait(&(shmc->mutex));
 			shmc->computed++;
-			sem_post(&(shmc->mutex));
-		};
+			//sem_post(&(shmc->mutex));
+		}
 	}
-	// detach from shared memory
 	shmdt(shmc);
 }
 
@@ -183,7 +253,7 @@ int main(){
 	int tot_jobs= (tot_matrix-1)*8;
 	shm->computed = 0;
 	
-	
+	/*
 	// initialize the semaphore mutex
 	//binary semaphore for access to jobs_created, jobs_completed, insertion & retrieval of jobs
 	int sema = sem_init(&(shm->mutex),1,1);
@@ -194,7 +264,7 @@ int main(){
 	if(sema<0||full_sema<0||empty_sema<0){
 		printf("Error in initializing semaphore. Exitting..\n");
 		exit(1);
-	}
+	}*/
 
 	time_t start = time(0);
 	pid_t pid;
@@ -236,29 +306,36 @@ int main(){
 	// loop till all jobs are created and consumed
 	while(1){
 		// acquire lock so that while checking, state change not possible
-		sem_wait(&(shm->mutex));
+		//sem_wait(&(shm->mutex));
 		if(shm->job_queue[0].status==8 && shm->job_queue[1].status==8){
+			printf("%d+++++++++++++++++%d\n",shm->size,shm->job_queue[0].matrix[0][0]);
 			remove_job(shm);
+			printf("%d+++++++++++++++++%d\n",shm->size,shm->job_queue[0].matrix[0][0]);
 		}
 		// shm->computed ensures that worker gets killed only after it has computed/slept
 		if(shm->job_created>=tot_matrix && shm->computed>=tot_jobs && shm->size==1){
 			time_t end = time(0);
 			int time_taken = end-start;
-			printf("Time taken to run %d jobs= %d seconds\n",tot_matrix,time_taken);
+			printf("Total time to multiply %d matrices is %d seconds\n",tot_matrix,time_taken);
+			int diag = 0;
+			for (int d = 0; d < N; ++d){
+				diag += shm->job_queue[0].matrix[d][d];
+			}
+			printf("Sum of diagonal elements is: %d\n",diag );
 			// kill all child processes
 			for(int i=0;i<NP;i++)
 				kill(pps[i],SIGTERM);
 			for(int i=0;i<NW;i++)
 				kill(wps[i],SIGTERM);
-			sem_post(&(shm->mutex));
+			//sem_post(&(shm->mutex));
 			break;		
 		}
-		sem_post(&(shm->mutex));
+		//sem_post(&(shm->mutex));
 	}
 	//destroy mutex semaphore
-	sem_destroy(&(shm->mutex));
-	//sem_destroy(&(shm->full));
-	//sem_destroy(&(shm->empty));
+	//sem_destroy(&(shm->mutex));
+	////sem_destroy(&(shm->full));
+	////sem_destroy(&(shm->empty));
 	shmdt(shm);//detach shared memory segment
 	shmctl(shmid,IPC_RMID,0);//mark shared memory segment to be destroyed
 	return 0;
