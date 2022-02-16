@@ -121,24 +121,28 @@ void worker(int shmid,int cons_no){
 		sem_wait(&(shmc->full));
 		// wait to acquire mutex
 		sem_wait(&(shmc->mutex));
-		job j;
+		// job j;
 		// flag to indicate a job is retrieved
 		int job_retrieved=0;
-		if(shmc->size>0){
+		if(shmc->size>1){
 			//compute cij acc to status
 			job_retrieved=1;
 		}
 		// signal mutex
 		sem_post(&(shmc->mutex));
 		if(job_retrieved){
-			//print aand status++ for bith job
+			//print and status++ for both job
+			// shmc->job_queue[0].status++;
+			// shmc->job_queue[1].status++;
+			// printf("Consumed job details\n");
+			// printf("worker: %d,",cons_no);
+			// print_job(j);
+			// wait for mutex
+			sem_wait(&(shmc->mutex));
 			shmc->job_queue[0].status++;
 			shmc->job_queue[1].status++;
 			printf("Consumed job details\n");
 			printf("worker: %d,",cons_no);
-			print_job(j);
-			// wait for mutex
-			sem_wait(&(shmc->mutex));
 			// increment shared variable
 			//shmc->job_completed++;
 			// signal mutex
@@ -160,12 +164,12 @@ int main(){
 
 	srand(time(0));
 	//create SHM
-	key_t key = ftok("/dev/random",'c');
-	if (key<0){
-		printf("Error in generating key! try again..\n");
-		exit(1);
-	}
-	int shmid = shmget(key,sizeof(shared_memory),0666|IPC_CREAT);
+	// key_t key = ftok("/dev/random",'c');
+	// if (key<0){
+	// 	printf("Error in generating key! try again..\n");
+	// 	exit(1);
+	// }
+	int shmid = shmget(IPC_PRIVATE,sizeof(shared_memory),0666|IPC_CREAT);
 	if(shmid<0){
 		printf("Error in creating SHM! try again..\n");
 		exit(1);
@@ -180,7 +184,7 @@ int main(){
 	shm->size = 0;
 	shm->tot_matrix = tot_matrix;
 	shm->job_created = 0;
-	int tot_jobs= (tot_matrix-1)*8;
+	int tot_jobs = (tot_matrix-1)*8;
 	shm->computed = 0;
 	
 	

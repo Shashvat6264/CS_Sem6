@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <sys/shm.h>
 #include <sys/stat.h>
@@ -93,14 +94,25 @@ int main(int pdc, char **pdv){
         for (int j = 0; j < c2; ++j){
             pd.i = i;
             pd.j = j;
-            if (fork()==0){
+            pid_t pid = fork();
+            if (pid < 0){
+                printf("Error in forking\n");
+                exit(1);
+            }
+            else if (pid == 0){
                 //printf("called child\n");
                 mult(&pd);   
-                return 0;
+                // return 0;
+                exit(0);
             }            
-            else{
-                //printf("parent\n");
-            }
+            // else{
+            //     //printf("parent\n");
+            // }
+        }
+    }
+    for (int i = 0; i < r1; ++i){
+        for (int j = 0; j < c2; ++j){
+           wait(NULL);
         }
     }
     printf("Resultant Matrix C:\n");   
