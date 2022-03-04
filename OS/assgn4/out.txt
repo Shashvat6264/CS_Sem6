@@ -1,0 +1,11574 @@
+Number of producer threads: Number of consumer threads: 
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 7191448
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 46622374
+	Status: Waiting
+	Runtime: 0.186000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 76714774
+	Status: Waiting
+	Runtime: 0.187000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 66889700
+	Status: Waiting
+	Runtime: 0.100000
+
+---------Added new job---------
+Parent Job:
+Job 76714774
+	Status: Waiting
+	Runtime: 0.187000
+
+New job:
+Job 22035270
+	Status: Waiting
+	Runtime: 0.017000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 23130538
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 57765211
+	Status: Waiting
+	Runtime: 0.007000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 65443911
+	Status: Waiting
+	Runtime: 0.096000
+
+---------Added new job---------
+Parent Job:
+Job 46622374
+	Status: Waiting
+	Runtime: 0.186000
+
+New job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 86727638
+	Status: Waiting
+	Runtime: 0.103000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 41861531
+	Status: Waiting
+	Runtime: 0.074000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 52213263
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 58623821
+	Status: Waiting
+	Runtime: 0.112000
+
+---------Added new job---------
+Parent Job:
+Job 66889700
+	Status: Waiting
+	Runtime: 0.100000
+
+New job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 51472186
+	Status: Waiting
+	Runtime: 0.215000
+
+---------Added new job---------
+Parent Job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 55163336
+	Status: Waiting
+	Runtime: 0.075000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 49590661
+	Status: Waiting
+	Runtime: 0.043000
+
+---------Added new job---------
+Parent Job:
+Job 23130538
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 97066587
+	Status: Waiting
+	Runtime: 0.026000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 62418439
+	Status: Waiting
+	Runtime: 0.234000
+
+---------Added new job---------
+Parent Job:
+Job 76714774
+	Status: Waiting
+	Runtime: 0.187000
+
+New job:
+Job 44200186
+	Status: Waiting
+	Runtime: 0.236000
+
+---------Added new job---------
+Parent Job:
+Job 97066587
+	Status: Waiting
+	Runtime: 0.026000
+
+New job:
+Job 41820214
+	Status: Waiting
+	Runtime: 0.057000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 41237377
+	Status: Waiting
+	Runtime: 0.016000
+
+---------Added new job---------
+Parent Job:
+Job 23130538
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 11013505
+	Status: Waiting
+	Runtime: 0.211000
+
+---------Added new job---------
+Parent Job:
+Job 11013505
+	Status: Waiting
+	Runtime: 0.211000
+
+New job:
+Job 2429898
+	Status: Waiting
+	Runtime: 0.227000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 73854823
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 29578426
+	Status: Waiting
+	Runtime: 0.008000
+
+---------Added new job---------
+Parent Job:
+Job 41820214
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+---------Added new job---------
+Parent Job:
+Job 7191448
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 23586361
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 35971395
+	Status: Waiting
+	Runtime: 0.077000
+
+---------Added new job---------
+Parent Job:
+Job 41820214
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 11464574
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 41237377
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 41005032
+	Status: Waiting
+	Runtime: 0.133000
+
+---------Added new job---------
+Parent Job:
+Job 58623821
+	Status: Waiting
+	Runtime: 0.112000
+
+New job:
+Job 63194745
+	Status: Waiting
+	Runtime: 0.076000
+
+---------Added new job---------
+Parent Job:
+Job 22035270
+	Status: Waiting
+	Runtime: 0.017000
+
+New job:
+Job 38434143
+	Status: Waiting
+	Runtime: 0.028000
+
+---------Added new job---------
+Parent Job:
+Job 62418439
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 9701905
+	Status: Waiting
+	Runtime: 0.090000
+
+---------Added new job---------
+Parent Job:
+Job 41005032
+	Status: Waiting
+	Runtime: 0.133000
+
+New job:
+Job 89973587
+	Status: Waiting
+	Runtime: 0.028000
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+Job 55163336
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 33568889
+	Status: Waiting
+	Runtime: 0.120000
+
+---------Added new job---------
+Parent Job:
+Job 44200186
+	Status: Waiting
+	Runtime: 0.236000
+
+New job:
+Job 62702644
+	Status: Waiting
+	Runtime: 0.184000
+
+---------Added new job---------
+Parent Job:
+Job 29578426
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 80868874
+	Status: Waiting
+	Runtime: 0.127000
+
+---------Added new job---------
+Parent Job:
+Job 44200186
+	Status: Waiting
+	Runtime: 0.236000
+
+New job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 58623821
+	Status: Waiting
+	Runtime: 0.112000
+
+New job:
+Job 26299224
+	Status: Waiting
+	Runtime: 0.162000
+
+---------Added new job---------
+Parent Job:
+Job 62418439
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 95995516
+	Status: Waiting
+	Runtime: 0.152000
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 25074039
+	Status: Waiting
+	Runtime: 0.249000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 27979682
+	Status: Waiting
+	Runtime: 0.245000
+
+---------Added new job---------
+Parent Job:
+Job 41005032
+	Status: Waiting
+	Runtime: 0.133000
+
+New job:
+Job 12693336
+	Status: Waiting
+	Runtime: 0.223000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 13875496
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 33568889
+	Status: Waiting
+	Runtime: 0.120000
+
+New job:
+Job 675472
+	Status: Waiting
+	Runtime: 0.145000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 83487242
+	Status: Waiting
+	Runtime: 0.194000
+
+---------Added new job---------
+Parent Job:
+Job 38434143
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 56779916
+	Status: Waiting
+	Runtime: 0.162000
+
+---------Added new job---------
+Parent Job:
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 6616997
+	Status: Waiting
+	Runtime: 0.110000
+
+---------Added new job---------
+Parent Job:
+Job 52213263
+	Status: Waiting
+	Runtime: 0.107000
+
+New job:
+Job 49365299
+	Status: Waiting
+	Runtime: 0.001000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+---------Added new job---------
+Parent Job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 37375267
+	Status: Waiting
+	Runtime: 0.049000
+
+---------Added new job---------
+Parent Job:
+Job 38434143
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 66291721
+	Status: Waiting
+	Runtime: 0.086000
+
+---------Added new job---------
+Parent Job:
+Job 55163336
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 17883613
+	Status: Waiting
+	Runtime: 0.023000
+
+---------Added new job---------
+Parent Job:
+Job 22035270
+	Status: Waiting
+	Runtime: 0.017000
+
+New job:
+Job 48472107
+	Status: Waiting
+	Runtime: 0.052000
+
+---------Added new job---------
+Parent Job:
+Job 56779916
+	Status: Waiting
+	Runtime: 0.162000
+
+New job:
+Job 23928840
+	Status: Waiting
+	Runtime: 0.077000
+
+---------Added new job---------
+Parent Job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+New job:
+Job 56992216
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 11464574
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 18684412
+	Status: Waiting
+	Runtime: 0.033000
+
+---------Added new job---------
+Parent Job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 8139595
+	Status: Waiting
+	Runtime: 0.101000
+
+---------Added new job---------
+Parent Job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 64809337
+	Status: Waiting
+	Runtime: 0.177000
+
+---------Added new job---------
+Parent Job:
+Job 37375267
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 68193801
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 64817611
+	Status: Waiting
+	Runtime: 0.128000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 99730149
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 41237377
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 63276324
+	Status: Waiting
+	Runtime: 0.229000
+
+---------Added new job---------
+Parent Job:
+Job 41820214
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 45484971
+	Status: Waiting
+	Runtime: 0.201000
+
+---------Added new job---------
+Parent Job:
+Job 63194745
+	Status: Waiting
+	Runtime: 0.076000
+
+New job:
+Job 80285384
+	Status: Waiting
+	Runtime: 0.030000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 14373296
+	Status: Waiting
+	Runtime: 0.001000
+
+---------Added new job---------
+Parent Job:
+Job 56779916
+	Status: Waiting
+	Runtime: 0.162000
+
+New job:
+Job 92694416
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 23130538
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 34718724
+	Status: Waiting
+	Runtime: 0.126000
+
+---------Added new job---------
+Parent Job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+New job:
+Job 62151251
+	Status: Waiting
+	Runtime: 0.069000
+
+---------Added new job---------
+Parent Job:
+Job 62702644
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 50497824
+	Status: Waiting
+	Runtime: 0.049000
+
+---------Added new job---------
+Parent Job:
+Job 55163336
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 81744358
+	Status: Waiting
+	Runtime: 0.006000
+
+---------Added new job---------
+Parent Job:
+Job 675472
+	Status: Waiting
+	Runtime: 0.145000
+
+New job:
+Job 42786313
+	Status: Waiting
+	Runtime: 0.092000
+
+---------Added new job---------
+Parent Job:
+Job 51472186
+	Status: Waiting
+	Runtime: 0.215000
+
+New job:
+Job 52273670
+	Status: Waiting
+	Runtime: 0.057000
+
+---------Added new job---------
+Parent Job:
+Job 64817611
+	Status: Waiting
+	Runtime: 0.128000
+
+New job:
+Job 6610096
+	Status: Waiting
+	Runtime: 0.032000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 73598860
+	Status: Waiting
+	Runtime: 0.200000
+
+---------Added new job---------
+Parent Job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 8394580
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 63276324
+	Status: Waiting
+	Runtime: 0.229000
+
+New job:
+Job 31422410
+	Status: Waiting
+	Runtime: 0.140000
+
+---------Added new job---------
+Parent Job:
+Job 41861531
+	Status: Waiting
+	Runtime: 0.074000
+
+New job:
+Job 77202937
+	Status: Waiting
+	Runtime: 0.225000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 79011093
+	Status: Waiting
+	Runtime: 0.214000
+
+---------Added new job---------
+Parent Job:
+Job 11464574
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+---------Added new job---------
+Parent Job:
+Job 33568889
+	Status: Waiting
+	Runtime: 0.120000
+
+New job:
+Job 6360983
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+Job 83487242
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 88678780
+	Status: Waiting
+	Runtime: 0.039000
+
+---------Added new job---------
+Parent Job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 40548780
+	Status: Waiting
+	Runtime: 0.101000
+
+---------Added new job---------
+Parent Job:
+Job 22035270
+	Status: Waiting
+	Runtime: 0.017000
+
+New job:
+Job 95602189
+	Status: Waiting
+	Runtime: 0.175000
+
+---------Added new job---------
+Parent Job:
+Job 6610096
+	Status: Waiting
+	Runtime: 0.032000
+
+New job:
+Job 31069282
+	Status: Waiting
+	Runtime: 0.039000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 27889516
+	Status: Waiting
+	Runtime: 0.065000
+
+---------Added new job---------
+Parent Job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 98495707
+	Status: Waiting
+	Runtime: 0.131000
+
+---------Added new job---------
+Parent Job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 4187342
+	Status: Waiting
+	Runtime: 0.191000
+
+---------Added new job---------
+Parent Job:
+Job 11464574
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 5725572
+	Status: Waiting
+	Runtime: 0.201000
+
+---------Added new job---------
+Parent Job:
+Job 41820214
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 99160088
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 62151251
+	Status: Waiting
+	Runtime: 0.069000
+
+New job:
+Job 70443670
+	Status: Waiting
+	Runtime: 0.148000
+
+---------Added new job---------
+Parent Job:
+Job 675472
+	Status: Waiting
+	Runtime: 0.145000
+
+New job:
+Job 66536901
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 4783500
+	Status: Waiting
+	Runtime: 0.154000
+
+---------Added new job---------
+Parent Job:
+Job 2429898
+	Status: Waiting
+	Runtime: 0.227000
+
+New job:
+Job 91078874
+	Status: Waiting
+	Runtime: 0.057000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 24044728
+	Status: Waiting
+	Runtime: 0.051000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 63401770
+	Status: Waiting
+	Runtime: 0.160000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 88384728
+	Status: Waiting
+	Runtime: 0.097000
+
+---------Added new job---------
+Parent Job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 16110401
+	Status: Waiting
+	Runtime: 0.104000
+
+---------Added new job---------
+Parent Job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+
+New job:
+Job 39866384
+	Status: Waiting
+	Runtime: 0.001000
+
+---------Added new job---------
+Parent Job:
+Job 14373296
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 34105025
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+
+---------Added new job---------
+Parent Job:
+Job 29578426
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 57703331
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 34048403
+	Status: Waiting
+	Runtime: 0.246000
+
+---------Added new job---------
+Parent Job:
+Job 12693336
+	Status: Waiting
+	Runtime: 0.223000
+
+New job:
+Job 97674477
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 36711221
+	Status: Waiting
+	Runtime: 0.080000
+
+---------Added new job---------
+Parent Job:
+Job 2429898
+	Status: Waiting
+	Runtime: 0.227000
+
+New job:
+Job 43245488
+	Status: Waiting
+	Runtime: 0.137000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 53188724
+	Status: Waiting
+	Runtime: 0.026000
+
+---------Added new job---------
+Parent Job:
+Job 8394580
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+---------Added new job---------
+Parent Job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 82214535
+	Status: Waiting
+	Runtime: 0.248000
+
+---------Added new job---------
+Parent Job:
+Job 56779916
+	Status: Waiting
+	Runtime: 0.162000
+
+New job:
+Job 86065991
+	Status: Waiting
+	Runtime: 0.022000
+
+---------Added new job---------
+Parent Job:
+Job 31069282
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+Job 67086864
+	Status: Waiting
+	Runtime: 0.068000
+
+---------Added new job---------
+Parent Job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 36886827
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Added new job---------
+Parent Job:
+Job 17883613
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 37376726
+	Status: Waiting
+	Runtime: 0.189000
+
+---------Added new job---------
+Parent Job:
+Job 73598860
+	Status: Waiting
+	Runtime: 0.200000
+
+New job:
+Job 52297727
+	Status: Waiting
+	Runtime: 0.015000
+
+---------Added new job---------
+Parent Job:
+Job 31425157
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 63556557
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 53188724
+	Status: Waiting
+	Runtime: 0.026000
+
+New job:
+Job 53811448
+	Status: Waiting
+	Runtime: 0.188000
+
+---------Added new job---------
+Parent Job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 74392516
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+Job 51472186
+	Status: Waiting
+	Runtime: 0.215000
+
+New job:
+Job 38802113
+	Status: Waiting
+	Runtime: 0.010000
+
+---------Added new job---------
+Parent Job:
+Job 18684412
+	Status: Waiting
+	Runtime: 0.033000
+
+New job:
+Job 85213105
+	Status: Waiting
+	Runtime: 0.071000
+
+---------Added new job---------
+Parent Job:
+Job 24044728
+	Status: Waiting
+	Runtime: 0.051000
+
+New job:
+Job 38897056
+	Status: Waiting
+	Runtime: 0.204000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 44132648
+	Status: Waiting
+	Runtime: 0.191000
+
+---------Added new job---------
+Parent Job:
+Job 99160088
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 76084925
+	Status: Waiting
+	Runtime: 0.139000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 64649819
+	Status: Waiting
+	Runtime: 0.048000
+
+---------Added new job---------
+Parent Job:
+Job 40548780
+	Status: Waiting
+	Runtime: 0.101000
+
+New job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+---------Added new job---------
+Parent Job:
+Job 27979682
+	Status: Waiting
+	Runtime: 0.245000
+
+New job:
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+---------Added new job---------
+Parent Job:
+Job 13875496
+	Status: Waiting
+	Runtime: 0.050000
+
+New job:
+Job 44207747
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 57765211
+	Status: Waiting
+	Runtime: 0.007000
+
+New job:
+Job 84530343
+	Status: Waiting
+	Runtime: 0.046000
+
+---------Added new job---------
+Parent Job:
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 36808308
+	Status: Waiting
+	Runtime: 0.115000
+
+---------Added new job---------
+Parent Job:
+Job 56992216
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 83722438
+	Status: Waiting
+	Runtime: 0.214000
+
+---------Added new job---------
+Parent Job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 17828478
+	Status: Waiting
+	Runtime: 0.234000
+
+---------Added new job---------
+Parent Job:
+Job 63556557
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 79743084
+	Status: Waiting
+	Runtime: 0.060000
+
+---------Added new job---------
+Parent Job:
+Job 41861531
+	Status: Waiting
+	Runtime: 0.074000
+
+New job:
+Job 73790410
+	Status: Waiting
+	Runtime: 0.209000
+
+---------Added new job---------
+Parent Job:
+Job 38802113
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 20318777
+	Status: Waiting
+	Runtime: 0.092000
+
+---------Added new job---------
+Parent Job:
+Job 97066587
+	Status: Waiting
+	Runtime: 0.026000
+
+New job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+
+New job:
+Job 40955144
+	Status: Waiting
+	Runtime: 0.121000
+
+---------Added new job---------
+Parent Job:
+Job 84530343
+	Status: Waiting
+	Runtime: 0.046000
+
+New job:
+Job 87738663
+	Status: Waiting
+	Runtime: 0.015000
+
+---------Added new job---------
+Parent Job:
+Job 8493382
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 75408304
+	Status: Waiting
+	Runtime: 0.034000
+
+---------Added new job---------
+Parent Job:
+Job 51472186
+	Status: Waiting
+	Runtime: 0.215000
+
+New job:
+Job 51547041
+	Status: Waiting
+	Runtime: 0.134000
+
+---------Added new job---------
+Parent Job:
+Job 33568889
+	Status: Waiting
+	Runtime: 0.120000
+
+New job:
+Job 71003821
+	Status: Waiting
+	Runtime: 0.032000
+
+---------Added new job---------
+Parent Job:
+Job 68193801
+	Status: Waiting
+	Runtime: 0.105000
+
+New job:
+Job 85113552
+	Status: Waiting
+	Runtime: 0.203000
+
+---------Added new job---------
+Parent Job:
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 18078132
+	Status: Waiting
+	Runtime: 0.167000
+
+---------Added new job---------
+Parent Job:
+Job 35971395
+	Status: Waiting
+	Runtime: 0.077000
+
+New job:
+Job 94866820
+	Status: Waiting
+	Runtime: 0.209000
+
+---------Added new job---------
+Parent Job:
+Job 73854823
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 66695956
+	Status: Waiting
+	Runtime: 0.065000
+
+---------Added new job---------
+Parent Job:
+Job 36711221
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 51008363
+	Status: Waiting
+	Runtime: 0.006000
+
+---------Added new job---------
+Parent Job:
+Job 91078874
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 25059429
+	Status: Waiting
+	Runtime: 0.044000
+
+---------Added new job---------
+Parent Job:
+Job 7191448
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 48571389
+	Status: Waiting
+	Runtime: 0.183000
+
+---------Added new job---------
+Parent Job:
+Job 4187342
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 69150262
+	Status: Waiting
+	Runtime: 0.059000
+
+---------Added new job---------
+Parent Job:
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 11451699
+	Status: Waiting
+	Runtime: 0.202000
+
+---------Added new job---------
+Parent Job:
+Job 53188724
+	Status: Waiting
+	Runtime: 0.026000
+
+New job:
+Job 8802738
+	Status: Waiting
+	Runtime: 0.061000
+
+---------Added new job---------
+Parent Job:
+Job 4187342
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 92329114
+	Status: Waiting
+	Runtime: 0.142000
+
+---------Added new job---------
+Parent Job:
+Job 41237377
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 48410319
+	Status: Waiting
+	Runtime: 0.030000
+
+---------Added new job---------
+Parent Job:
+Job 64809337
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 11714478
+	Status: Waiting
+	Runtime: 0.032000
+
+---------Added new job---------
+Parent Job:
+Job 34718724
+	Status: Waiting
+	Runtime: 0.126000
+
+New job:
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 38516835
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 84530343
+	Status: Waiting
+	Runtime: 0.046000
+
+New job:
+Job 28967251
+	Status: Waiting
+	Runtime: 0.175000
+
+---------Added new job---------
+Parent Job:
+Job 46622374
+	Status: Waiting
+	Runtime: 0.186000
+
+New job:
+Job 12998962
+	Status: Waiting
+	Runtime: 0.034000
+
+---------Added new job---------
+Parent Job:
+Job 81744358
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 31167194
+	Status: Waiting
+	Runtime: 0.019000
+
+---------Added new job---------
+Parent Job:
+Job 83722438
+	Status: Waiting
+	Runtime: 0.214000
+
+New job:
+Job 50656272
+	Status: Waiting
+	Runtime: 0.023000
+
+---------Added new job---------
+Parent Job:
+Job 2429898
+	Status: Waiting
+	Runtime: 0.227000
+
+New job:
+Job 13904130
+	Status: Waiting
+	Runtime: 0.015000
+
+---------Added new job---------
+Parent Job:
+Job 25059429
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 80352720
+	Status: Waiting
+	Runtime: 0.007000
+
+---------Added new job---------
+Parent Job:
+Job 20318777
+	Status: Waiting
+	Runtime: 0.092000
+
+New job:
+Job 27790995
+	Status: Waiting
+	Runtime: 0.246000
+
+---------Added new job---------
+Parent Job:
+Job 27242852
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 92959002
+	Status: Waiting
+	Runtime: 0.014000
+
+---------Added new job---------
+Parent Job:
+Job 79011093
+	Status: Waiting
+	Runtime: 0.214000
+
+New job:
+Job 22584354
+	Status: Waiting
+	Runtime: 0.242000
+
+---------Added new job---------
+Parent Job:
+Job 80868874
+	Status: Waiting
+	Runtime: 0.127000
+
+New job:
+Job 73656164
+	Status: Waiting
+	Runtime: 0.200000
+
+---------Added new job---------
+Parent Job:
+Job 17883613
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 8143781
+	Status: Waiting
+	Runtime: 0.202000
+
+---------Added new job---------
+Parent Job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 2662495
+	Status: Waiting
+	Runtime: 0.023000
+
+---------Added new job---------
+Parent Job:
+Job 18684412
+	Status: Waiting
+	Runtime: 0.033000
+
+New job:
+Job 5898415
+	Status: Waiting
+	Runtime: 0.158000
+
+---------Added new job---------
+Parent Job:
+Job 73854823
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 76015459
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+Job 95602189
+	Status: Waiting
+	Runtime: 0.175000
+
+New job:
+Job 47023714
+	Status: Waiting
+	Runtime: 0.033000
+
+---------Added new job---------
+Parent Job:
+Job 52273670
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 70278833
+	Status: Waiting
+	Runtime: 0.055000
+
+---------Added new job---------
+Parent Job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 31108274
+	Status: Waiting
+	Runtime: 0.097000
+
+---------Added new job---------
+Parent Job:
+Job 70443670
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 2355760
+	Status: Waiting
+	Runtime: 0.054000
+
+---------Added new job---------
+Parent Job:
+Job 57765211
+	Status: Waiting
+	Runtime: 0.007000
+
+New job:
+Job 62303516
+	Status: Waiting
+	Runtime: 0.248000
+
+---------Added new job---------
+Parent Job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+New job:
+Job 61117023
+	Status: Waiting
+	Runtime: 0.213000
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 89207184
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 68471716
+	Status: Waiting
+	Runtime: 0.109000
+
+---------Added new job---------
+Parent Job:
+Job 48571389
+	Status: Waiting
+	Runtime: 0.183000
+
+New job:
+Job 77727107
+	Status: Waiting
+	Runtime: 0.183000
+
+---------Added new job---------
+Parent Job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+
+New job:
+Job 91283906
+	Status: Waiting
+	Runtime: 0.144000
+
+---------Added new job---------
+Parent Job:
+Job 16110401
+	Status: Waiting
+	Runtime: 0.104000
+
+New job:
+Job 64616499
+	Status: Waiting
+	Runtime: 0.235000
+
+---------Added new job---------
+Parent Job:
+Job 64809337
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 26535978
+	Status: Waiting
+	Runtime: 0.179000
+
+---------Added new job---------
+Parent Job:
+Job 40955144
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 40491452
+	Status: Waiting
+	Runtime: 0.146000
+
+---------Added new job---------
+Parent Job:
+Job 25074039
+	Status: Waiting
+	Runtime: 0.249000
+
+New job:
+Job 42246111
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 35971395
+	Status: Waiting
+	Runtime: 0.077000
+
+New job:
+Job 81442514
+	Status: Waiting
+	Runtime: 0.091000
+
+---------Added new job---------
+Parent Job:
+Job 41005032
+	Status: Waiting
+	Runtime: 0.133000
+
+New job:
+Job 43967275
+	Status: Waiting
+	Runtime: 0.221000
+
+---------Added new job---------
+Parent Job:
+Job 66536901
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 66487995
+	Status: Waiting
+	Runtime: 0.163000
+
+---------Added new job---------
+Parent Job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 83166242
+	Status: Waiting
+	Runtime: 0.090000
+
+---------Added new job---------
+Parent Job:
+Job 44200186
+	Status: Waiting
+	Runtime: 0.236000
+
+New job:
+Job 79834077
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 6360983
+	Status: Waiting
+	Runtime: 0.196000
+
+New job:
+Job 23008010
+	Status: Waiting
+	Runtime: 0.214000
+
+---------Added new job---------
+Parent Job:
+Job 56992216
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 99730149
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 24126971
+	Status: Waiting
+	Runtime: 0.099000
+
+---------Added new job---------
+Parent Job:
+Job 44200186
+	Status: Waiting
+	Runtime: 0.236000
+
+New job:
+Job 41266381
+	Status: Waiting
+	Runtime: 0.089000
+
+---------Added new job---------
+Parent Job:
+Job 2429898
+	Status: Waiting
+	Runtime: 0.227000
+
+New job:
+Job 10043665
+	Status: Waiting
+	Runtime: 0.159000
+
+---------Added new job---------
+Parent Job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+
+New job:
+Job 86972809
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 82214535
+	Status: Waiting
+	Runtime: 0.248000
+
+New job:
+Job 51236359
+	Status: Waiting
+	Runtime: 0.222000
+
+---------Added new job---------
+Parent Job:
+Job 53188724
+	Status: Waiting
+	Runtime: 0.026000
+
+New job:
+Job 46012594
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 50656272
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 24269578
+	Status: Waiting
+	Runtime: 0.154000
+
+---------Added new job---------
+Parent Job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+New job:
+Job 33212869
+	Status: Waiting
+	Runtime: 0.087000
+
+---------Added new job---------
+Parent Job:
+Job 40548780
+	Status: Waiting
+	Runtime: 0.101000
+
+New job:
+Job 96612152
+	Status: Waiting
+	Runtime: 0.074000
+
+---------Added new job---------
+Parent Job:
+Job 86065991
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+Job 12965406
+	Status: Waiting
+	Runtime: 0.146000
+
+---------Added new job---------
+Parent Job:
+Job 85113552
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 36689515
+	Status: Waiting
+	Runtime: 0.004000
+
+---------Added new job---------
+Parent Job:
+Job 61117023
+	Status: Waiting
+	Runtime: 0.213000
+
+New job:
+Job 25682140
+	Status: Waiting
+	Runtime: 0.103000
+
+---------Added new job---------
+Parent Job:
+Job 9701905
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 63819311
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 40955144
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 38890316
+	Status: Waiting
+	Runtime: 0.132000
+
+---------Added new job---------
+Parent Job:
+Job 80868874
+	Status: Waiting
+	Runtime: 0.127000
+
+New job:
+Job 39056246
+	Status: Waiting
+	Runtime: 0.181000
+
+---------Added new job---------
+Parent Job:
+Job 99152671
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 92104816
+	Status: Waiting
+	Runtime: 0.040000
+
+---------Added new job---------
+Parent Job:
+Job 38890316
+	Status: Waiting
+	Runtime: 0.132000
+
+New job:
+Job 60322478
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 66889700
+	Status: Waiting
+	Runtime: 0.100000
+
+New job:
+Job 56933944
+	Status: Waiting
+	Runtime: 0.162000
+
+---------Added new job---------
+Parent Job:
+Job 57703331
+	Status: Waiting
+	Runtime: 0.166000
+
+New job:
+Job 89077818
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 57703331
+	Status: Waiting
+	Runtime: 0.166000
+
+New job:
+Job 18864953
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 42246111
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 72156557
+	Status: Waiting
+	Runtime: 0.161000
+
+---------Added new job---------
+Parent Job:
+Job 51008363
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 40278345
+	Status: Waiting
+	Runtime: 0.012000
+
+---------Added new job---------
+Parent Job:
+Job 69150262
+	Status: Waiting
+	Runtime: 0.059000
+
+New job:
+Job 6703997
+	Status: Waiting
+	Runtime: 0.083000
+
+---------Added new job---------
+Parent Job:
+Job 62303516
+	Status: Waiting
+	Runtime: 0.248000
+
+New job:
+Job 73366227
+	Status: Waiting
+	Runtime: 0.229000
+
+---------Added new job---------
+Parent Job:
+Job 68471716
+	Status: Waiting
+	Runtime: 0.109000
+
+New job:
+Job 54111708
+	Status: Waiting
+	Runtime: 0.184000
+
+---------Added new job---------
+Parent Job:
+Job 76084925
+	Status: Waiting
+	Runtime: 0.139000
+
+New job:
+Job 95418300
+	Status: Waiting
+	Runtime: 0.088000
+
+---------Added new job---------
+Parent Job:
+Job 85213105
+	Status: Waiting
+	Runtime: 0.071000
+
+New job:
+Job 72505332
+	Status: Waiting
+	Runtime: 0.172000
+
+---------Added new job---------
+Parent Job:
+Job 44207747
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 62572067
+	Status: Waiting
+	Runtime: 0.165000
+
+---------Added new job---------
+Parent Job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 79010179
+	Status: Waiting
+	Runtime: 0.094000
+
+---------Added new job---------
+Parent Job:
+Job 22035270
+	Status: Waiting
+	Runtime: 0.017000
+
+New job:
+Job 22339022
+	Status: Waiting
+	Runtime: 0.224000
+
+---------Added new job---------
+Parent Job:
+Job 40278345
+	Status: Waiting
+	Runtime: 0.012000
+
+New job:
+Job 82815380
+	Status: Waiting
+	Runtime: 0.038000
+
+---------Added new job---------
+Parent Job:
+Job 13904130
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 99009684
+	Status: Waiting
+	Runtime: 0.192000
+
+---------Added new job---------
+Parent Job:
+Job 62418439
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 19473406
+	Status: Waiting
+	Runtime: 0.001000
+
+---------Added new job---------
+Parent Job:
+Job 44132648
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 27434072
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+Job 64649819
+	Status: Waiting
+	Runtime: 0.048000
+
+New job:
+Job 82511916
+	Status: Waiting
+	Runtime: 0.066000
+
+---------Added new job---------
+Parent Job:
+Job 24044728
+	Status: Waiting
+	Runtime: 0.051000
+
+New job:
+Job 26630502
+	Status: Waiting
+	Runtime: 0.173000
+
+---------Added new job---------
+Parent Job:
+Job 94866820
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 87196163
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+Job 50656272
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+---------Added new job---------
+Parent Job:
+Job 31069282
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+Job 23479254
+	Status: Waiting
+	Runtime: 0.043000
+
+---------Added new job---------
+Parent Job:
+Job 36689515
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 5726526
+	Status: Waiting
+	Runtime: 0.099000
+
+---------Added new job---------
+Parent Job:
+Job 64649819
+	Status: Waiting
+	Runtime: 0.048000
+
+New job:
+Job 71776914
+	Status: Waiting
+	Runtime: 0.247000
+
+---------Added new job---------
+Parent Job:
+Job 92694416
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+Job 17544439
+	Status: Waiting
+	Runtime: 0.076000
+
+---------Added new job---------
+Parent Job:
+Job 64817611
+	Status: Waiting
+	Runtime: 0.128000
+
+New job:
+Job 66749721
+	Status: Waiting
+	Runtime: 0.006000
+
+---------Added new job---------
+Parent Job:
+Job 38802113
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 53244910
+	Status: Waiting
+	Runtime: 0.113000
+
+---------Added new job---------
+Parent Job:
+Job 82815380
+	Status: Waiting
+	Runtime: 0.038000
+
+New job:
+Job 33387941
+	Status: Waiting
+	Runtime: 0.043000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 24613173
+	Status: Waiting
+	Runtime: 0.016000
+
+---------Added new job---------
+Parent Job:
+Job 34718724
+	Status: Waiting
+	Runtime: 0.126000
+
+New job:
+Job 86586919
+	Status: Waiting
+	Runtime: 0.083000
+
+---------Added new job---------
+Parent Job:
+Job 77202937
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+Job 91867716
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 53244910
+	Status: Waiting
+	Runtime: 0.113000
+
+New job:
+Job 94570884
+	Status: Waiting
+	Runtime: 0.134000
+
+---------Added new job---------
+Parent Job:
+Job 81442514
+	Status: Waiting
+	Runtime: 0.091000
+
+New job:
+Job 66303734
+	Status: Waiting
+	Runtime: 0.130000
+
+---------Added new job---------
+Parent Job:
+Job 31422410
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 80798879
+	Status: Waiting
+	Runtime: 0.174000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 40693203
+	Status: Waiting
+	Runtime: 0.101000
+
+---------Added new job---------
+Parent Job:
+Job 2355760
+	Status: Waiting
+	Runtime: 0.054000
+
+New job:
+Job 8247952
+	Status: Waiting
+	Runtime: 0.096000
+
+---------Added new job---------
+Parent Job:
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+Job 97674477
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 10541388
+	Status: Waiting
+	Runtime: 0.039000
+
+---------Added new job---------
+Parent Job:
+Job 89973587
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 6225722
+	Status: Waiting
+	Runtime: 0.029000
+
+---------Added new job---------
+Parent Job:
+Job 57703331
+	Status: Waiting
+	Runtime: 0.166000
+
+New job:
+Job 22421482
+	Status: Waiting
+	Runtime: 0.096000
+
+---------Added new job---------
+Parent Job:
+Job 47023714
+	Status: Waiting
+	Runtime: 0.033000
+
+New job:
+Job 81129662
+	Status: Waiting
+	Runtime: 0.219000
+
+---------Added new job---------
+Parent Job:
+Job 13904130
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 81835820
+	Status: Waiting
+	Runtime: 0.246000
+
+---------Added new job---------
+Parent Job:
+Job 38897056
+	Status: Waiting
+	Runtime: 0.204000
+
+New job:
+Job 26782829
+	Status: Waiting
+	Runtime: 0.198000
+
+---------Added new job---------
+Parent Job:
+Job 44132648
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 88117357
+	Status: Waiting
+	Runtime: 0.161000
+
+---------Added new job---------
+Parent Job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 10882430
+	Status: Waiting
+	Runtime: 0.215000
+
+---------Added new job---------
+Parent Job:
+Job 63819311
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 6775630
+	Status: Waiting
+	Runtime: 0.238000
+
+---------Added new job---------
+Parent Job:
+Job 77202937
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+Job 99531837
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+Job 62151251
+	Status: Waiting
+	Runtime: 0.069000
+
+New job:
+Job 43814039
+	Status: Waiting
+	Runtime: 0.213000
+
+---------Added new job---------
+Parent Job:
+Job 18864953
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 86358253
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+---------Added new job---------
+Parent Job:
+Job 65443911
+	Status: Waiting
+	Runtime: 0.096000
+
+New job:
+Job 785683
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 34718724
+	Status: Waiting
+	Runtime: 0.126000
+
+New job:
+Job 71932222
+	Status: Waiting
+	Runtime: 0.012000
+
+---------Added new job---------
+Parent Job:
+Job 40693203
+	Status: Waiting
+	Runtime: 0.101000
+
+New job:
+Job 81601034
+	Status: Waiting
+	Runtime: 0.235000
+
+---------Added new job---------
+Parent Job:
+Job 91867716
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 65042995
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 91867716
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 17890672
+	Status: Waiting
+	Runtime: 0.047000
+
+---------Added new job---------
+Parent Job:
+Job 19473406
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 56886360
+	Status: Waiting
+	Runtime: 0.044000
+
+---------Added new job---------
+Parent Job:
+Job 98495707
+	Status: Waiting
+	Runtime: 0.131000
+
+New job:
+Job 90104879
+	Status: Waiting
+	Runtime: 0.019000
+
+---------Added new job---------
+Parent Job:
+Job 785683
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 26092001
+	Status: Waiting
+	Runtime: 0.089000
+
+---------Added new job---------
+Parent Job:
+Job 675472
+	Status: Waiting
+	Runtime: 0.145000
+
+New job:
+Job 5089323
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 28967251
+	Status: Waiting
+	Runtime: 0.175000
+
+New job:
+Job 29260142
+	Status: Waiting
+	Runtime: 0.065000
+
+---------Added new job---------
+Parent Job:
+Job 49365299
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 95777248
+	Status: Waiting
+	Runtime: 0.152000
+
+---------Added new job---------
+Parent Job:
+Job 80868874
+	Status: Waiting
+	Runtime: 0.127000
+
+New job:
+Job 26247033
+	Status: Waiting
+	Runtime: 0.066000
+
+---------Added new job---------
+Parent Job:
+Job 36886827
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 35887043
+	Status: Waiting
+	Runtime: 0.250000
+
+---------Added new job---------
+Parent Job:
+Job 91078874
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 98218505
+	Status: Waiting
+	Runtime: 0.041000
+
+---------Added new job---------
+Parent Job:
+Job 81442514
+	Status: Waiting
+	Runtime: 0.091000
+
+New job:
+Job 84870510
+	Status: Waiting
+	Runtime: 0.148000
+
+---------Added new job---------
+Parent Job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 53917307
+	Status: Waiting
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+Job 94570884
+	Status: Waiting
+	Runtime: 0.134000
+
+New job:
+Job 26864220
+	Status: Waiting
+	Runtime: 0.163000
+
+---------Added new job---------
+Parent Job:
+Job 36886827
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 22805979
+	Status: Waiting
+	Runtime: 0.020000
+
+---------Added new job---------
+Parent Job:
+Job 12998962
+	Status: Waiting
+	Runtime: 0.034000
+
+New job:
+Job 35511327
+	Status: Waiting
+	Runtime: 0.106000
+
+---------Added new job---------
+Parent Job:
+Job 62303516
+	Status: Waiting
+	Runtime: 0.248000
+
+New job:
+Job 44942479
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 31069282
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+Job 41674380
+	Status: Waiting
+	Runtime: 0.084000
+
+---------Added new job---------
+Parent Job:
+Job 45484971
+	Status: Waiting
+	Runtime: 0.201000
+
+New job:
+Job 78804612
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 22584354
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 71828627
+	Status: Waiting
+	Runtime: 0.176000
+
+---------Added new job---------
+Parent Job:
+Job 28967251
+	Status: Waiting
+	Runtime: 0.175000
+
+New job:
+Job 30690565
+	Status: Waiting
+	Runtime: 0.214000
+
+---------Added new job---------
+Parent Job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+
+New job:
+Job 95549330
+	Status: Waiting
+	Runtime: 0.090000
+
+---------Added new job---------
+Parent Job:
+Job 16110401
+	Status: Waiting
+	Runtime: 0.104000
+
+New job:
+Job 23312371
+	Status: Waiting
+	Runtime: 0.192000
+
+---------Added new job---------
+Parent Job:
+Job 76015459
+	Status: Waiting
+	Runtime: 0.102000
+
+New job:
+Job 82385657
+	Status: Waiting
+	Runtime: 0.001000
+
+---------Added new job---------
+Parent Job:
+Job 79011093
+	Status: Waiting
+	Runtime: 0.214000
+
+New job:
+Job 88617318
+	Status: Waiting
+	Runtime: 0.165000
+
+---------Added new job---------
+Parent Job:
+Job 87738663
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 95605997
+	Status: Waiting
+	Runtime: 0.042000
+
+---------Added new job---------
+Parent Job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 79336613
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 24613173
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 20311189
+	Status: Waiting
+	Runtime: 0.154000
+
+---------Added new job---------
+Parent Job:
+Job 81744358
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 77501567
+	Status: Waiting
+	Runtime: 0.203000
+
+---------Added new job---------
+Parent Job:
+Job 34048403
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+Job 21393797
+	Status: Waiting
+	Runtime: 0.141000
+
+---------Added new job---------
+Parent Job:
+Job 18078132
+	Status: Waiting
+	Runtime: 0.167000
+
+New job:
+Job 72236327
+	Status: Waiting
+	Runtime: 0.046000
+
+---------Added new job---------
+Parent Job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 39147553
+	Status: Waiting
+	Runtime: 0.175000
+
+---------Added new job---------
+Parent Job:
+Job 73790410
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 41674380
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 19376623
+	Status: Waiting
+	Runtime: 0.098000
+
+---------Added new job---------
+Parent Job:
+Job 46012594
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 66260003
+	Status: Waiting
+	Runtime: 0.140000
+
+---------Added new job---------
+Parent Job:
+Job 6610096
+	Status: Waiting
+	Runtime: 0.032000
+
+New job:
+Job 91678132
+	Status: Waiting
+	Runtime: 0.224000
+
+---------Added new job---------
+Parent Job:
+Job 11451699
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 2356739
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+Parent Job:
+Job 20318777
+	Status: Waiting
+	Runtime: 0.092000
+
+New job:
+Job 72310617
+	Status: Waiting
+	Runtime: 0.230000
+
+---------Added new job---------
+Parent Job:
+Job 88117357
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 25733188
+	Status: Waiting
+	Runtime: 0.058000
+
+---------Added new job---------
+Parent Job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 33766401
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 97009026
+	Status: Waiting
+	Runtime: 0.058000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 37273995
+	Status: Waiting
+	Runtime: 0.190000
+
+---------Added new job---------
+Parent Job:
+Job 6703997
+	Status: Waiting
+	Runtime: 0.083000
+
+New job:
+Job 4392031
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 33387941
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 60500674
+	Status: Waiting
+	Runtime: 0.141000
+
+---------Added new job---------
+Parent Job:
+Job 26535978
+	Status: Waiting
+	Runtime: 0.179000
+
+New job:
+Job 85021396
+	Status: Waiting
+	Runtime: 0.225000
+
+---------Added new job---------
+Parent Job:
+Job 95549330
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 52225877
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 19473406
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 3557982
+	Status: Waiting
+	Runtime: 0.029000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 36689515
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 71057142
+	Status: Waiting
+	Runtime: 0.114000
+Job 86065991
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+Job 71057142
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Starting new job---------
+
+---------Starting new job---------
+
+---------Starting new job---------
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Rme: 0.214000
+
+New job:
+Job 88617318
+	Status: Waiting
+	Runtime: 0.165000
+
+---------Added new job---------
+Parent Job:
+Job 87738663
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 95605997
+	Status: Waiting
+	Runtime: 0.042000
+
+---------Added new job---------
+Parent Job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 79336613
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 24613173
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 20311189
+	Status: Waiting
+	Runtime: 0.154000
+
+---------Added new job---------
+Parent Job:
+Job 81744358
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 77501567
+	Status: Waiting
+	Runtime: 0.203000
+
+---------Added new job---------
+Parent Job:
+Job 34048403
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+Job 21393797
+	Status: Waiting
+	Runtime: 0.141000
+
+---------Added new job---------
+Parent Job:
+Job 18078132
+	Status: Waiting
+	Runtime: 0.167000
+
+New job:
+Job 72236327
+	Status: Waiting
+	Runtime: 0.046000
+
+---------Added new job---------
+Parent Job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 39147553
+	Status: Waiting
+	Runtime: 0.175000
+
+---------Added new job---------
+Parent Job:
+Job 73790410
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 41674380
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 19376623
+	Status: Waiting
+	Runtime: 0.098000
+
+---------Added new job---------
+Parent Job:
+Job 46012594
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 66260003
+	Status: Waiting
+	Runtime: 0.140000
+
+---------Added new job---------
+Parent Job:
+Job 6610096
+	Status: Waiting
+	Runtime: 0.032000
+
+New job:
+Job 91678132
+	Status: Waiting
+	Runtime: 0.224000
+
+---------Added new job---------
+Parent Job:
+Job 11451699
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 2356739
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+Parent Job:
+Job 20318777
+	Status: Waiting
+	Runtime: 0.092000
+
+New job:
+Job 72310617
+	Status: Waiting
+	Runtime: 0.230000
+
+---------Added new job---------
+Parent Job:
+Job 88117357
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 25733188
+	Status: Waiting
+	Runtime: 0.058000
+
+---------Added new job---------
+Parent Job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 33766401
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 97009026
+	Status: Waiting
+	Runtime: 0.058000
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 37273995
+	Status: Waiting
+	Runtime: 0.190000
+
+---------Added new job---------
+Parent Job:
+Job 6703997
+	Status: Waiting
+	Runtime: 0.083000
+
+New job:
+Job 4392031
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 33387941
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 60500674
+	Status: Waiting
+	Runtime: 0.141000
+
+---------Added new job---------
+Parent Job:
+Job 26535978
+	Status: Waiting
+	Runtime: 0.179000
+
+New job:
+Job 85021396
+	Status: Waiting
+	Runtime: 0.225000
+
+---------Added new job---------
+Parent Job:
+Job 95549330
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 52225877
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 19473406
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 3557982
+	Status: Waiting
+	Runtime: 0.029000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 36689515
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 71057142
+	Status: Waiting
+	Runtime: 0.114000
+Job 86065991
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+Job 71057142
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 66536901
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 1281693
+	Status: Waiting
+	Runtime: 0.063000
+Parent Job:
+Job 66291721
+	Status: Waiting
+	Runtime: 0.086000
+
+New job:
+Job 41005032
+	Status: Waiting
+	Runtime: 0.133000
+
+New job:
+Job 1281693
+	Status: Waiting
+	Runtime: 0.063000
+Job 1281693
+	Status: Waiting
+	Runtime: 0.063000
+Job 95777248
+	Status: Waiting
+	Runtime: 0.152000
+
+New job:
+Job 1281693
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 4187342
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 72873679
+	Status: Waiting
+	Runtime: 0.215000
+
+---------Added new job---------
+Parent Job:
+Job 87738663
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 3046385
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 95995516
+	Status: Waiting
+	Runtime: 0.152000
+
+New job:
+Job 73762224
+	Status: Waiting
+	Runtime: 0.094000
+
+---------Added new job---------
+Parent Job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 80798879
+	Status: Waiting
+	Runtime: 0.174000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 83488697
+	Status: Waiting
+	Runtime: 0.045000
+Job 46622374
+	Status: Waiting
+	Runtime: 0.186000
+
+New job:
+Job 83488697
+	Status: Waiting
+	Runtime: 0.045000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 92694416
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+Job 29113717
+	Status: Waiting
+	Runtime: 0.009000
+Job 29260142
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 29113717
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 88678780
+Job 54111708
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 3055643
+	Status: Waiting
+	Runtime: 0.213000
+	Runtime: 0.039000
+
+New job:
+Job 3055643
+	Status: Waiting
+	Runtime: 0.213000
+
+---------Added new job---------
+Parent Job:
+Job 19473406
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 14358362
+	Status: Waiting
+	Runtime: 0.016000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 96770735
+	Status: Waiting
+	Runtime: 0.093000
+Job 73598860
+
+---------Added new job---------
+	Status: Waiting
+Parent Job:
+	Runtime: 0.200000
+
+New job:
+Job 96770735
+	Status: Waiting
+	Runtime: 0.093000
+Job 26535978
+	Status: Waiting
+	Runtime: 0.179000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 68789782
+	Status: Waiting
+	Runtime: 0.027000
+
+---------Added new job---------
+Parent Job:
+Job 63819311
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 36808308
+	Status: Waiting
+	Runtime: 0.115000
+
+New job:
+Job 68789782
+	Status: Waiting
+	Runtime: 0.027000
+
+---------Added new job---------
+Parent Job:
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 29122253
+	Status: Waiting
+	Runtime: 0.070000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 55163336
+Job 36711221
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 24403504
+	Status: Waiting
+	Runtime: 0.181000
+	Runtime: 0.075000
+
+New job:
+Job 23458237
+	Status: Waiting
+	Runtime: 0.181000
+
+---------Added new job---------
+Parent Job:
+Job 6360983
+	Status: Waiting
+	Runtime: 0.196000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 66303734
+	Status: Waiting
+	Runtime: 0.130000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 37375267
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 6814701
+	Status: Waiting
+	Runtime: 0.218000
+
+---------Added new job---------
+Parent Job:
+Job 31422410
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 58418588
+	Status: Waiting
+	Runtime: 0.117000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 49590661
+	Status: Waiting
+Parent Job:
+	Runtime: 0.043000
+
+New job:
+Job 92104816
+	Status: Waiting
+	Runtime: 0.040000
+
+New job:
+Job 58418588
+	Status: Waiting
+	Runtime: 0.117000
+Job 58418588
+	Status: Waiting
+	Runtime: 0.117000
+
+---------Added new job---------
+Parent Job:
+Job 25059429
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 98074885
+	Status: Waiting
+	Runtime: 0.039000
+
+---------Added new job---------
+Parent Job:
+Job 76805282
+	Status: Waiting
+	Runtime: 0.126000
+
+New job:
+Job 15758254
+	Status: Waiting
+	Runtime: 0.090000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 50497824
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+Job 76015459
+	Status: Waiting
+	Runtime: 0.102000
+
+New job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+---------Added new job---------
+Parent Job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 31069282
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+Job 65731797
+	Status: Waiting
+	Runtime: 0.133000
+
+---------Added new job---------
+Parent Job:
+Job 69150262
+	Status: Waiting
+	Runtime: 0.059000
+
+New job:
+Job 65731797
+	Status: Waiting
+	Runtime: 0.133000
+
+---------Added new job---------
+Parent Job:
+Job 68789782
+	Status: Waiting
+	Runtime: 0.027000
+
+New job:
+Job 17249132
+	Status: Waiting
+	Runtime: 0.146000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 85308479
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 69150262
+	Status: Waiting
+	Runtime: 0.059000
+
+New job:
+Job 63411523
+	Status: Waiting
+	Runtime: 0.038000
+
+---------Added new job---------
+Parent Job:
+Job 36942218
+	Status: Waiting
+	Runtime: 0.070000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 58712225
+	Status: Waiting
+	Runtime: 0.109000
+Job 37273995
+	Status: Waiting
+	Runtime: 0.190000
+
+New job:
+Job 58712225
+	Status: Waiting
+	Runtime: 0.109000
+
+---------Added new job---------
+Parent Job:
+Job 72505332
+	Status: Waiting
+	Runtime: 0.172000
+
+New job:
+Job 55204123
+	Status: Waiting
+	Runtime: 0.159000
+
+---------Added new job---------
+Parent Job:
+Job 51472186
+	Status: Waiting
+	Runtime: 0.215000
+
+New job:
+Job 89020529
+	Status: Waiting
+	Runtime: 0.120000
+
+---------Added new job---------
+Parent Job:
+Job 39866384
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 37726816
+	Status: Waiting
+	Runtime: 0.193000
+
+---------Added new job---------
+Parent Job:
+Job 14358362
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 22584354
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 84870510
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 73161522
+	Status: Waiting
+	Runtime: 0.087000
+
+---------Added new job---------
+Parent Job:
+Job 57765211
+	Status: Waiting
+	Runtime: 0.007000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 30347489
+	Status: Waiting
+	Runtime: 0.173000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 30347489
+	Status: Waiting
+	Runtime: 0.173000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 87550250
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 5898415
+	Status: Waiting
+	Runtime: 0.158000
+
+New job:
+Job 87550250
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 73161522
+	Status: Waiting
+	Runtime: 0.070000
+
+New job:
+Job 67827107
+	Status: Waiting
+	Runtime: 0.105000
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 67827107
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 26630502
+	Status: Waiting
+	Runtime: 0.173000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 34105025
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 67827107
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+Job 785683
+
+New job:
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 14659750
+	Status: Waiting
+	Runtime: 0.009000
+Job 14659750
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 97674477
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 87196163
+Job 53314653
+	Status: Waiting
+	Runtime: 0.102000
+
+New job:
+Job 53314653
+	Status: Waiting
+	Runtime: 0.068000
+	Status: Waiting
+	Runtime: 0.068000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 79010179
+	Status: Waiting
+	Runtime: 0.094000
+Job 46622374
+
+New job:
+	Status: Waiting
+	Runtime: 0.186000
+
+New job:
+Job 55125603
+Job 55125603
+	Status: Waiting
+	Runtime: 0.048000
+	Status: Waiting
+	Runtime: 0.048000
+
+---------Added new job---------
+Parent Job:
+Job 25059429
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 14449135
+
+---------Added new job---------
+Parent Job:
+	Status: Waiting
+	Runtime: 0.175000
+Job 60500674
+	Status: Waiting
+	Runtime: 0.141000
+
+New job:
+Job 14449135
+	Status: Waiting
+	Runtime: 0.175000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 80668709
+	Status: Waiting
+	Runtime: 0.062000
+
+---------Added new job---------
+Parent Job:
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 46146529
+	Status: Waiting
+	Runtime: 0.220000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 34105025
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 46146529
+	Status: Waiting
+	Runtime: 0.220000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 3055643
+
+---------Added new job---------
+	Status: Waiting
+	Runtime: 0.213000
+
+New job:
+Job 26579785
+	Status: Waiting
+	Runtime: 0.113000
+
+---------Added new job---------
+Parent Job:
+Job 6775630
+	Status: Waiting
+	Runtime: 0.238000
+
+New job:
+Job 27987530
+	Status: Waiting
+	Runtime: 0.178000
+Parent Job:
+Job 37375267
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 26579785
+	Status: Waiting
+	Runtime: 0.113000
+
+---------Added new job---------
+Parent Job:
+Job 38890316
+	Status: Waiting
+	Runtime: 0.132000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.011000
+Job 4783500
+	Status: Waiting
+	Runtime: 0.154000
+
+New job:
+Job 8827644
+	Status: Waiting
+	Runtime: 0.011000
+
+---------Added new job---------
+Parent Job:
+Job 2355760
+	Status: Waiting
+	Runtime: 0.054000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 25104117
+	Status: Waiting
+	Runtime: 0.097000
+Job 29260142
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 25104117
+	Status: Waiting
+	Runtime: 0.097000
+
+---------Added new job---------
+Parent Job:
+Job 23479254
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 71781958
+	Status: Waiting
+	Runtime: 0.135000
+
+---------Added new job---------
+Parent Job:
+Job 66260003
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 72547857
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 8139595
+	Status: Waiting
+	Runtime: 0.101000
+
+New job:
+Job 72547857
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 5898415
+	Status: Waiting
+	Runtime: 0.158000
+
+New job:
+Job 49520090
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 21393797
+	Status: Waiting
+	Runtime: 0.141000
+
+New job:
+Job 49520090
+	Status: Waiting
+	Runtime: 0.021000
+Job 29113717
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 27683618
+	Status: Waiting
+	Runtime: 0.205000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 77727107
+	Status: Waiting
+	Runtime: 0.183000
+
+New job:
+Job 52812262
+	Status: Waiting
+	Runtime: 0.085000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 27024982
+	Status: Waiting
+	Runtime: 0.230000
+
+---------Added new job---------
+Parent Job:
+Job 53244910
+	Status: Waiting
+	Runtime: 0.113000
+
+New job:
+Job 27024982
+
+---------Added new job---------
+	Status: Waiting
+Parent Job:
+	Runtime: 0.230000
+Job 72505332
+	Status: Waiting
+	Runtime: 0.172000
+
+New job:
+Job 78809765
+	Status: Waiting
+	Runtime: 0.210000
+
+---------Added new job---------
+Parent Job:
+Job 24126971
+	Status: Waiting
+	Runtime: 0.099000
+
+New job:
+Job 1611316
+	Status: Waiting
+	Runtime: 0.225000
+
+---------Added new job---------
+Parent Job:
+Job 43814039
+	Status: Waiting
+	Runtime: 0.213000
+
+New job:
+Job 99609895
+	Status: Waiting
+	Runtime: 0.219000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 40491452
+Job 80780623
+	Status: Waiting
+	Runtime: 0.023000
+Job 785683
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 80780623
+	Status: Waiting
+	Runtime: 0.023000
+	Status: Waiting
+	Runtime: 0.146000
+
+New job:
+Job 80780623
+	Status: Waiting
+	Runtime: 0.023000
+
+---------Added new job---------
+Parent Job:
+Job 90489706
+	Status: Waiting
+	Runtime: 0.103000
+
+New job:
+Job 61369510
+	Status: Waiting
+	Runtime: 0.161000
+
+---------Added new job---------
+Parent Job:
+Job 4392031
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 96268204
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+Job 27683618
+	Status: Waiting
+	Runtime: 0.205000
+
+New job:
+Job 30249600
+	Status: Waiting
+	Runtime: 0.028000
+
+---------Added new job---------
+Parent Job:
+Job 95995516
+	Status: Waiting
+	Runtime: 0.152000
+
+New job:
+Job 70339834
+	Status: Waiting
+	Runtime: 0.011000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 76084925
+	Status: Waiting
+	Runtime: 0.139000
+
+New job:
+Job 89055591
+
+---------Added new job---------
+	Status: Waiting
+	Runtime: 0.216000
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 70339834
+	Status: Waiting
+	Runtime: 0.082000
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 89055591
+	Status: Waiting
+	Runtime: 0.216000
+
+---------Added new job---------
+Parent Job:
+Job 76714774
+	Status: Waiting
+	Runtime: 0.187000
+
+New job:
+Job 16000564
+	Status: Waiting
+	Runtime: 0.060000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 18864953
+Job 79142411
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 79142411
+	Status: Waiting
+	Runtime: 0.178000
+	Status: Waiting
+	Runtime: 0.178000
+
+---------Added new job---------
+Parent Job:
+Job 44942479
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 88384728
+	Status: Waiting
+	Runtime: 0.097000
+
+New job:
+Job 13917075
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+Job 38890316
+	Status: Waiting
+	Runtime: 0.132000
+
+New job:
+Job 99688184
+	Status: Waiting
+	Runtime: 0.003000
+
+---------Added new job---------
+Parent Job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 36387045
+	Status: Waiting
+	Runtime: 0.136000
+
+---------Added new job---------
+Parent Job:
+Job 79336613
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 57363395
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 9701905
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 57363395
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 81129662
+	Status: Waiting
+	Runtime: 0.219000
+
+New job:
+Job 47745109
+	Status: Waiting
+	Runtime: 0.002000
+Job 26630502
+	Status: Waiting
+	Runtime: 0.173000
+
+New job:
+Job 47745109
+	Status: Waiting
+	Runtime: 0.002000
+
+---------Added new job---------
+Parent Job:
+Job 22805979
+	Status: Waiting
+	Runtime: 0.020000
+
+New job:
+Job 5558765
+	Status: Waiting
+	Runtime: 0.049000
+
+---------Added new job---------
+Parent Job:
+Job 22805979
+	Status: Waiting
+	Runtime: 0.020000
+
+New job:
+Job 6119747
+	Status: Waiting
+	Runtime: 0.184000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 21393797
+	Status: Waiting
+	Runtime: 0.141000
+
+New job:
+Job 0
+Job 16103375
+	Status: Waiting
+	Runtime: 0.000000
+Job 71776914
+	Status: Waiting
+	Runtime: 0.247000
+
+New job:
+Job 16103375
+	Status: Waiting
+	Runtime: 0.143000
+
+New job:
+Job 16103375
+	Status: Waiting
+	Runtime: 0.143000
+	Status: Waiting
+	Runtime: 0.143000
+
+---------Added new job---------
+Parent Job:
+Job 36886827
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 40983855
+	Status: Waiting
+	Runtime: 0.135000
+
+---------Added new job---------
+Parent Job:
+Job 24126971
+	Status: Waiting
+	Runtime: 0.099000
+
+New job:
+Job 85775265
+	Status: Waiting
+	Runtime: 0.191000
+
+---------Added new job---------
+Parent Job:
+Job 14358362
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+Job 75785422
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 84870510
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 75785422
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 10143328
+	Status: Waiting
+	Runtime: 0.213000
+
+---------Added new job---------
+Parent Job:
+Job 10882430
+	Status: Waiting
+	Runtime: 0.215000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 29122253
+	Status: Waiting
+	Runtime: 0.070000
+
+New job:
+Job 40625673
+	Status: Waiting
+	Runtime: 0.107000
+Job 24305088
+	Status: Waiting
+	Runtime: 0.208000
+
+New job:
+Job 40625673
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 66889700
+	Status: Waiting
+	Runtime: 0.100000
+
+New job:
+Job 41881328
+	Status: Waiting
+	Runtime: 0.037000
+
+---------Added new job---------
+Parent Job:
+Job 72156557
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 40955144
+	Status: Waiting
+Job 0
+	Runtime: 0.121000
+
+New job:
+Job 33734269
+	Status: Waiting
+	Runtime: 0.119000
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 33734269
+	Status: Waiting
+	Runtime: 0.119000
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 33734269
+	Status: Waiting
+	Runtime: 0.119000
+
+---------Added new job---------
+Parent Job:
+Job 8143781
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 14600748
+	Status: Waiting
+	Runtime: 0.165000
+
+---------Added new job---------
+Parent Job:
+Job 51547041
+	Status: Waiting
+	Runtime: 0.134000
+
+New job:
+Job 88841048
+	Status: Waiting
+	Runtime: 0.218000
+
+---------Added new job---------
+Parent Job:
+Job 17249132
+	Status: Waiting
+	Runtime: 0.146000
+
+New job:
+Job 5774966
+	Status: Waiting
+	Runtime: 0.094000
+
+---------Added new job---------
+Parent Job:
+Job 12965406
+	Status: Waiting
+	Runtime: 0.146000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 35360330
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+Job 26663489
+	Status: Waiting
+	Runtime: 0.158000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+
+New job:
+Job 24157346
+	Status: Waiting
+	Runtime: 0.185000
+Job 5898415
+	Status: Waiting
+	Runtime: 0.158000
+
+New job:
+Job 24157346
+	Status: Waiting
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+Job 76084925
+	Status: Waiting
+	Runtime: 0.139000
+
+New job:
+Job 76253819
+	Status: Waiting
+	Runtime: 0.067000
+
+---------Added new job---------
+Parent Job:
+Job 6360983
+	Status: Waiting
+	Runtime: 0.196000
+
+New job:
+Job 45295823
+	Status: Waiting
+	Runtime: 0.032000
+
+---------Added new job---------
+Parent Job:
+Job 6225722
+	Status: Waiting
+	Runtime: 0.029000
+
+New job:
+Job 32966723
+	Status: Waiting
+	Runtime: 0.180000
+
+---------Added new job---------
+Parent Job:
+Job 99730149
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 64817611
+	Status: Waiting
+	Runtime: 0.128000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 97100081
+	Status: Waiting
+	Runtime: 0.231000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 64616499
+	Status: Waiting
+	Runtime: 0.235000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 96109600
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 1281693
+	Status: Waiting
+	Runtime: 0.063000
+
+New job:
+Job 97318818
+	Status: Waiting
+	Runtime: 0.091000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 97318818
+	Status: Waiting
+	Runtime: 0.091000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 73854823
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 56761582
+	Status: Waiting
+	Runtime: 0.226000
+Job 8394580
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 56761582
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 72547857
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 86160307
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 95602189
+	Status: Waiting
+	Runtime: 0.175000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 76725878
+	Status: Waiting
+	Runtime: 0.188000
+Job 14600748
+	Status: Waiting
+	Runtime: 0.165000
+
+New job:
+Job 76725878
+	Status: Waiting
+	Runtime: 0.188000
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 45708756
+	Status: Waiting
+	Runtime: 0.074000
+
+---------Added new job---------
+Parent Job:
+Job 81442514
+	Status: Waiting
+	Runtime: 0.091000
+
+New job:
+Job 85553775
+	Status: Waiting
+	Runtime: 0.045000
+
+---------Added new job---------
+Parent Job:
+Job 80798879
+	Status: Waiting
+	Runtime: 0.174000
+
+New job:
+Job 42049991
+	Status: Waiting
+	Runtime: 0.101000
+
+---------Added new job---------
+Parent Job:
+Job 17249132
+	Status: Waiting
+	Runtime: 0.146000
+
+New job:
+Job 19441880
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 15529888
+	Status: Waiting
+	Runtime: 0.250000
+
+---------Added new job---------
+Parent Job:
+Job 95549330
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 54020109
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+	Status: Waiting
+Job 78804612
+	Runtime: 0.061000
+	Status: Waiting
+	Runtime: 0.164000
+
+New job:
+Job 54020109
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 54020109
+	Status: Waiting
+	Runtime: 0.061000
+
+---------Added new job---------
+Parent Job:
+Job 8394580
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 37454062
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+
+New job:
+Job 37454062
+	Status: Waiting
+	Runtime: 0.108000
+Job 12965406
+	Status: Waiting
+	Runtime: 0.146000
+
+New job:
+Job 37454062
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 28653295
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+Job 37454062
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 49590661
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 88678780
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+Job 17061961
+	Status: Waiting
+	Runtime: 0.041000
+Job 17061961
+	Status: Waiting
+	Runtime: 0.041000
+
+---------Added new job---------
+Parent Job:
+Job 43967275
+	Status: Waiting
+	Runtime: 0.221000
+
+New job:
+Job 9194131
+	Status: Waiting
+	Runtime: 0.155000
+
+---------Added new job---------
+Parent Job:
+Job 80868874
+	Status: Waiting
+	Runtime: 0.127000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 64616499
+	Status: Waiting
+	Runtime: 0.235000
+
+New job:
+Job 20645858
+	Status: Waiting
+	Runtime: 0.148000
+Job 20645858
+	Status: Waiting
+	Runtime: 0.148000
+
+---------Added new job---------
+Parent Job:
+Job 95605997
+	Status: Waiting
+	Runtime: 0.042000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 32966723
+Job 35617405
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.180000
+
+New job:
+Job 35617405
+	Status: Waiting
+	Runtime: 0.185000
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+Job 32966723
+	Status: Waiting
+	Runtime: 0.180000
+
+---------Added new job---------
+Parent Job:
+
+New job:
+Job 2585681
+	Status: Waiting
+	Runtime: 0.114000
+Job 65042995
+	Status: Waiting
+	Runtime: 0.063000
+
+New job:
+Job 2585681
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Added new job---------
+Parent Job:
+Job 90104879
+	Status: Waiting
+	Runtime: 0.019000
+
+New job:
+Job 5718639
+	Status: Waiting
+	Runtime: 0.145000
+
+---------Added new job---------
+Parent Job:
+Job 3046385
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 90423764
+	Status: Waiting
+	Runtime: 0.029000
+
+---------Added new job---------
+Parent Job:
+Job 66487995
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 89482833
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 83488697
+	Status: Waiting
+	Runtime: 0.045000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+Job 72505332
+	Status: Waiting
+	Runtime: 0.172000
+
+New job:
+Job 70901265
+	Status: Waiting
+	Runtime: 0.019000
+	Status: Waiting
+	Runtime: 0.019000
+
+---------Added new job---------
+Parent Job:
+Job 53244910
+	Status: Waiting
+	Runtime: 0.113000
+
+New job:
+Job 92492531
+	Status: Waiting
+	Runtime: 0.015000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 27434072
+Job 5718639
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 27651917
+	Status: Waiting
+	Runtime: 0.030000
+	Status: Waiting
+	Runtime: 0.166000
+
+New job:
+Job 27651917
+	Status: Waiting
+	Runtime: 0.030000
+
+---------Added new job---------
+Parent Job:
+Job 95777248
+	Status: Waiting
+	Runtime: 0.152000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 86044345
+	Status: Waiting
+	Runtime: 0.062000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 86044345
+	Status: Waiting
+	Runtime: 0.062000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 90104879
+Job 28591015
+	Status: Waiting
+	Runtime: 0.019000
+
+New job:
+Job 86958640
+	Status: Waiting
+	Runtime: 0.093000
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 86958640
+	Status: Waiting
+	Runtime: 0.093000
+
+---------Added new job---------
+Parent Job:
+Job 72547857
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 95998255
+	Status: Waiting
+	Runtime: 0.205000
+
+---------Added new job---------
+Parent Job:
+Job 53244910
+	Status: Waiting
+	Runtime: 0.113000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 4187342
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 21788930
+	Status: Waiting
+	Runtime: 0.010000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 38524491
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 21788930
+	Status: Waiting
+	Runtime: 0.010000
+
+---------Added new job---------
+Job 77501567
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 21788930
+	Status: Waiting
+	Runtime: 0.010000
+Parent Job:
+Job 88117357
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 21788930
+	Status: Waiting
+	Runtime: 0.010000
+
+---------Added new job---------
+Parent Job:
+Job 83166242
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 87427350
+	Status: Waiting
+	Runtime: 0.025000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 89077212
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 17768994
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 26630502
+	Status: Waiting
+	Runtime: 0.173000
+
+New job:
+Job 5332171
+	Status: Waiting
+	Runtime: 0.139000
+
+---------Added new job---------
+Parent Job:
+Job 29260142
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 46217821
+	Status: Waiting
+	Runtime: 0.197000
+
+---------Added new job---------
+Parent Job:
+Job 81744358
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 2315463
+	Status: Waiting
+	Runtime: 0.147000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 305260
+	Status: Waiting
+	Runtime: 0.024000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 85078069
+	Status: Waiting
+	Runtime: 0.033000
+
+---------Added new job---------
+Parent Job:
+Job 99009684
+	Status: Waiting
+	Runtime: 0.192000
+
+New job:
+Job 17614848
+	Status: Waiting
+	Runtime: 0.113000
+
+---------Added new job---------
+Parent Job:
+Job 46012594
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 67889384
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 3055643
+	Status: Waiting
+	Runtime: 0.213000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 8143781
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 30002712
+	Status: Waiting
+	Runtime: 0.232000
+
+---------Added new job---------
+Parent Job:
+Job 28653295
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+Job 94669795
+	Status: Waiting
+	Runtime: 0.199000
+
+---------Added new job---------
+Parent Job:
+Job 82511916
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 94669795
+	Status: Waiting
+	Runtime: 0.199000
+
+---------Added new job---------
+Parent Job:
+Job 73042631
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 87401648
+	Status: Waiting
+	Runtime: 0.023000
+
+---------Added new job---------
+Parent Job:
+Job 47745109
+	Status: Waiting
+	Runtime: 0.002000
+
+New job:
+Job 14410461
+	Status: Waiting
+	Runtime: 0.216000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 50656272
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 29800826
+Job 77202937
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+Job 29800826
+	Status: Waiting
+	Runtime: 0.046000
+	Runtime: 0.046000
+
+---------Added new job---------
+Parent Job:
+Job 23008010
+
+---------Added new job---------
+	Status: Waiting
+Parent Job:
+	Runtime: 0.214000
+
+New job:
+Job 83683657
+	Status: Waiting
+	Runtime: 0.217000
+Job 58418588
+	Status: Waiting
+	Runtime: 0.117000
+
+New job:
+Job 83683657
+	Status: Waiting
+	Runtime: 0.217000
+
+---------Added new job---------
+Parent Job:
+Job 18864953
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 8158738
+	Status: Waiting
+	Runtime: 0.057000
+
+---------Added new job---------
+Parent Job:
+Job 65042995
+	Status: Waiting
+	Runtime: 0.063000
+
+New job:
+Job 57978705
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 95998255
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 14655034
+	Status: Waiting
+	Runtime: 0.155000
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+Job 20645858
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 14655034
+	Status: Waiting
+	Runtime: 0.130000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 92165336
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 99160088
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 79928783
+	Status: Waiting
+	Runtime: 0.005000
+
+---------Added new job---------
+Parent Job:
+Job 31422410
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 81835820
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+Job 55954853
+	Status: Waiting
+	Runtime: 0.240000
+
+---------Added new job---------
+Parent Job:
+Job 37376726
+	Status: Waiting
+	Runtime: 0.189000
+
+New job:
+Job 16806754
+	Status: Waiting
+	Runtime: 0.223000
+
+---------Added new job---------
+Parent Job:
+Job 70908702
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 55954853
+	Status: Waiting
+	Runtime: 0.240000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 51655406
+	Status: Waiting
+	Runtime: 0.229000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 51655406
+	Status: Waiting
+	Runtime: 0.229000
+
+---------Added new job---------
+Parent Job:
+Job 29122253
+	Status: Waiting
+	Runtime: 0.070000
+
+New job:
+Job 85036765
+	Status: Waiting
+	Runtime: 0.030000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 95998255
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 77866808
+	Status: Waiting
+	Runtime: 0.182000
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 77866808
+	Status: Waiting
+	Runtime: 0.182000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 79010179
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+Job 16958546
+	Status: Waiting
+	Runtime: 0.127000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 16958546
+	Status: Waiting
+	Runtime: 0.127000
+
+---------Added new job---------
+Parent Job:
+Job 88355219
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 94283899
+	Status: Waiting
+	Runtime: 0.067000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 13917267
+	Status: Waiting
+	Runtime: 0.160000
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 13917267
+	Status: Waiting
+	Runtime: 0.160000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 36886827
+	Status: Waiting
+Job 72505332
+	Status: Waiting
+	Runtime: 0.172000
+
+New job:
+Job 93714589
+	Status: Waiting
+	Runtime: 0.055000
+Job 99531837
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 93714589
+	Status: Waiting
+	Runtime: 0.055000
+	Runtime: 0.009000
+
+New job:
+Job 93714589
+	Status: Waiting
+	Runtime: 0.055000
+
+---------Added new job---------
+Parent Job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 99009684
+	Status: Waiting
+	Runtime: 0.192000
+
+New job:
+Job 12563146
+	Status: Waiting
+	Runtime: 0.237000
+
+---------Added new job---------
+Parent Job:
+Job 89055591
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 35417617
+	Status: Waiting
+	Runtime: 0.022000
+
+---------Added new job---------
+Parent Job:
+Job 72156557
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 86065991
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 70885132
+	Status: Waiting
+	Runtime: 0.078000
+Job 70885132
+	Status: Waiting
+	Runtime: 0.078000
+
+---------Added new job---------
+Parent Job:
+Job 36886827
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 35203835
+	Status: Waiting
+	Runtime: 0.076000
+
+---------Added new job---------
+Parent Job:
+Job 55125603
+	Status: Waiting
+	Runtime: 0.048000
+
+New job:
+Job 38284813
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+Job 48472107
+
+---------Added new job---------
+Parent Job:
+	Status: Waiting
+	Runtime: 0.052000
+
+New job:
+
+New job:
+Job 17484889
+	Status: Waiting
+	Runtime: 0.072000
+Job 61369510
+Job 17484889
+	Status: Waiting
+	Runtime: 0.072000
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 17484889
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 5332171
+	Status: Waiting
+	Runtime: 0.139000
+
+New job:
+Job 40788098
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 73790410
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 0
+Job 46356631
+	Status: Waiting
+	Runtime: 0.000000
+	Status: Waiting
+	Runtime: 0.063000
+
+New job:
+Job 46356631
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 10043665
+	Status: Waiting
+	Runtime: 0.159000
+
+New job:
+Job 46356631
+	Status: Waiting
+	Runtime: 0.063000
+
+---------Added new job---------
+Parent Job:
+Job 35617405
+	Status: Waiting
+	Runtime: 0.185000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 62303516
+	Status: Waiting
+	Runtime: 0.248000
+
+New job:
+Job 41684934
+	Status: Waiting
+	Runtime: 0.082000
+
+---------Added new job---------
+Parent Job:
+Job 43967275
+	Status: Waiting
+	Runtime: 0.221000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 5774966
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 0
+Job 0
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.000000
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 36978649
+	Status: Waiting
+	Runtime: 0.222000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 85746025
+	Status: Waiting
+	Runtime: 0.074000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 36978649
+	Status: Waiting
+	Runtime: 0.222000
+
+New job:
+Job 85945121
+Job 96612152
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.074000
+
+New job:
+Job 85945121
+	Status: Waiting
+	Runtime: 0.061000
+	Runtime: 0.061000
+
+---------Added new job---------
+Parent Job:
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 94687877
+	Status: Waiting
+	Runtime: 0.018000
+
+---------Added new job---------
+Parent Job:
+Job 98500069
+	Status: Waiting
+	Runtime: 0.041000
+
+New job:
+Job 42324556
+	Status: Waiting
+	Runtime: 0.154000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 82385657
+	Status: Waiting
+	Runtime: 0.001000
+Job 0
+
+New job:
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 78700474
+	Status: Waiting
+	Runtime: 0.021000
+Job 87135808
+
+---------Added new job---------
+	Status: Waiting
+Parent Job:
+Job 57298772
+	Status: Waiting
+	Runtime: 0.025000
+	Runtime: 0.021000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 17883613
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 44207747
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 48073029
+	Status: Waiting
+	Runtime: 0.080000
+
+---------Added new job---------
+Parent Job:
+Job 37726816
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 92861401
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 62702644
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 92861401
+	Status: Waiting
+	Runtime: 0.166000
+Job 81367815
+	Status: Waiting
+	Runtime: 0.089000
+
+New job:
+Job 92861401
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+Job 48410319
+	Status: Waiting
+	Runtime: 0.030000
+
+New job:
+Job 23097284
+	Status: Waiting
+	Runtime: 0.013000
+
+---------Added new job---------
+Parent Job:
+Job 22805979
+	Status: Waiting
+	Runtime: 0.020000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 76015459
+	Status: Waiting
+Job 66695956
+	Runtime: 0.102000
+
+New job:
+Job 18757072
+	Status: Waiting
+	Runtime: 0.246000
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 18757072
+	Status: Waiting
+	Runtime: 0.246000
+
+---------Added new job---------
+Parent Job:
+Job 71003821
+	Status: Waiting
+	Runtime: 0.032000
+
+New job:
+Job 76247474
+	Status: Waiting
+	Runtime: 0.060000
+
+---------Added new job---------
+Parent Job:
+Job 82815380
+	Status: Waiting
+	Runtime: 0.038000
+
+New job:
+Job 27948094
+	Status: Waiting
+	Runtime: 0.052000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 62702644
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 88314550
+	Status: Waiting
+	Runtime: 0.102000
+Job 57363395
+	Status: Waiting
+	Runtime: 0.050000
+
+New job:
+Job 88314550
+	Status: Waiting
+	Runtime: 0.102000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 6610096
+	Status: Waiting
+	Runtime: 0.032000
+
+New job:
+Job 58508530
+	Status: Waiting
+	Runtime: 0.196000
+Job 38802113
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 58508530
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+Job 17174318
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 52978526
+	Status: Waiting
+	Runtime: 0.081000
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 43670091
+	Status: Waiting
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 94956528
+	Status: Waiting
+	Runtime: 0.097000
+
+---------Added new job---------
+Parent Job:
+Job 22584354
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 20405454
+	Status: Waiting
+	Runtime: 0.223000
+
+---------Added new job---------
+Parent Job:
+Job 85945121
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 8799528
+	Status: Waiting
+	Runtime: 0.243000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 22103526
+	Status: Waiting
+	Runtime: 0.238000
+
+---------Added new job---------
+Parent Job:
+Job 56886360
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 13894529
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 6320566
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 10966108
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 69231567
+Job 29260142
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 69231567
+	Status: Waiting
+	Runtime: 0.106000
+	Status: Waiting
+	Runtime: 0.106000
+
+---------Added new job---------
+Parent Job:
+Job 36711221
+	Status: Waiting
+	Runtime: 0.080000
+
+New job:
+Job 29565185
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 19193244
+	Status: Waiting
+	Runtime: 0.054000
+
+New job:
+Job 78672825
+	Status: Waiting
+	Runtime: 0.229000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 54020109
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 73490568
+	Status: Waiting
+	Runtime: 0.085000
+Job 17544439
+	Status: Waiting
+	Runtime: 0.076000
+
+New job:
+Job 73490568
+	Status: Waiting
+	Runtime: 0.085000
+
+---------Added new job---------
+Parent Job:
+Job 56886360
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 28707910
+	Status: Waiting
+	Runtime: 0.153000
+
+---------Added new job---------
+Parent Job:
+Job 94866820
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 28707910
+	Status: Waiting
+	Runtime: 0.153000
+
+---------Added new job---------
+Parent Job:
+Job 95605997
+	Status: Waiting
+	Runtime: 0.042000
+
+New job:
+Job 74125064
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 35971395
+	Status: Waiting
+	Runtime: 0.077000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 66303734
+	Status: Waiting
+	Runtime: 0.130000
+
+New job:
+Job 49190295
+	Status: Waiting
+	Runtime: 0.171000
+Job 0
+	Status: Waiting
+	Runtime: 0.171000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 65443911
+	Status: Waiting
+	Runtime: 0.096000
+
+New job:
+Job 12185558
+	Status: Waiting
+	Runtime: 0.179000
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 12185558
+	Status: Waiting
+	Runtime: 0.179000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 25156568
+	Status: Waiting
+	Runtime: 0.248000
+
+---------Added new job---------
+Parent Job:
+Job 50497824
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 88628396
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+Job 73598860
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.200000
+
+New job:
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 11451699
+Job 85188582
+	Status: Waiting
+	Runtime: 0.202000
+
+New job:
+Job 85188582
+	Status: Waiting
+	Runtime: 0.111000
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+Job 98608662
+	Status: Waiting
+	Runtime: 0.027000
+
+New job:
+Job 306118
+	Status: Waiting
+	Runtime: 0.042000
+
+---------Added new job---------
+Parent Job:
+Job 52812262
+	Status: Waiting
+	Runtime: 0.085000
+
+New job:
+Job 88279350
+	Status: Waiting
+	Runtime: 0.043000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 56437517
+	Status: Waiting
+	Runtime: 0.122000
+Job 8394580
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 56437517
+	Status: Waiting
+	Runtime: 0.122000
+
+---------Added new job---------
+Parent Job:
+Job 3046385
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 52724225
+	Status: Waiting
+	Runtime: 0.006000
+
+---------Added new job---------
+Parent Job:
+Job 57765211
+	Status: Waiting
+	Runtime: 0.007000
+
+New job:
+Job 52724225
+	Status: Waiting
+	Runtime: 0.006000
+
+---------Added new job---------
+Parent Job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 16806754
+
+---------Added new job---------
+	Status: Waiting
+	Runtime: 0.223000
+
+New job:
+Job 9046902
+	Status: Waiting
+	Runtime: 0.044000
+Parent Job:
+Job 75804998
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 43321659
+	Status: Waiting
+	Runtime: 0.044000
+
+---------Added new job---------
+Parent Job:
+Job 24044728
+	Status: Waiting
+	Runtime: 0.051000
+
+New job:
+Job 39446935
+	Status: Waiting
+	Runtime: 0.071000
+
+---------Added new job---------
+Parent Job:
+Job 3557982
+	Status: Waiting
+	Runtime: 0.029000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 46356631
+	Status: Waiting
+	Runtime: 0.063000
+
+New job:
+Job 17159333
+	Status: Waiting
+	Runtime: 0.041000
+
+---------Added new job---------
+Parent Job:
+Job 95998255
+	Status: Waiting
+	Runtime: 0.004000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 18757072
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+Job 51514454
+	Status: Waiting
+	Runtime: 0.054000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 15502023
+Job 0
+	Status: Waiting
+	Status: Waiting
+Job 92694416
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+	Runtime: 0.051000
+Job 14286862
+	Status: Waiting
+	Runtime: 0.227000
+
+New job:
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 98495707
+	Status: Waiting
+	Runtime: 0.131000
+
+New job:
+Job 3154735
+	Status: Waiting
+	Runtime: 0.094000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 97041892
+	Status: Waiting
+	Runtime: 0.232000
+
+---------Added new job---------
+Parent Job:
+Job 54020109
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 45162913
+	Status: Waiting
+	Runtime: 0.086000
+
+---------Added new job---------
+Parent Job:
+Job 26630502
+	Status: Waiting
+	Runtime: 0.173000
+
+New job:
+Job 41581111
+	Status: Waiting
+	Runtime: 0.036000
+
+---------Added new job---------
+Parent Job:
+Job 98608662
+	Status: Waiting
+	Runtime: 0.027000
+
+New job:
+Job 39658525
+	Status: Waiting
+	Runtime: 0.179000
+
+---------Added new job---------
+Parent Job:
+Job 79010179
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 88384728
+	Status: Waiting
+	Runtime: 0.097000
+Job 89077818
+
+New job:
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 78220713
+	Status: Waiting
+	Runtime: 0.136000
+Job 78220713
+	Status: Waiting
+	Runtime: 0.136000
+
+---------Added new job---------
+Parent Job:
+Job 56933944
+	Status: Waiting
+	Runtime: 0.162000
+
+New job:
+Job 30915535
+	Status: Waiting
+	Runtime: 0.101000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 27790995
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 81829418
+	Status: Waiting
+	Runtime: 0.163000
+Job 48571389
+	Status: Waiting
+	Runtime: 0.183000
+
+New job:
+Job 81829418
+	Status: Waiting
+	Runtime: 0.163000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 81829418
+	Status: Waiting
+	Runtime: 0.163000
+
+---------Added new job---------
+Parent Job:
+Job 79928783
+	Status: Waiting
+	Runtime: 0.087000
+
+New job:
+Job 14098505
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+Job 2356739
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+
+New job:
+Parent Job:
+Job 16377293
+	Status: Waiting
+	Runtime: 0.006000
+
+New job:
+Job 68741495
+	Status: Waiting
+	Runtime: 0.244000
+Job 68741495
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 90104879
+	Status: Waiting
+	Runtime: 0.019000
+
+New job:
+Job 53056338
+	Status: Waiting
+	Runtime: 0.012000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 69283581
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 27024982
+	Status: Waiting
+	Runtime: 0.230000
+
+New job:
+Job 22598
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 31425157
+Parent Job:
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 94179703
+	Status: Waiting
+	Runtime: 0.018000
+Job 8158738
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 94179703
+	Status: Waiting
+	Runtime: 0.018000
+
+---------Added new job---------
+Parent Job:
+Job 30249600
+	Status: Waiting
+	Runtime: 0.028000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 62151251
+	Status: Waiting
+	Runtime: 0.069000
+
+New job:
+Job 69384702
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 69316133
+	Status: Waiting
+	Runtime: 0.153000
+Job 4392031
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+Job 69316133
+	Status: Waiting
+	Runtime: 0.153000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 2355760
+	Status: Waiting
+Parent Job:
+	Runtime: 0.054000
+
+New job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 86958640
+	Status: Waiting
+	Runtime: 0.093000
+
+New job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+Job 43814039
+	Status: Waiting
+	Runtime: 0.213000
+
+New job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+
+---------Added new job---------
+Parent Job:
+Job 17544439
+	Status: Waiting
+	Runtime: 0.076000
+
+New job:
+Job 90173080
+	Status: Waiting
+	Runtime: 0.223000
+
+---------Added new job---------
+Parent Job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 20555236
+	Status: Waiting
+	Runtime: 0.020000
+
+---------Added new job---------
+Parent Job:
+Job 99730149
+	Status: Waiting
+	Runtime: 0.138000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 46276675
+	Status: Waiting
+	Runtime: 0.070000
+Job 94179703
+	Status: Waiting
+	Runtime: 0.115000
+
+New job:
+Job 46276675
+	Status: Waiting
+	Runtime: 0.070000
+
+---------Added new job---------
+Parent Job:
+Job 36922389
+	Status: Waiting
+	Runtime: 0.167000
+
+New job:
+Job 84077512
+	Status: Waiting
+	Runtime: 0.005000
+
+---------Added new job---------
+Parent Job:
+Job 8799528
+	Status: Waiting
+	Runtime: 0.243000
+
+New job:
+Job 45733660
+	Status: Waiting
+	Runtime: 0.090000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 93714589
+	Status: Waiting
+	Runtime: 0.055000
+
+New job:
+Job 87360093
+Job 44200186
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.236000
+
+New job:
+Job 87360093
+	Status: Waiting
+	Runtime: 0.163000
+	Runtime: 0.163000
+
+---------Added new job---------
+Parent Job:
+Job 86358253
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 68044933
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 68193801
+	Status: Waiting
+	Runtime: 0.105000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 94866820
+	Status: Waiting
+	Runtime: 0.209000
+
+New job:
+Job 94067811
+	Status: Waiting
+	Runtime: 0.042000
+
+---------Added new job---------
+Parent Job:
+Job 77202937
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+Job 71771729
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 22598
+	Status: Waiting
+	Runtime: 0.114000
+
+New job:
+Job 10367811
+	Status: Waiting
+	Runtime: 0.215000
+
+---------Added new job---------
+Parent Job:
+Job 10541388
+	Status: Waiting
+	Runtime: 0.039000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 65670779
+	Status: Waiting
+	Runtime: 0.224000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 65670779
+	Status: Waiting
+	Runtime: 0.224000
+
+---------Added new job---------
+Parent Job:
+Job 33568889
+	Status: Waiting
+	Runtime: 0.120000
+
+New job:
+Job 22541995
+	Status: Waiting
+
+---------Added new job---------
+Parent Job:
+	Runtime: 0.130000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 22541995
+	Status: Waiting
+	Runtime: 0.130000
+
+---------Added new job---------
+Parent Job:
+Job 33766401
+	Status: Waiting
+	Runtime: 0.244000
+
+New job:
+Job 84726426
+	Status: Waiting
+	Runtime: 0.078000
+
+---------Added new job---------
+Parent Job:
+Job 66303734
+	Status: Waiting
+	Runtime: 0.130000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 14659750
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+
+New job:
+Parent Job:
+Job 71771729
+	Status: Waiting
+	Runtime: 0.079000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 92347541
+	Status: Waiting
+	Runtime: 0.091000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 57363395
+	Status: Waiting
+	Runtime: 0.050000
+
+New job:
+Job 38214342
+	Status: Waiting
+	Runtime: 0.048000
+
+---------Added new job---------
+Parent Job:
+Job 33387941
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 16151803
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 51547041
+	Status: Waiting
+	Runtime: 0.134000
+
+New job:
+Job 16151803
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 66536901
+	Status: Waiting
+	Runtime: 0.193000
+Job 70885132
+
+New job:
+	Status: Waiting
+	Runtime: 0.078000
+
+New job:
+Job 44353062
+	Status: Waiting
+	Runtime: 0.108000
+Job 44353062
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 58712225
+	Status: Waiting
+	Runtime: 0.109000
+
+New job:
+Job 28561083
+	Status: Waiting
+	Runtime: 0.018000
+
+---------Added new job---------
+Parent Job:
+Job 36978649
+	Status: Waiting
+	Runtime: 0.222000
+
+New job:
+Job 12312550
+	Status: Waiting
+	Runtime: 0.184000
+
+---------Added new job---------
+Parent Job:
+Job 64809337
+	Status: Waiting
+	Runtime: 0.177000
+
+---------Added new job---------
+
+New job:
+Parent Job:
+Job 35520091
+	Status: Waiting
+	Runtime: 0.161000
+Job 52812262
+	Status: Waiting
+	Runtime: 0.085000
+
+New job:
+Job 35520091
+	Status: Waiting
+	Runtime: 0.161000
+
+---------Added new job---------
+Parent Job:
+Job 17883613
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 22556708
+	Status: Waiting
+	Runtime: 0.167000
+
+---------Added new job---------
+Parent Job:
+Job 67889384
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 72426518
+	Status: Waiting
+	Runtime: 0.061000
+
+---------Added new job---------
+Parent Job:
+Job 23928840
+	Status: Waiting
+	Runtime: 0.077000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 54517818
+	Status: Waiting
+	Runtime: 0.157000
+Job 51547041
+	Status: Waiting
+	Runtime: 0.134000
+
+New job:
+Job 54517818
+	Status: Waiting
+	Runtime: 0.157000
+
+---------Added new job---------
+Parent Job:
+Job 41881328
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 60119691
+	Status: Waiting
+	Runtime: 0.155000
+
+---------Added new job---------
+Parent Job:
+Job 63819311
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 66748078
+	Status: Waiting
+	Runtime: 0.044000
+
+---------Added new job---------
+Parent Job:
+Job 45484971
+	Status: Waiting
+	Runtime: 0.201000
+
+New job:
+Job 19820752
+	Status: Waiting
+	Runtime: 0.054000
+
+---------Added new job---------
+Parent Job:
+Job 64809337
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 22805979
+	Status: Waiting
+	Runtime: 0.020000
+
+New job:
+Job 45719544
+	Status: Waiting
+	Runtime: 0.061000
+
+---------Added new job---------
+Parent Job:
+Job 35328707
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 29905525
+	Status: Waiting
+	Runtime: 0.071000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 76947972
+	Status: Waiting
+	Runtime: 0.142000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 53811448
+	Status: Waiting
+	Runtime: 0.188000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 89482833
+	Status: Waiting
+	Runtime: 0.141000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 67889384
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 33387941
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 74125064
+	Status: Waiting
+	Runtime: 0.050000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.243000
+Job 40955144
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 50268236
+	Status: Waiting
+	Runtime: 0.243000
+
+---------Added new job---------
+Parent Job:
+Job 85308479
+	Status: Waiting
+	Runtime: 0.137000
+
+New job:
+Job 93934199
+	Status: Waiting
+	Runtime: 0.237000
+
+---------Added new job---------
+Parent Job:
+Job 41220462
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 93934199
+	Status: Waiting
+	Runtime: 0.237000
+
+---------Added new job---------
+Parent Job:
+Job 94570884
+	Status: Waiting
+	Runtime: 0.134000
+
+New job:
+Job 28490543
+	Status: Waiting
+	Runtime: 0.058000
+
+---------Added new job---------
+Parent Job:
+Job 89055591
+	Status: Waiting
+	Runtime: 0.216000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 17828478
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+Job 39390530
+	Status: Waiting
+	Runtime: 0.060000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 72976034
+	Status: Waiting
+	Runtime: 0.135000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 13894529
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 54841174
+	Status: Waiting
+	Runtime: 0.250000
+
+---------Added new job---------
+Parent Job:
+Job 28589001
+	Status: Waiting
+	Runtime: 0.018000
+
+New job:
+Job 54676889
+	Status: Waiting
+	Runtime: 0.176000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 99688184
+	Status: Waiting
+	Runtime: 0.003000
+
+New job:
+Job 47692502
+	Status: Waiting
+	Runtime: 0.021000
+Job 77866808
+	Status: Waiting
+	Runtime: 0.182000
+
+New job:
+Job 47692502
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 26663489
+	Status: Waiting
+	Runtime: 0.158000
+
+New job:
+Job 78394514
+	Status: Waiting
+	Runtime: 0.103000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 96253251
+	Status: Waiting
+	Runtime: 0.149000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 19376623
+	Status: Waiting
+	Runtime: 0.098000
+Job 26782829
+
+New job:
+	Status: Waiting
+	Runtime: 0.198000
+Job 6167484
+
+New job:
+	Status: Waiting
+	Runtime: 0.234000
+Job 6167484
+	Status: Waiting
+	Runtime: 0.234000
+
+---------Added new job---------
+Parent Job:
+Job 63556557
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 2095154
+	Status: Waiting
+	Runtime: 0.046000
+
+---------Added new job---------
+Parent Job:
+Job 17484889
+	Status: Waiting
+	Runtime: 0.072000
+
+New job:
+Job 15138983
+	Status: Waiting
+	Runtime: 0.069000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 38524491
+Parent Job:
+	Status: Waiting
+	Runtime: 0.242000
+
+New job:
+Job 11119611
+	Status: Waiting
+	Runtime: 0.072000
+Job 6119747
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 11119611
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+Parent Job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 53734139
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 36978649
+	Status: Waiting
+	Runtime: 0.222000
+
+New job:
+Job 80446175
+	Status: Waiting
+	Runtime: 0.156000
+
+---------Added new job---------
+Parent Job:
+Job 17828478
+	Status: Waiting
+	Runtime: 0.234000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 40832767
+	Status: Waiting
+	Runtime: 0.054000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 40832767
+	Status: Waiting
+	Runtime: 0.054000
+
+---------Added new job---------
+Parent Job:
+Job 30690565
+	Status: Waiting
+	Runtime: 0.214000
+
+New job:
+Job 31919289
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 91552569
+	Status: Waiting
+	Runtime: 0.139000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 50147542
+	Status: Waiting
+	Runtime: 0.129000
+Job 86044345
+	Status: Waiting
+	Runtime: 0.062000
+
+New job:
+Job 50147542
+	Status: Waiting
+	Runtime: 0.129000
+
+---------Added new job---------
+Parent Job:
+Job 39866384
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 99009684
+	Status: Waiting
+	Runtime: 0.192000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 58418588
+	Status: Waiting
+	Runtime: 0.117000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 92979038
+	Status: Waiting
+	Runtime: 0.107000
+
+New job:
+Job 42422163
+	Status: Waiting
+	Runtime: 0.156000
+
+---------Added new job---------
+Parent Job:
+Job 92694416
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+Job 19529883
+	Status: Waiting
+	Runtime: 0.050000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 76700064
+	Status: Waiting
+	Runtime: 0.177000
+
+---------Added new job---------
+Parent Job:
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 47320171
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 53610754
+	Status: Waiting
+	Runtime: 0.085000
+
+---------Added new job---------
+Parent Job:
+Job 23479254
+	Status: Waiting
+	Runtime: 0.043000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 86586919
+	Status: Waiting
+	Runtime: 0.083000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 37376726
+	Status: Waiting
+	Runtime: 0.189000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 66889700
+	Status: Waiting
+	Runtime: 0.100000
+
+New job:
+Job 85461462
+	Status: Waiting
+	Runtime: 0.216000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 2459400
+	Status: Waiting
+	Runtime: 0.189000
+
+---------Added new job---------
+Parent Job:
+Job 87059829
+	Status: Waiting
+	Runtime: 0.238000
+
+New job:
+Job 83728813
+	Status: Waiting
+	Runtime: 0.169000
+
+---------Added new job---------
+Parent Job:
+Job 35520091
+	Status: Waiting
+	Runtime: 0.161000
+
+New job:
+Job 83728813
+	Status: Waiting
+	Runtime: 0.169000
+
+---------Added new job---------
+Parent Job:
+Job 12563146
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 10365059
+	Status: Waiting
+	Runtime: 0.071000
+
+---------Added new job---------
+Parent Job:
+Job 6119747
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 95692103
+	Status: Waiting
+	Runtime: 0.174000
+
+New job:
+Job 46852651
+	Status: Waiting
+	Runtime: 0.039000
+
+---------Added new job---------
+Parent Job:
+Job 61258524
+	Status: Waiting
+	Runtime: 0.017000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 98500069
+	Status: Waiting
+	Runtime: 0.041000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 88617318
+	Status: Waiting
+	Runtime: 0.165000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 73042631
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 94687877
+	Status: Waiting
+	Runtime: 0.018000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 28589001
+	Status: Waiting
+	Runtime: 0.018000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 70443670
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 62963010
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+Job 71771729
+	Status: Waiting
+	Runtime: 0.079000
+
+New job:
+Job 62963010
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+Job 14358362
+	Status: Waiting
+	Runtime: 0.016000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 67762629
+	Status: Waiting
+	Runtime: 0.158000
+Job 44132648
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 67762629
+	Status: Waiting
+	Runtime: 0.158000
+
+---------Added new job---------
+Parent Job:
+Job 27889516
+	Status: Waiting
+	Runtime: 0.065000
+
+New job:
+Job 66889900
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+Job 91283906
+	Status: Waiting
+	Runtime: 0.144000
+
+New job:
+Job 54738127
+	Status: Waiting
+	Runtime: 0.016000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 72760784
+	Status: Waiting
+	Runtime: 0.203000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 14281495
+	Status: Waiting
+	Runtime: 0.079000
+
+New job:
+Job 14281495
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 21788930
+	Status: Waiting
+	Runtime: 0.010000
+
+New job:
+Job 56144483
+	Status: Waiting
+	Runtime: 0.115000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 14281495
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 2164272
+	Status: Waiting
+	Runtime: 0.059000
+
+---------Added new job---------
+Parent Job:
+Job 14449135
+	Status: Waiting
+	Runtime: 0.175000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 76218285
+	Status: Waiting
+	Runtime: 0.087000
+Job 80798879
+	Status: Waiting
+	Runtime: 0.174000
+
+New job:
+Job 76218285
+	Status: Waiting
+	Runtime: 0.087000
+
+---------Added new job---------
+Parent Job:
+Job 92492531
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 51882272
+	Status: Waiting
+	Runtime: 0.194000
+
+---------Added new job---------
+Parent Job:
+Job 41674380
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 88226290
+	Status: Waiting
+	Runtime: 0.156000
+
+---------Added new job---------
+Parent Job:
+Job 23479254
+	Status: Waiting
+
+---------Added new job---------
+	Runtime: 0.043000
+
+New job:
+Job 43539000
+	Status: Waiting
+	Runtime: 0.179000
+Parent Job:
+Job 92492531
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 43539000
+	Status: Waiting
+	Runtime: 0.179000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 64208896
+	Status: Waiting
+	Runtime: 0.086000
+
+---------Added new job---------
+Parent Job:
+Job 56761582
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 32817298
+	Status: Waiting
+	Runtime: 0.100000
+
+---------Added new job---------
+Parent Job:
+Job 52273670
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 32817298
+	Status: Waiting
+	Runtime: 0.100000
+
+---------Added new job---------
+Parent Job:
+Job 69283581
+	Status: Waiting
+	Runtime: 0.226000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 98495707
+	Status: Waiting
+	Runtime: 0.131000
+
+New job:
+Job 41630537
+	Status: Waiting
+	Runtime: 0.109000
+
+---------Added new job---------
+Parent Job:
+Job 40548780
+	Status: Waiting
+	Runtime: 0.101000
+
+New job:
+Job 56833470
+	Status: Waiting
+	Runtime: 0.020000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 73598860
+	Status: Waiting
+	Runtime: 0.200000
+
+New job:
+Job 38897056
+	Status: Waiting
+	Runtime: 0.204000
+
+New job:
+Job 0
+	Status: Waiting
+Job 0
+	Runtime: 0.000000
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 98182113
+	Status: Waiting
+	Runtime: 0.155000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 67394342
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 85943537
+	Status: Waiting
+	Runtime: 0.092000
+
+New job:
+
+---------Added new job---------
+Job 99316664
+	Status: Waiting
+	Runtime: 0.042000
+Parent Job:
+Job 99316664
+Job 14659750
+	Status: Waiting
+	Runtime: 0.042000
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+Job 99316664
+	Status: Waiting
+	Runtime: 0.042000
+
+---------Added new job---------
+Parent Job:
+Job 87738663
+	Status: Waiting
+	Runtime: 0.015000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 82815380
+	Status: Waiting
+	Runtime: 0.038000
+
+New job:
+Job 96455825
+	Status: Waiting
+	Runtime: 0.183000
+
+---------Added new job---------
+Parent Job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 59853430
+	Status: Waiting
+	Runtime: 0.011000
+
+---------Added new job---------
+Parent Job:
+Job 94956528
+	Status: Waiting
+	Runtime: 0.097000
+
+New job:
+Job 59853430
+	Status: Waiting
+	Runtime: 0.011000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 87550250
+	Status: Waiting
+	Runtime: 0.239000
+
+New job:
+Job 93765107
+	Status: Waiting
+	Runtime: 0.184000
+
+---------Added new job---------
+Parent Job:
+Job 46012594
+	Status: Waiting
+	Runtime: 0.021000
+
+New job:
+Job 99062855
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+Job 8802738
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 96612152
+	Status: Waiting
+	Runtime: 0.074000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 89032054
+	Status: Waiting
+	Runtime: 0.219000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 43030082
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 71144399
+	Status: Waiting
+	Runtime: 0.075000
+
+---------Added new job---------
+Parent Job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 44132648
+	Status: Waiting
+	Runtime: 0.191000
+
+New job:
+Job 66905622
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 5725572
+	Status: Waiting
+	Runtime: 0.201000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 58203508
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 92796237
+	Status: Waiting
+	Runtime: 0.013000
+
+---------Added new job---------
+Parent Job:
+Job 91078874
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 43389023
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 32740154
+	Status: Waiting
+	Runtime: 0.216000
+Job 32740154
+	Status: Waiting
+	Runtime: 0.216000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 11565204
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 77840369
+	Status: Waiting
+	Runtime: 0.195000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 90104879
+Job 41881328
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.000000
+	Runtime: 0.019000
+
+New job:
+Job 10681916
+	Status: Waiting
+	Runtime: 0.224000
+
+New job:
+Job 10681916
+	Status: Waiting
+	Runtime: 0.224000
+
+---------Added new job---------
+Parent Job:
+Job 92861401
+	Status: Waiting
+	Runtime: 0.166000
+
+New job:
+Job 89842523
+	Status: Waiting
+	Runtime: 0.214000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 31145071
+	Status: Waiting
+	Runtime: 0.062000
+
+New job:
+Job 6225722
+Job 74989483
+	Status: Waiting
+	Runtime: 0.066000
+	Status: Waiting
+	Runtime: 0.029000
+
+New job:
+Job 74989483
+	Status: Waiting
+	Runtime: 0.066000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 63401770
+	Status: Waiting
+	Runtime: 0.160000
+
+New job:
+Job 70564747
+	Status: Waiting
+	Runtime: 0.094000
+Job 84077512
+	Status: Waiting
+	Runtime: 0.005000
+
+New job:
+Job 70564747
+	Status: Waiting
+	Runtime: 0.094000
+
+---------Added new job---------
+Parent Job:
+Job 52273670
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 61515999
+	Status: Waiting
+	Runtime: 0.145000
+
+---------Added new job---------
+Parent Job:
+Job 70901265
+	Status: Waiting
+	Runtime: 0.019000
+
+New job:
+Job 51085949
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 51085949
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 32966723
+	Status: Waiting
+	Runtime: 0.180000
+
+New job:
+Job 55989817
+	Status: Waiting
+	Runtime: 0.055000
+
+---------Added new job---------
+Parent Job:
+Job 26685963
+	Status: Waiting
+	Runtime: 0.121000
+
+New job:
+Job 86185204
+	Status: Waiting
+	Runtime: 0.187000
+
+---------Added new job---------
+Parent Job:
+Job 35360330
+	Status: Waiting
+	Runtime: 0.108000
+
+New job:
+Job 96578140
+	Status: Waiting
+	Runtime: 0.088000
+
+---------Added new job---------
+Parent Job:
+Job 23937394
+	Status: Waiting
+	Runtime: 0.064000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 99730209
+	Status: Waiting
+	Runtime: 0.138000
+Job 14600748
+	Status: Waiting
+	Runtime: 0.165000
+
+New job:
+Job 99730209
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 5726526
+	Status: Waiting
+	Runtime: 0.099000
+
+New job:
+Job 47203838
+	Status: Waiting
+	Runtime: 0.105000
+
+---------Added new job---------
+Parent Job:
+Job 13904130
+	Status: Waiting
+
+---------Added new job---------
+	Runtime: 0.015000
+
+New job:
+Job 31552096
+	Status: Waiting
+	Runtime: 0.217000
+Parent Job:
+Job 48410319
+	Status: Waiting
+	Runtime: 0.030000
+
+New job:
+Job 31552096
+	Status: Waiting
+	Runtime: 0.217000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 29578426
+Parent Job:
+	Status: Waiting
+	Runtime: 0.008000
+
+New job:
+Job 96451338
+	Status: Waiting
+	Runtime: 0.133000
+Job 66260003
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 85945121
+Job 96451338
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 96451338
+	Status: Waiting
+	Runtime: 0.133000
+	Status: Waiting
+	Runtime: 0.133000
+
+---------Added new job---------
+Parent Job:
+Job 73162188
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 71243245
+	Status: Waiting
+	Runtime: 0.064000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 9739532
+Job 56833470
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.099000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 15003546
+	Status: Waiting
+	Runtime: 0.091000
+	Runtime: 0.217000
+Job 79336613
+	Status: Waiting
+
+New job:
+	Runtime: 0.244000
+Job 15003546
+
+New job:
+	Status: Waiting
+	Runtime: 0.091000
+Job 15003546
+	Status: Waiting
+	Runtime: 0.091000
+
+---------Added new job---------
+Parent Job:
+Job 58712225
+	Status: Waiting
+	Runtime: 0.109000
+
+New job:
+Job 24056516
+	Status: Waiting
+	Runtime: 0.246000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 76253819
+	Status: Waiting
+	Runtime: 0.067000
+
+New job:
+Job 99316664
+Job 26318680
+	Status: Waiting
+	Runtime: 0.042000
+
+New job:
+Job 26318680
+	Status: Waiting
+	Runtime: 0.198000
+	Status: Waiting
+	Runtime: 0.198000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 15003546
+Job 50307067
+	Status: Waiting
+	Runtime: 0.091000
+
+New job:
+Job 50307067
+	Status: Waiting
+	Runtime: 0.234000
+	Status: Waiting
+	Runtime: 0.234000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 40840711
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 40840711
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 76725878
+	Status: Waiting
+	Runtime: 0.188000
+
+New job:
+Job 76552692
+	Status: Waiting
+	Runtime: 0.121000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 66037368
+	Status: Waiting
+	Runtime: 0.243000
+
+---------Added new job---------
+Parent Job:
+Job 87042872
+	Status: Waiting
+	Runtime: 0.185000
+
+New job:
+Job 43511844
+	Status: Waiting
+	Runtime: 0.003000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 37726816
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 74125064
+	Status: Waiting
+	Runtime: 0.050000
+
+New job:
+Job 83505132
+	Status: Waiting
+	Runtime: 0.038000
+Job 83505132
+	Status: Waiting
+	Runtime: 0.038000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 76133916
+	Status: Waiting
+	Runtime: 0.226000
+
+---------Added new job---------
+Parent Job:
+Job 70280296
+	Status: Waiting
+	Runtime: 0.003000
+
+New job:
+Job 37655340
+	Status: Waiting
+	Runtime: 0.157000
+
+---------Added new job---------
+Parent Job:
+Job 54111708
+
+---------Added new job---------
+	Status: Waiting
+Parent Job:
+	Runtime: 0.184000
+
+New job:
+Job 26039968
+	Status: Waiting
+	Runtime: 0.045000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 26039968
+	Status: Waiting
+	Runtime: 0.045000
+
+---------Added new job---------
+Parent Job:
+Job 63411523
+	Status: Waiting
+	Runtime: 0.038000
+
+New job:
+Job 77376530
+	Status: Waiting
+	Runtime: 0.060000
+
+---------Added new job---------
+Parent Job:
+Job 48571389
+	Status: Waiting
+	Runtime: 0.183000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 12693336
+	Status: Waiting
+	Runtime: 0.223000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 21093002
+	Status: Waiting
+	Runtime: 0.009000
+Job 21093002
+	Status: Waiting
+	Runtime: 0.009000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 99739338
+	Status: Waiting
+	Runtime: 0.202000
+
+---------Added new job---------
+Parent Job:
+Job 14659750
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+Job 64672747
+	Status: Waiting
+	Runtime: 0.201000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 53056338
+	Status: Waiting
+	Runtime: 0.012000
+
+New job:
+Job 71119721
+	Status: Waiting
+	Runtime: 0.111000
+Job 19209756
+	Status: Waiting
+	Runtime: 0.085000
+
+New job:
+Job 71119721
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+Job 12312550
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 16985753
+	Status: Waiting
+	Runtime: 0.233000
+
+---------Added new job---------
+Parent Job:
+Job 35971395
+	Status: Waiting
+	Runtime: 0.077000
+
+New job:
+Job 17242969
+	Status: Waiting
+	Runtime: 0.233000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 97844095
+	Status: Waiting
+	Runtime: 0.114000
+
+---------Added new job---------
+Parent Job:
+Job 63333958
+	Status: Waiting
+	Runtime: 0.075000
+
+New job:
+Job 23667478
+	Status: Waiting
+	Runtime: 0.222000
+
+---------Added new job---------
+Parent Job:
+Job 76805282
+	Status: Waiting
+	Runtime: 0.126000
+
+New job:
+Job 80310138
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 23008010
+	Status: Waiting
+	Runtime: 0.214000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 39866384
+	Status: Waiting
+	Runtime: 0.001000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 319220
+	Status: Waiting
+	Runtime: 0.062000
+Job 85308479
+	Status: Waiting
+	Runtime: 0.137000
+
+New job:
+Job 319220
+	Status: Waiting
+	Runtime: 0.062000
+
+---------Added new job---------
+Parent Job:
+Job 29113717
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 16797049
+	Status: Waiting
+	Runtime: 0.130000
+Job 42422163
+	Status: Waiting
+	Runtime: 0.156000
+
+New job:
+Job 16797049
+	Status: Waiting
+	Runtime: 0.130000
+
+---------Added new job---------
+Parent Job:
+Job 37375267
+	Status: Waiting
+	Runtime: 0.049000
+
+New job:
+Job 11331923
+	Status: Waiting
+	Runtime: 0.111000
+
+---------Added new job---------
+Parent Job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 73228324
+	Status: Waiting
+	Runtime: 0.244000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+
+New job:
+Parent Job:
+Job 17605298
+	Status: Waiting
+	Runtime: 0.164000
+Job 21093002
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+Job 17605298
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 21254128
+	Status: Waiting
+	Runtime: 0.201000
+
+---------Added new job---------
+Parent Job:
+Job 83505132
+	Status: Waiting
+	Runtime: 0.038000
+
+New job:
+Job 71997233
+	Status: Waiting
+	Runtime: 0.140000
+
+---------Added new job---------
+Parent Job:
+Job 31552096
+	Status: Waiting
+	Runtime: 0.217000
+
+New job:
+Job 55298683
+	Status: Waiting
+	Runtime: 0.036000
+
+---------Added new job---------
+Parent Job:
+Job 96578140
+	Status: Waiting
+	Runtime: 0.155000
+
+New job:
+Job 55298683
+	Status: Waiting
+	Runtime: 0.036000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 83487242
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 165751
+	Status: Waiting
+	Runtime: 0.164000
+
+---------Added new job---------
+Parent Job:
+Job 14916988
+	Status: Waiting
+	Runtime: 0.177000
+
+New job:
+Job 18299857
+	Status: Waiting
+	Runtime: 0.122000
+
+---------Added new job---------
+Parent Job:
+Job 85943537
+	Status: Waiting
+	Runtime: 0.092000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 13994182
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 26689870
+	Status: Waiting
+	Runtime: 0.076000
+
+---------Added new job---------
+Parent Job:
+Job 56833470
+	Status: Waiting
+	Runtime: 0.099000
+
+New job:
+Job 1792204
+	Status: Waiting
+	Runtime: 0.071000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 85188582
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+Job 78128057
+	Status: Waiting
+	Runtime: 0.152000
+Job 78128057
+	Status: Waiting
+	Runtime: 0.152000
+
+---------Added new job---------
+Parent Job:
+Job 52812262
+	Status: Waiting
+	Runtime: 0.085000
+
+New job:
+Job 7118734
+	Status: Waiting
+	Runtime: 0.106000
+
+---------Added new job---------
+Parent Job:
+Job 35511725
+	Status: Waiting
+	Runtime: 0.222000
+
+New job:
+Job 76721716
+	Status: Waiting
+	Runtime: 0.085000
+
+---------Added new job---------
+Parent Job:
+Job 13894529
+	Status: Waiting
+	Runtime: 0.225000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 82698258
+	Status: Waiting
+	Runtime: 0.241000
+Job 68193801
+	Status: Waiting
+	Runtime: 0.105000
+
+New job:
+Job 82698258
+	Status: Waiting
+	Runtime: 0.241000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 24477318
+	Status: Waiting
+	Runtime: 0.048000
+
+---------Added new job---------
+Parent Job:
+Job 26009930
+	Status: Waiting
+	Runtime: 0.111000
+
+New job:
+Job 1206947
+	Status: Waiting
+	Runtime: 0.245000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 85982143
+	Status: Waiting
+	Runtime: 0.166000
+Job 91678132
+	Status: Waiting
+	Runtime: 0.224000
+
+New job:
+Job 85982143
+	Status: Waiting
+	Runtime: 0.166000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 90173080
+	Status: Waiting
+	Runtime: 0.223000
+Job 0
+
+New job:
+	Status: Waiting
+	Runtime: 0.000000
+Job 7846494
+
+New job:
+	Status: Waiting
+	Runtime: 0.182000
+Job 7846494
+	Status: Waiting
+	Runtime: 0.182000
+
+---------Added new job---------
+Parent Job:
+Job 26689870
+	Status: Waiting
+	Runtime: 0.076000
+
+New job:
+Job 93402242
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 2164272
+	Status: Waiting
+	Runtime: 0.163000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 1185253
+	Status: Waiting
+	Runtime: 0.149000
+
+New job:
+Job 70901265
+Job 39258880
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.179000
+	Runtime: 0.019000
+
+New job:
+Job 39258880
+	Status: Waiting
+	Runtime: 0.179000
+
+---------Added new job---------
+Parent Job:
+Job 22103526
+	Status: Waiting
+	Runtime: 0.238000
+
+New job:
+Job 59576355
+	Status: Waiting
+	Runtime: 0.167000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 58623751
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+Job 56144483
+	Status: Waiting
+	Runtime: 0.115000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 21231031
+	Status: Waiting
+	Runtime: 0.014000
+Job 76725878
+	Status: Waiting
+	Runtime: 0.188000
+
+New job:
+Job 21231031
+	Status: Waiting
+	Runtime: 0.014000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 31843467
+	Status: Waiting
+	Runtime: 0.132000
+
+---------Added new job---------
+Parent Job:
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 55584687
+	Status: Waiting
+	Runtime: 0.008000
+
+---------Added new job---------
+Parent Job:
+Job 28591015
+	Status: Waiting
+	Runtime: 0.066000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 43190693
+	Status: Waiting
+	Runtime: 0.150000
+Job 84870510
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 43190693
+	Status: Waiting
+	Runtime: 0.150000
+
+---------Added new job---------
+Parent Job:
+Job 6616997
+	Status: Waiting
+	Runtime: 0.110000
+
+New job:
+Job 57350886
+	Status: Waiting
+	Runtime: 0.021000
+
+---------Added new job---------
+Parent Job:
+Job 31422410
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 73489015
+	Status: Waiting
+	Runtime: 0.215000
+
+---------Added new job---------
+Parent Job:
+Job 85308479
+	Status: Waiting
+	Runtime: 0.137000
+
+New job:
+Job 24846081
+	Status: Waiting
+	Runtime: 0.202000
+
+---------Added new job---------
+Parent Job:
+Job 95692103
+	Status: Waiting
+	Runtime: 0.174000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 37726816
+	Status: Waiting
+	Runtime: 0.193000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 41881328
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 92036510
+	Status: Waiting
+	Runtime: 0.194000
+
+New job:
+Job 12003113
+	Status: Waiting
+	Runtime: 0.045000
+
+---------Added new job---------
+Parent Job:
+Job 21393797
+	Status: Waiting
+	Runtime: 0.141000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 70901265
+	Status: Waiting
+	Runtime: 0.019000
+
+New job:
+Job 72214243
+	Status: Waiting
+	Runtime: 0.125000
+
+---------Added new job---------
+Parent Job:
+Job 8158738
+	Status: Waiting
+	Runtime: 0.057000
+
+New job:
+Job 79265010
+	Status: Waiting
+	Runtime: 0.012000
+
+---------Added new job---------
+Parent Job:
+Job 12693336
+	Status: Waiting
+	Runtime: 0.223000
+
+---------Added new job---------
+
+New job:
+Parent Job:
+Job 49033458
+	Status: Waiting
+	Runtime: 0.041000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 70276342
+	Status: Waiting
+	Runtime: 0.037000
+
+---------Added new job---------
+Parent Job:
+Job 14655034
+	Status: Waiting
+	Runtime: 0.130000
+
+New job:
+Job 70276342
+	Status: Waiting
+	Runtime: 0.079000
+
+---------Added new job---------
+Parent Job:
+Job 80310138
+	Status: Waiting
+	Runtime: 0.076000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 39390530
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 30061857
+	Status: Waiting
+	Runtime: 0.133000
+Job 26989533
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 30061857
+	Status: Waiting
+	Runtime: 0.133000
+
+---------Added new job---------
+Parent Job:
+Job 6225722
+	Status: Waiting
+	Runtime: 0.029000
+
+New job:
+
+---------Added new job---------
+Parent Job:
+Job 70077833
+	Status: Waiting
+	Runtime: 0.072000
+Job 30108629
+	Status: Waiting
+	Runtime: 0.044000
+
+New job:
+Job 70077833
+	Status: Waiting
+	Runtime: 0.072000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 79928783
+	Status: Waiting
+	Runtime: 0.087000
+
+New job:
+Job 90036339
+	Status: Waiting
+	Runtime: 0.121000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 90036339
+	Status: Waiting
+	Runtime: 0.121000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 17883613
+Job 42422667
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 96778628
+	Status: Waiting
+	Runtime: 0.097000
+	Runtime: 0.023000
+
+New job:
+Job 96778628
+	Status: Waiting
+	Runtime: 0.097000
+
+---------Added new job---------
+Parent Job:
+Job 29905525
+	Status: Waiting
+	Runtime: 0.071000
+
+New job:
+Job 6899912
+	Status: Waiting
+	Runtime: 0.208000
+
+---------Added new job---------
+Parent Job:
+Job 86958640
+	Status: Waiting
+	Runtime: 0.093000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 78809765
+	Status: Waiting
+	Runtime: 0.210000
+
+New job:
+Job 63562817
+	Status: Waiting
+	Runtime: 0.108000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 63562817
+	Status: Waiting
+	Runtime: 0.108000
+
+---------Added new job---------
+Parent Job:
+Job 20645858
+	Status: Waiting
+	Runtime: 0.148000
+
+New job:
+Job 87613282
+	Status: Waiting
+	Runtime: 0.227000
+
+---------Added new job---------
+Parent Job:
+Job 12998962
+	Status: Waiting
+	Runtime: 0.034000
+
+New job:
+Job 26697058
+	Status: Waiting
+	Runtime: 0.137000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 5727419
+	Status: Waiting
+	Runtime: 0.197000
+
+---------Added new job---------
+Parent Job:
+Job 51236359
+	Status: Waiting
+	Runtime: 0.222000
+
+New job:
+Job 5727419
+	Status: Waiting
+	Runtime: 0.197000
+
+---------Added new job---------
+Parent Job:
+Job 22339022
+	Status: Waiting
+	Runtime: 0.224000
+
+New job:
+Job 45041568
+	Status: Waiting
+	Runtime: 0.200000
+
+---------Added new job---------
+Parent Job:
+Job 54020109
+	Status: Waiting
+	Runtime: 0.061000
+
+New job:
+Job 57958682
+	Status: Waiting
+	Runtime: 0.207000
+
+---------Added new job---------
+Parent Job:
+Job 95549330
+	Status: Waiting
+	Runtime: 0.090000
+
+New job:
+Job 43671729
+	Status: Waiting
+	Runtime: 0.239000
+
+---------Added new job---------
+Parent Job:
+Job 17890672
+	Status: Waiting
+	Runtime: 0.047000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 9246931
+	Status: Waiting
+	Runtime: 0.148000
+
+---------Added new job---------
+
+---------Added new job---------
+Parent Job:
+Parent Job:
+Job 6119747
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 16723698
+	Status: Waiting
+	Runtime: 0.242000
+
+---------Added new job---------
+Parent Job:
+Job 54111708
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+	Status: Waiting
+	Runtime: 0.184000
+
+New job:
+Job 16723698
+	Status: Waiting
+	Runtime: 0.202000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Job 42345175
+	Status: Waiting
+	Runtime: 0.048000
+
+New job:
+Parent Job:
+Job 63639089
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 63639089
+	Status: Waiting
+	Runtime: 0.196000
+Job 24157346
+	Status: Waiting
+	Runtime: 0.185000
+
+New job:
+Job 63639089
+	Status: Waiting
+	Runtime: 0.196000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 63639089
+	Status: Waiting
+	Runtime: 0.196000
+
+---------Added new job---------
+Parent Job:
+Job 71997233
+	Status: Waiting
+	Runtime: 0.140000
+
+New job:
+Job 76019162
+	Status: Waiting
+	Runtime: 0.145000
+
+---------Added new job---------
+Parent Job:
+Job 47745109
+	Status: Waiting
+	Runtime: 0.002000
+
+---------Added new job---------
+Parent Job:
+
+New job:
+Job 9261381
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 3046385
+	Status: Waiting
+	Runtime: 0.084000
+
+New job:
+Job 9261381
+	Status: Waiting
+	Runtime: 0.107000
+Job 99609895
+	Status: Waiting
+	Runtime: 0.219000
+
+New job:
+Job 9261381
+	Status: Waiting
+	Runtime: 0.107000
+
+---------Added new job---------
+Parent Job:
+Job 26867673
+	Status: Waiting
+	Runtime: 0.071000
+
+New job:
+Job 38269983
+	Status: Waiting
+	Runtime: 0.204000
+
+---------Added new job---------
+Parent Job:
+Job 7846494
+	Status: Waiting
+	Runtime: 0.182000
+
+New job:
+Job 29235806
+	Status: Waiting
+	Runtime: 0.155000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 17614848
+	Status: Waiting
+	Runtime: 0.113000
+
+New job:
+Job 85602081
+	Status: Waiting
+	Runtime: 0.242000
+Job 35417617
+	Status: Waiting
+	Runtime: 0.022000
+
+New job:
+Job 85602081
+	Status: Waiting
+	Runtime: 0.242000
+
+---------Added new job---------
+Parent Job:
+Job 79010179
+	Status: Waiting
+	Runtime: 0.094000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 49136192
+	Status: Waiting
+	Runtime: 0.023000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 3084880
+	Status: Waiting
+	Runtime: 0.206000
+
+---------Added new job---------
+Parent Job:
+Job 16000564
+	Status: Waiting
+	Runtime: 0.060000
+
+New job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Added new job---------
+Parent Job:
+Job 78394514
+	Status: Waiting
+	Runtime: 0.103000
+
+New job:
+Job 43351438
+	Status: Waiting
+	Runtime: 0.195000
+
+---------Added new job---------
+Parent Job:
+Job 2459400
+	Status: Waiting
+	Runtime: 0.189000
+
+New job:
+Job 43351438
+	Status: Waiting
+	Runtime: 0.195000
+
+---------Added new job---------
+Parent Job:
+Job 12563146
+	Status: Waiting
+	Runtime: 0.237000
+
+New job:
+Job 43788276
+	Status: Waiting
+	Runtime: 0.124000
+
+---------Added new job---------
+Parent Job:
+Job 93402242
+	Status: Waiting
+	Runtime: 0.125000
+
+New job:
+Job 44885348
+	Status: Waiting
+	Runtime: 0.130000
+
+---------Added new job---------
+Parent Job:
+
+---------Added new job---------
+Parent Job:
+Job 24056516
+Job 0
+	Status: Waiting
+	Runtime: 0.246000
+
+New job:
+Job 20820539
+	Status: Waiting
+	Runtime: 0.159000
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 20820539
+	Status: Waiting
+	Runtime: 0.159000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 59369910
+	Status: Waiting
+	Runtime: 0.232000
+
+---------Added new job---------
+Parent Job:
+Job 38269983
+	Status: Waiting
+	Runtime: 0.204000
+
+New job:
+Job 33269937
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 70339834
+	Status: Waiting
+	Runtime: 0.082000
+
+New job:
+Job 53752701
+	Status: Waiting
+	Runtime: 0.217000
+
+---------Added new job---------
+Parent Job:
+Job 99531837
+	Status: Waiting
+	Runtime: 0.009000
+
+New job:
+Job 53752701
+	Status: Waiting
+	Runtime: 0.217000
+
+---------Added new job---------
+Parent Job:
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+New job:
+Job 95533674
+	Status: Waiting
+	Runtime: 0.138000
+
+---------Added new job---------
+Parent Job:
+Job 57978705
+	Status: Waiting
+	Rununtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+
+---------Starting new job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+
+---------Completed a job---------
+	Status: Done
+Job 0
+	Status: Done
+	Runtime: 0.000000
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 0
+Job 0
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.000000
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+
+---------Completed a job---------
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 0
+Job 0
+	Status: Waiting
+	Status: Waiting
+	Runtime: 0.000000
+	Runtime: 0.000000
+Job 0
+
+---------Completed a job---------
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+
+---------Starting new job---------
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+
+---------Completed a job---------
+	Status: Done
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+Job 0
+	Status: Waiting
+	Runtime: 0.000000
+	Runtime: 0.000000
+
+---------Completed a job---------
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 0
+	Status: Done
+	Runtime: 0.000000
+
+---------Starting new job---------
+
+---------Starting new job---------
+
+---------Starting new job---------
+Job 8493382
+
+---------Starting new job---------
+Job 8493382
+	Status: Waiting
+	Runtime: 0.000000
+	Status: Waiting
+	Runtime: 0.000000
+Job 8493382
+	Status: Waiting
+	Runtime: 0.000000
+Job 8493382
+	Status: Waiting
+	Runtime: 0.000000
+
+---------Starting new job---------
+Job 8493382
+	Status: OnGoing
+	Runtime: 0.000000
+
+---------Completed a job---------
+Job 8493382
+
+---------Completed a job---------
+	Status: OnGoing
+Job 8493382
+	Status: OnGoing
+	Runtime: 0.000000
+	Runtime: 0.000000
+
+---------Completed a job---Number of producer threads: Number of consumer threads: 

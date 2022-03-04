@@ -18,11 +18,11 @@ Sunanda Mondal - 19CS10060
 #include <fcntl.h>
 #include <dirent.h>
 
-#define MAX_BUFF 100
+#define MAX_BUFF 200
 #define PORT 20001
-#define BLK_SIZE 100
+#define BLK_SIZE 200
 
-#define MAXUSERS 100
+#define MAXUSERS 200
 
 
 int getAllUsers(char **usernames, char **passwords){
