@@ -9,22 +9,23 @@
 #include <time.h>
 #include <signal.h>
 #include <pthread.h>
-#include <semaphore.h>
 
 #define MAXPRODTHREADS 1000
 #define MAXCONSTHREADS 1000
 #define MAXCHILDJOBS 1000
 #define MAXJOBS 1000
 
+
+// Enumerations
 enum Status {Waiting, OnGoing, Done};
 enum Log {Adding, Starting, Completed};
 
 typedef struct node{
     unsigned long jid;
-    struct node *dependantj[MAXCHILDJOBS];
+    struct node **dependantj;
     struct node *parent;
     enum Status status;
-    sem_t mutex;
+    pthread_mutex_t mutex;
     int cntchildjobs;
     int waitingjobs;
 
@@ -33,9 +34,13 @@ typedef struct node{
 } Node;
 
 typedef struct shared_memory{
-    struct node nodeArr[MAXJOBS];
+    Node nodeArr[MAXJOBS];
     Node *head;
     int noOfNodes;
+
+    // Mutex locks in shared memory
+    pthread_mutex_t print;
+    pthread_mutex_t mutex;
 } shared_memory;
 
 // Utility functions
@@ -47,9 +52,10 @@ void print_job(Node n){
     printf("\tRuntime: %f\n", n.jruntime);
 }
 
-void job_logs(enum Log log, Node *parent, Node *child){
-    switch (log)
-    {
+void job_logs(int shmid, enum Log log, Node *parent, Node *child){
+    shared_memory* shmc = (shared_memory*)shmat(shmid,NULL,0);
+    pthread_mutex_lock(&(shmc->print));
+    switch (log){
     case Adding:
         if (parent != NULL && child != NULL){
             printf("\n---------Added new job---------\n");
@@ -57,6 +63,7 @@ void job_logs(enum Log log, Node *parent, Node *child){
             print_job(*parent);
             printf("\nNew job:\n");
             print_job(*child);
+            printf("\n---------------------------------\n");
         }
         else{
             printf("Improper use of job logger");
@@ -67,6 +74,10 @@ void job_logs(enum Log log, Node *parent, Node *child){
         if (parent != NULL){
             printf("\n---------Starting new job---------\n");
             print_job(*parent);
+            printf("\n---------------------------------\n");
+        }
+        else{
+            printf("Improper use of job logger");
         }
         break;
     
@@ -74,12 +85,18 @@ void job_logs(enum Log log, Node *parent, Node *child){
         if (parent != NULL){
             printf("\n---------Completed a job---------\n");
             print_job(*parent);
+            printf("\n---------------------------------\n");
+        }
+        else{
+            printf("Improper use of job logger");
         }
         break;
     
     default:
         break;
     }
+    pthread_mutex_unlock(&(shmc->print));
+    shmdt(shmc);
 }
 
 int generateJID(){
@@ -91,47 +108,57 @@ int generateJID(){
     return x;
 }
 
-void run_job(Node *n){
-    job_logs(Starting, n, NULL);
+void run_job(int shmid, Node *n){
+    job_logs(shmid, Starting, n, NULL);
     n->status = OnGoing;
     sleep(n->jruntime);
-    job_logs(Completed, n, NULL);
+    job_logs(shmid, Completed, n, NULL);
     n->status = Done;
+    if (n->parent){
+        n->parent->waitingjobs--;
+    }
 }
 
-Node create_job(Node *parent){
-    Node n;
-    n.jid = generateJID();
-    n.jruntime = (rand()%251)/1000.0;
-    n.parent = parent;
-    n.status = Waiting;
-    n.cntchildjobs = 0;
-    n.waitingjobs = 0;
-    int sem_job = sem_init(&(n.mutex),1,1);
+void create_job(Node *n, Node *parent){
+    n->jid = generateJID();
+    n->jruntime = (rand()%251)/1000.0;
+    n->dependantj = (Node **)malloc(MAXCHILDJOBS*sizeof(Node *));
+    for (int i=0;i<MAXCHILDJOBS;i++){
+        n->dependantj[i] = NULL;
+    }
+    n->parent = parent;
+    n->status = Waiting;
+    n->cntchildjobs = 0;
+    n->waitingjobs = 0;
+    int sem_job = pthread_mutex_init(&(n->mutex),NULL);
     if (sem_job < 0){
         perror("Could not create semaphore\n");
         exit(1);
     }
-    return n;
-}
-
-void add_job_dependancy(int shmid, Node *parent){
-	shared_memory* shmc = (shared_memory*)shmat(shmid,NULL,0);
-    shmc->nodeArr[shmc->noOfNodes] = create_job(parent);
-    parent->dependantj[parent->cntchildjobs] = &shmc->nodeArr[shmc->noOfNodes];
-    job_logs(Adding, parent, &shmc->nodeArr[shmc->noOfNodes]);
-    parent->cntchildjobs++;
-    parent->waitingjobs++;
-    shmc->noOfNodes++;
-    shmdt(shmc);
 }
 
 void *producer_thread_function(void *input){
     int shmid = *(int *)input;
     shared_memory* shm = (shared_memory*)shmat(shmid,NULL,0);
     while(1){
-        add_job_dependancy(shmid, &shm->nodeArr[(rand()%(shm->noOfNodes))]);
-        sleep((rand()%501)/1000.0);
+        int id = rand()%(shm->noOfNodes);
+        while (shm->nodeArr[id].status != Waiting){
+            id = rand()%(shm->noOfNodes);
+        }
+        pthread_mutex_lock(&(shm->nodeArr[id].mutex));
+        if (shm->nodeArr[id].status == Waiting){
+            Node *parent = shm->nodeArr + id;
+            pthread_mutex_lock(&(shm->mutex));
+            create_job(&(shm->nodeArr[shm->noOfNodes]), parent);
+            parent->dependantj[parent->cntchildjobs] = &shm->nodeArr[shm->noOfNodes];
+            shm->noOfNodes++;
+            job_logs(shmid, Adding, parent, parent->dependantj[parent->cntchildjobs]);
+            parent->cntchildjobs++;
+            parent->waitingjobs++;
+            pthread_mutex_unlock(&(shm->mutex));
+            sleep((rand()%501)/1000.0);
+        }
+        pthread_mutex_unlock(&(shm->nodeArr[id].mutex));
     }
     shmdt(shm);
 }
@@ -154,11 +181,11 @@ void *consumer_thread_function(void *input){
                 }
             }
         }
+        if (n->parent == NULL) finish = 1;
         if (n->status == Waiting){
-            run_job(n);
-        }
-        if (n->parent){
-            n->parent->waitingjobs--;
+            pthread_mutex_lock(&(n->mutex));
+            if (n->waitingjobs == 0) run_job(shmid, n);
+            pthread_mutex_unlock(&(n->mutex));
         }
     }
 
@@ -182,6 +209,10 @@ int main(int argc, char **argv){
 	}
 	shared_memory* shm = (shared_memory*)shmat(shmid,NULL,0);
 
+    // Initialise shared mutex locks in shm
+    pthread_mutex_init(&(shm->print), NULL);
+    pthread_mutex_init(&(shm->mutex), NULL);
+
     pid_t master_pid = fork();
     // Workflow of master process A
     if (master_pid == 0){
@@ -190,27 +221,41 @@ int main(int argc, char **argv){
         int noOfBaseTJobs = (rand()%201)+300;
 
         // Creating the head job
-        shm->nodeArr[shm->noOfNodes] = create_job(NULL);
+        // shm->nodeArr[shm->noOfNodes] = create_job(NULL);
+        create_job(&(shm->nodeArr[shm->noOfNodes]), NULL);
         shm->head = &shm->nodeArr[shm->noOfNodes];
         shm->noOfNodes++;
 
         // Creating other jobs
+        printf("Building base tree T... \n");
         for (int i=1;i<noOfBaseTJobs;i++){
-            add_job_dependancy(shmid, &shm->nodeArr[(rand()%(shm->noOfNodes))]);
+            pthread_mutex_lock(&(shm->mutex));
+            Node *parent = shm->nodeArr + (rand()%(shm->noOfNodes));
+            create_job(&(shm->nodeArr[shm->noOfNodes]), parent);
+            parent->dependantj[parent->cntchildjobs] = &shm->nodeArr[shm->noOfNodes];
+            shm->noOfNodes++;
+            job_logs(shmid, Adding, parent, parent->dependantj[parent->cntchildjobs]);
+            parent->cntchildjobs++;
+            parent->waitingjobs++;
+            pthread_mutex_unlock(&(shm->mutex));
         }
         // Created a base tree T with "noOfBaseTJobs" amount of jobs //
+        // Printing children of head
 
         // Creating producer threads and process B //
         // Creating "p" producer threads 
+        printf("Starting producer threads... \n");
         for (int i=0;i<p;i++){
             pthread_create(&prod_thread_id[i], NULL, producer_thread_function, (void *)&shmid);
         }
 
         // Creating a child process B //
+        printf("Starting up process B... \n");
         pid_t b_pid = fork();
         // Workflow for process B
         if (b_pid == 0){
             // Creating "y" consumer threads
+            printf("Starting consumer threads... \n");
             for (int i=0;i<y;i++){
                 pthread_create(&cons_thread_id[i], NULL, consumer_thread_function, (void *)&shmid);
             }
