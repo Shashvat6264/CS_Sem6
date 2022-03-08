@@ -40,6 +40,9 @@ typedef struct shared_memory{
 	sem_t empty;
 }shared_memory;
 
+// Global variables
+
+
 job create_job(int proNo){
 	job x;
 	x.proNo = proNo;
