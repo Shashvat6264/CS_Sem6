@@ -34,6 +34,7 @@ int main() {
     len = sizeof(servaddr);
 
     char buf[100];
+    // recvfrom(sockfd, buf, len ,MSG_WAITALL, ( struct sockaddr *) src_addr,&addrlen)
     while((n = r_recvfrom(M2, buf, sizeof(buf), ( struct sockaddr *) &cliaddr,len))>0){
         printf("Client : %s\n",buf);  
         n = 0; 
@@ -41,6 +42,6 @@ int main() {
     // n = recvfrom(M2, &mm, sizeof(mm),MSG_WAITALL, (struct sockaddr *) &servaddr,&len);
     // printf("Server : %s\n", mm.buf);
 
-    r_close(M2);
+    //r_close(M2);
     return 0;
 }

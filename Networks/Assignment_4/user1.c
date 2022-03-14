@@ -44,11 +44,13 @@ int main() {
     scanf("%[^\n]s",buf);
     for (int i = 0; i < strlen(buf); ++i){
         char ch = buf[i];
-        if((n=r_sendto(M1, &ch, 1, (const struct sockaddr *) &cliaddr,sizeof(cliaddr)))<0){
+        if((n=r_sendto(M1, &ch, 1, (struct sockaddr *) &cliaddr,sizeof(cliaddr)))<0){
             printf("Error in sending msg\n");
         }
     }
     
-    r_close(M1);
+    sleep(80);
+    printf("%d\n", no_of_tranmission);
+    while(1);
     return 0;
 }
