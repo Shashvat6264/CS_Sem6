@@ -39,6 +39,7 @@ send_msg* unack_table;
 recv_msg* recv_table;
 int utable_len, rtable_len, utable_next, rtable_next;
 time_t tzero;
+int bind_flag;
 
 
 

@@ -5,7 +5,7 @@
 // Driver code
 int main() {
     int M2;
-    struct sockaddr_in   servaddr,cliaddr;
+    struct sockaddr_in servaddr,cliaddr;
 
     // Creating socket file descriptor
     if ( (M2 = r_socket(AF_INET, SOCK_MRP, 0)) < 0 ) {
