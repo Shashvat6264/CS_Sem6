@@ -4,11 +4,11 @@
 
 // Driver code
 int main() {
-    int sockfd;
+    int M2;
     struct sockaddr_in   servaddr,cliaddr;
 
     // Creating socket file descriptor
-    if ( (sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
+    if ( (M2 = r_socket(AF_INET, SOCK_MRP, 0)) < 0 ) {
         perror("socket creation failed");
         exit(EXIT_FAILURE);
     }
@@ -22,21 +22,25 @@ int main() {
     servaddr.sin_addr.s_addr = INADDR_ANY;
 
     // Bind the socket with the server address
-    if ( bind(sockfd, (const struct sockaddr *)&servaddr,sizeof(servaddr)) < 0 ) {
+    if ( r_bind(M2, (const struct sockaddr *)&servaddr,sizeof(servaddr)) < 0 ) {
         perror("bind failed");
+        r_close(M2);
         exit(EXIT_FAILURE);
     }
     
-    int n, len;
+    int n;
+    socklen_t len;
 
     len = sizeof(servaddr);
 
     char buf[100];
-    n = recvfrom(sockfd, buf, sizeof(buf),MSG_WAITALL, ( struct sockaddr *) &cliaddr,&len);
-    printf("Client : %s\n",buf);   
-    // n = recvfrom(sockfd, &mm, sizeof(mm),MSG_WAITALL, (struct sockaddr *) &servaddr,&len);
+    while((n = r_recvfrom(M2, buf, sizeof(buf), ( struct sockaddr *) &cliaddr,len))>0){
+        printf("Client : %s\n",buf);  
+        n = 0; 
+    }
+    // n = recvfrom(M2, &mm, sizeof(mm),MSG_WAITALL, (struct sockaddr *) &servaddr,&len);
     // printf("Server : %s\n", mm.buf);
 
-    close(sockfd);
+    r_close(M2);
     return 0;
 }

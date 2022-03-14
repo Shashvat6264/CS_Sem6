@@ -1,4 +1,4 @@
-main: user1.o librsocket.a user2.o
+main: user1.o librsocket.a user2.o 
 	gcc user1.o -L. -lrsocket -pthread -o user1
 	gcc user2.o -L. -lrsocket -pthread -o user2
 

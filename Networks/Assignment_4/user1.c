@@ -9,8 +9,9 @@ int main() {
     struct sockaddr_in servaddr, cliaddr;
     
     // Creating socket file descriptor
-    if ( (M1 = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
+    if ( (M1 = r_socket(AF_INET, SOCK_MRP, 0)) < 0 ) {
         perror("socket creation failed");
+        r_close(M1);
         exit(EXIT_FAILURE);
     }
     
@@ -29,22 +30,23 @@ int main() {
     inet_aton("127.0.0.1", &cliaddr.sin_addr); 
 
     // Bind the socket with the server address
-    if ( bind(M1, (const struct sockaddr *)&servaddr,sizeof(servaddr)) < 0 ) {
+    if ( r_bind(M1, (const struct sockaddr *)&servaddr,sizeof(servaddr)) < 0 ) {
         perror("bind failed");
         exit(EXIT_FAILURE);
     }
     
-    int len, n;
+    int  n;
 
-    len = sizeof(cliaddr); //len is value/resuslt
+    // len = sizeof(cliaddr); //len is value/resuslt
 
     char buf[100];
     printf("Enter a string (of 25<size<50): \n");
     scanf("%[^\n]s",buf);
     for (int i = 0; i < strlen(buf); ++i){
         char ch = buf[i];
-        sendto(M1, &ch, sizeof(ch),MSG_CONFIRM, (const struct sockaddr *) &cliaddr,sizeof(cliaddr));
-        printf("Hello message sent.\n");
+        if((n=r_sendto(M1, &ch, 1, (const struct sockaddr *) &cliaddr,sizeof(cliaddr)))<0){
+            printf("Error in sending msg\n");
+        }
     }
     
     r_close(M1);

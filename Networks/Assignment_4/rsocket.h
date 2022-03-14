@@ -15,7 +15,8 @@
 #define MAX 100
 
 pthread_t R,S;
-pthread_mutex_t ulock,rlock;
+pthread_mutex_t utable_lock,rtable_lock;
+int sockfd;
 
 typedef struct _send_msg{
 	char buf[MAX];
@@ -23,18 +24,30 @@ typedef struct _send_msg{
 	const struct sockaddr *dest_addr;
 } send_msg;
 
-typedef struct _unack_table{
-	send_msg utable[50];
-	int entries;
-}unack_table;
+
+typedef struct _recv_msg{
+	char buf[MAX];
+	const struct sockaddr *src_addr;
+} recv_msg;
 
 
-int r_socket(int domain, int type, int protocol)
+// typedef struct _unack_table{
+// 	send_msg utable[50];
+// 	int entries;
+// }unack_table;
+send_msg* unack_table;
+recv_msg* recv_table;
+int utable_len, rtable_len, utable_next, rtable_next;
+time_t tzero;
+
+
+
+int r_socket(int domain, int type, int protocol);
 
 int r_bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
 
 int r_sendto(int sockfd, const void *buf, size_t len, const struct sockaddr *dest_addr, socklen_t addrlen);
 
-int r_recvfrom(int sockfd,void *buf, size_t len, const struct sockaddr *dest_addr, socklen_t addrlen);
+int r_recvfrom(int sockfd,void *buf, size_t len, const struct sockaddr *src_addr, socklen_t addrlen);
 
 int r_close(int fd);
