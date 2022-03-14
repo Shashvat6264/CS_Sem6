@@ -10,18 +10,20 @@ int dropMessage(float prob){
 
 void *thread_R(){
 	while(!bind_flag)
-		sleep(1);
+		printf("not binded\n");;
 	while(1){
 		sleep(T);
 		char temp[100];
 		int n;
 		struct sockaddr_in cliaddr;
+	    memset(&cliaddr, 0, sizeof(cliaddr));
 		socklen_t len = sizeof(cliaddr);
+		
+		n = recvfrom(sockfd, temp , sizeof(temp) ,MSG_WAITALL, ( struct sockaddr *) &cliaddr,&len);
 		if(n<0){
-			printf("Error in recieving message\n");
+			perror("Error in recieving message\n");
 			continue;
 		}
-		n = recvfrom(sockfd, temp , sizeof(temp) ,MSG_WAITALL, ( struct sockaddr *) &cliaddr,&len);
 		if (dropMessage(p))
 			continue;
 
@@ -83,7 +85,7 @@ void *thread_S(){
 				char *temp;
 				strcpy(temp,unack_table[i].buf);
 				const struct sockaddr *daddr = unack_table[i].dest_addr;
-				socklen_t daddr_len;
+				socklen_t daddr_len = sizeof(*daddr);
 				sendto(sockfd,temp,strlen(temp),0,(const struct sockaddr *) daddr,daddr_len);
 				unack_table[i].sent_time = time(0)-tzero;
 			}
@@ -162,6 +164,7 @@ int r_sendto(int sockfd, const void *buf, size_t len, const struct sockaddr *des
 }
 
 int r_recvfrom(int sockfd,void *buf, size_t len, const struct sockaddr *src_addr, socklen_t addrlen){
+	// return recvfrom(sockfd, buf, len ,MSG_WAITALL, ( struct sockaddr *) src_addr,&addrlen);
 	while(rtable_len==0) 
 		sleep(1);
 
@@ -182,7 +185,8 @@ int r_recvfrom(int sockfd,void *buf, size_t len, const struct sockaddr *src_addr
 }
 
 int r_close(int fd){
-    int r = close(fd);
+    int r ;
+    // = close(fd);
     
     // kill threads
     pthread_join(R, NULL);
