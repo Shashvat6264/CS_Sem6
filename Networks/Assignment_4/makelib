@@ -1,0 +1,2 @@
+library: rsocket.o
+	ar -rcs librsocket.a rsocket.o
